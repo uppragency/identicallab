@@ -3,7 +3,7 @@ import { metaFor } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
-import { CardGrid, Compare, FlowDark, InOut, RelatedGuides, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
+import { CardGrid, Compare, FlowDark, InOut, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
 import { Accent } from "@/components/ui";
 
 export const metadata: Metadata = metaFor("/servicii/design-cad-cam");
@@ -77,7 +77,6 @@ export default function Page() {
         intro="Spune-ne ce lucrare ai nevoie. Revenim cu termenul de execuție și cu prețul înainte să începem."
         checklist={["Tipul de lucrare și numărul de elemente", "Scan sau amprentă (la primul răspuns)", "Culoarea și indicațiile clinice"]}
       />
-      <RelatedGuides service="design-cad-cam" />
       <RelatedServices current="design-cad-cam" />
     </PageShell>
   );

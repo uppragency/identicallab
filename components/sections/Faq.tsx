@@ -1,6 +1,6 @@
 export function Faq() {
   return (
-    <section id="intrebari" style={{ padding: "0 40px 130px" }}>
+    <section id="intrebari" style={{ padding: "70px 40px 130px" }}>
       <div
         className="m-grid m-gap"
         style={{

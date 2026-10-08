@@ -1,6 +1,6 @@
 export function Services() {
   return (
-    <section id="servicii" style={{ padding: "0 40px 130px" }}>
+    <section id="servicii" style={{ padding: "70px 40px 130px" }}>
       <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
         <div
           className="m-sb"

@@ -465,7 +465,7 @@ const RELATED_PH: Record<string, string> = {"modele-mandibulare-3d": "FOTO51", "
 export function RelatedServices({ current }: { current?: string }) {
   const list = SERVICES.filter((s) => s.slug !== current);
   return (
-    <section id="alte-servicii" style={{ padding: "0 40px 130px" }}>
+    <section id="alte-servicii" style={{ padding: "110px 40px 130px" }}>
       <div style={wrap}>
         <SectionHead eyebrow="Alte servicii">
           {"Continuă fluxul "}

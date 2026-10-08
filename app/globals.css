@@ -212,3 +212,9 @@ details[open] > summary [data-acc-icon] { transform: rotate(45deg); }
   .idl-cookie { left: 12px !important; right: 12px; bottom: 12px !important; width: auto !important; padding: 22px 20px 18px !important; }
 }
 @media (prefers-reduced-motion: reduce) { .idl-cookie { animation: none; } }
+
+/* FAQ rows: keep the + on the same line as the question on mobile */
+@media (max-width: 1024px) {
+  details > summary.m-sb { flex-wrap: nowrap !important; align-items: flex-start; }
+  details > summary.m-sb > :last-child { flex: none; }
+}

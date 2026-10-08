@@ -3,7 +3,7 @@ import { metaFor } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
-import { CardGrid, Compare, FlowDark, InOut, RelatedGuides, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
+import { CardGrid, Compare, FlowDark, InOut, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
 import { Accent } from "@/components/ui";
 
 export const metadata: Metadata = metaFor("/servicii/modele-mandibulare-3d");
@@ -79,7 +79,6 @@ export default function Page() {
         intro="Descrie-ne pe scurt cazul și zona de interes. Revenim cu termenul de execuție și cu prețul înainte să începem."
         checklist={["Setul DICOM din CBCT (la primul răspuns)", "Zona de interes și scopul modelului", "Termenul dorit"]}
       />
-      <RelatedGuides service="modele-mandibulare-3d" />
       <RelatedServices current="modele-mandibulare-3d" />
     </PageShell>
   );

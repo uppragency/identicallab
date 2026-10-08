@@ -3,7 +3,7 @@ import { metaFor } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
-import { CardGrid, Compare, FlowDark, InOut, RelatedGuides, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
+import { CardGrid, Compare, FlowDark, InOut, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
 import { Accent } from "@/components/ui";
 
 export const metadata: Metadata = metaFor("/servicii/segmentare-cbct");
@@ -78,7 +78,6 @@ export default function Page() {
         intro="Spune-ne ce structuri te interesează. Revenim cu termenul de execuție și cu prețul înainte să începem."
         checklist={["Setul DICOM (la primul răspuns)", "Structurile de interes", "Formatul de export dorit"]}
       />
-      <RelatedGuides service="segmentare-cbct" />
       <RelatedServices current="segmentare-cbct" />
     </PageShell>
   );

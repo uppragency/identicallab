@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/PageShell";
 import { AboutBand, AboutCta, AboutHero, AboutMethod, AboutStory, AboutTeam, AboutTech } from "@/components/pages/AboutSections";
-import { Accreditations } from "@/components/sections/Accreditations";
 import { Positioning } from "@/components/sections/Positioning";
-import { Results } from "@/components/sections/Results";
-import { RingDivider } from "@/components/sections/RingDivider";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { Values } from "@/components/sections/Values";
 
 export const metadata: Metadata = {
@@ -26,10 +22,6 @@ export default function Page() {
       <AboutMethod />
       <AboutTech />
       <AboutTeam />
-      <Results />
-      <Testimonials />
-      <RingDivider />
-      <Accreditations />
       <AboutCta />
     </PageShell>
   );

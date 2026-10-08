@@ -153,3 +153,4 @@ html.js [data-mask] { clip-path: inset(100% 0 0 0); }
   .footer-cols > :last-child { grid-column: 1 / -1; }
   .footer-cols > :not(:last-child) > div:first-child { min-height: 30px; }
 }
+details[open] > summary [data-acc-icon] { transform: rotate(45deg); }

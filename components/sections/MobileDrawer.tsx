@@ -63,20 +63,38 @@ export function MobileDrawer() {
         >
           Despre noi
         </a>
-        <a
-          href="/servicii"
-          data-drawer-link
-          style={{
-            padding: "16px 0",
-            borderTop: "1px solid rgba(26,26,26,0.1)",
-            fontFamily: "var(--font-outfit), Helvetica, sans-serif",
-            fontSize: "26px",
-            fontWeight: "200",
-            letterSpacing: "-0.02em",
-          }}
-        >
-          Servicii
-        </a>
+        <details data-drawer-acc style={{ borderTop: "1px solid rgba(26,26,26,0.1)" }}>
+          <summary
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              padding: "16px 0",
+              fontFamily: "var(--font-outfit), Helvetica, sans-serif",
+              fontSize: "26px",
+              fontWeight: "200",
+              letterSpacing: "-0.02em",
+              cursor: "pointer",
+              listStyle: "none",
+            }}
+          >
+            Servicii
+            <span data-acc-icon style={{ color: "#26B7BC", fontSize: "26px", transition: "transform .3s ease" }}>+</span>
+          </summary>
+          <div style={{ display: "flex", flexDirection: "column", paddingBottom: "10px" }}>
+            {[
+              ["Toate serviciile", "/servicii"],
+              ["Modele mandibulare 3D", "/servicii/modele-mandibulare-3d"],
+              ["Segmentare CBCT", "/servicii/segmentare-cbct"],
+              ["Design CAD/CAM", "/servicii/design-cad-cam"],
+              ["Ghiduri chirurgicale", "/servicii/ghiduri-chirurgicale"],
+            ].map(([t, h], k) => (
+              <a key={h} href={h} data-drawer-link style={{ padding: "14px 0 14px 4px", fontFamily: "var(--font-outfit), Helvetica, sans-serif", fontSize: "19px", fontWeight: "300", borderTop: k ? "1px solid rgba(26,26,26,0.06)" : "none", color: k ? "#3A3A44" : "#0F0053" }}>
+                {t}
+              </a>
+            ))}
+          </div>
+        </details>
         <a
           href="/portofoliu"
           data-drawer-link
@@ -92,7 +110,7 @@ export function MobileDrawer() {
           Portofoliu
         </a>
         <a
-          href="/#proces"
+          href="/cum-lucram"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -103,35 +121,7 @@ export function MobileDrawer() {
             letterSpacing: "-0.02em",
           }}
         >
-          Proces
-        </a>
-        <a
-          href="/#planificare"
-          data-drawer-link
-          style={{
-            padding: "16px 0",
-            borderTop: "1px solid rgba(26,26,26,0.1)",
-            fontFamily: "var(--font-outfit), Helvetica, sans-serif",
-            fontSize: "26px",
-            fontWeight: "200",
-            letterSpacing: "-0.02em",
-          }}
-        >
-          Planificare
-        </a>
-        <a
-          href="/#livrare"
-          data-drawer-link
-          style={{
-            padding: "16px 0",
-            borderTop: "1px solid rgba(26,26,26,0.1)",
-            fontFamily: "var(--font-outfit), Helvetica, sans-serif",
-            fontSize: "26px",
-            fontWeight: "200",
-            letterSpacing: "-0.02em",
-          }}
-        >
-          Livrare
+          Cum lucrăm
         </a>
         <a
           href="/#ghiduri"

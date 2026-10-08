@@ -210,8 +210,8 @@ export function Footer() {
               <a className="idl-hover-9" href="/portofoliu" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Portofoliu
               </a>
-              <a className="idl-hover-9" href="/#proces" style={{ color: "rgba(255,255,255,0.82)" }}>
-                Proces
+              <a className="idl-hover-9" href="/cum-lucram" style={{ color: "rgba(255,255,255,0.82)" }}>
+                Cum lucrăm
               </a>
               <a className="idl-hover-9" href="/#intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Întrebări
@@ -243,7 +243,7 @@ export function Footer() {
               <a className="idl-hover-9" href="/servicii/ghiduri-chirurgicale" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Ghiduri chirurgicale
               </a>
-              <a className="idl-hover-9" href="/#planificare" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/cum-lucram#planificare" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Planificare digitală
               </a>
             </div>
@@ -261,13 +261,13 @@ export function Footer() {
               Pentru cabinete
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>
-              <a className="idl-hover-9" href="/#intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/cum-lucram#proces" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Cum trimiți un caz
               </a>
               <a className="idl-hover-9" href="/#materiale" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Materiale și tehnologii
               </a>
-              <a className="idl-hover-9" href="/#livrare" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/cum-lucram#livrare" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Termene de livrare
               </a>
               <a className="idl-hover-9" href="/#acreditari" style={{ color: "rgba(255,255,255,0.82)" }}>

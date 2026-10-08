@@ -178,14 +178,8 @@ export function Header() {
         <a className="idl-hover-0" href="/portofoliu">
           Portofoliu
         </a>
-        <a className="idl-hover-0" href="/#proces">
-          Proces
-        </a>
-        <a className="idl-hover-0" href="/#planificare">
-          Planificare
-        </a>
-        <a className="idl-hover-0" href="/#livrare">
-          Livrare
+        <a className="idl-hover-0" href="/cum-lucram">
+          Cum lucrăm
         </a>
         <a className="idl-hover-0" href="/#ghiduri">
           Ghiduri

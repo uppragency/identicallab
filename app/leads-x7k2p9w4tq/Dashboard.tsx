@@ -7,6 +7,7 @@ const navy = "#0F0053";
 const teal = "#26B7BC";
 const statusColor: Record<string, string> = { nou: "#26B7BC", contactat: "#B7791F", ofertat: "#5B4BC4", castigat: "#2E7D32", pierdut: "#8A8A94" };
 const fmt = (s: string) => new Date(s).toLocaleString("ro-RO", { dateStyle: "short", timeStyle: "short" });
+const isOverdue = (l: AdminLead) => l.status === "nou" && Date.now() - new Date(l.created_at).getTime() > 24 * 36e5;
 const input: React.CSSProperties = { padding: "10px 14px", border: "1px solid rgba(26,26,26,0.2)", borderRadius: 10, fontSize: 15, fontFamily: font, background: "#fff" };
 
 export function Dashboard({ initialLeads, subscribers, error }: { initialLeads: AdminLead[]; subscribers: AdminSub[]; error: boolean }) {
@@ -16,17 +17,20 @@ export function Dashboard({ initialLeads, subscribers, error }: { initialLeads: 
   const [fs, setFs] = useState("");
   const [fsrc, setFsrc] = useState("");
   const [open, setOpen] = useState<string | null>(null);
+  const [onlyLate, setOnlyLate] = useState(false);
 
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
     return leads.filter(
       (l) =>
         (!fs || l.status === fs) &&
+        (!onlyLate || isOverdue(l)) &&
         (!fsrc || l.source === fsrc) &&
         (!s || [l.name, l.clinic, l.email, l.phone, l.work_type, l.message, l.notes].some((v) => (v || "").toLowerCase().includes(s)))
     );
-  }, [leads, q, fs, fsrc]);
+  }, [leads, q, fs, fsrc, onlyLate]);
 
+  const lateCount = useMemo(() => leads.filter(isOverdue).length, [leads]);
   const counts = useMemo(() => {
     const c: Record<string, number> = {};
     leads.forEach((l) => (c[l.status] = (c[l.status] || 0) + 1));
@@ -57,6 +61,12 @@ export function Dashboard({ initialLeads, subscribers, error }: { initialLeads: 
         </header>
 
         {error && <div style={{ background: "#FDECEA", color: "#B3261E", padding: 14, borderRadius: 10, marginBottom: 16 }}>Datele nu au putut fi încărcate.</div>}
+
+        {lateCount > 0 && (
+          <button onClick={() => { setTab("leads"); setOnlyLate(!onlyLate); }} style={{ width: "100%", textAlign: "left", background: "#FDECEA", color: "#B3261E", padding: "14px 18px", borderRadius: 12, marginBottom: 16, border: "1px solid rgba(179,38,30,0.25)", fontFamily: font, fontSize: 15, cursor: "pointer" }}>
+            {lateCount} {lateCount === 1 ? "lead fără răspuns" : "lead-uri fără răspuns"} de peste 24h. {onlyLate ? "Arată toate" : "Arată doar întârziate"}
+          </button>
+        )}
 
         <div style={{ display: "flex", gap: 8, marginBottom: 18 }}>
           {([["leads", `Lead-uri (${leads.length})`], ["subs", `Newsletter (${subscribers.length})`]] as const).map(([k, label]) => (
@@ -137,7 +147,10 @@ function LeadCard({ l, open, onToggle, onSave }: { l: AdminLead; open: boolean; 
           {l.work_type || "—"}
           <span style={{ display: "block", color: "#6E6E78", fontSize: 13 }}>{fmt(l.created_at)}</span>
         </span>
-        <span style={{ padding: "5px 12px", borderRadius: 999, fontSize: 13, color: "#fff", background: statusColor[l.status] || "#888" }}>{label}</span>
+        <span style={{ display: "flex", gap: 6, alignItems: "center" }}>
+          {isOverdue(l) && <span style={{ padding: "5px 12px", borderRadius: 999, fontSize: 13, color: "#B3261E", background: "#FDECEA" }}>Peste 24h</span>}
+          <span style={{ padding: "5px 12px", borderRadius: 999, fontSize: 13, color: "#fff", background: statusColor[l.status] || "#888" }}>{label}</span>
+        </span>
       </button>
       {open && (
         <div style={{ padding: "4px 18px 20px", borderTop: "1px solid rgba(26,26,26,0.08)", display: "grid", gap: 14 }}>

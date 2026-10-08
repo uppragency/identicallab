@@ -42,7 +42,8 @@ export function Services() {
           </span>
         </div>
         <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "28px 28px" }}>
-          <article
+          <a
+            href="/servicii/modele-mandibulare-3d"
             data-reveal
             data-lift
             style={{
@@ -110,8 +111,9 @@ export function Services() {
                 Replici printate 3D ale anatomiei osoase, pornind de la CBCT-ul pacientului.
               </p>
             </div>
-          </article>
-          <article
+          </a>
+          <a
+            href="/servicii/segmentare-cbct"
             data-reveal
             data-lift
             style={{
@@ -179,8 +181,9 @@ export function Services() {
                 Izolarea structurilor de interes din setul DICOM, cu verificare a acurateței.
               </p>
             </div>
-          </article>
-          <article
+          </a>
+          <a
+            href="/servicii/segmentare-cbct"
             data-reveal
             data-lift
             style={{
@@ -248,8 +251,9 @@ export function Services() {
                 Curățare și pregătire a modelului STL pentru printare sau pentru planificare pe ecran.
               </p>
             </div>
-          </article>
-          <article
+          </a>
+          <a
+            href="/servicii/modele-mandibulare-3d"
             data-reveal
             data-lift
             style={{
@@ -317,8 +321,9 @@ export function Services() {
                 Execuție în laborator și livrare către cabinet, cu documentația cazului.
               </p>
             </div>
-          </article>
-          <article
+          </a>
+          <a
+            href="/servicii/design-cad-cam"
             data-reveal
             data-lift
             style={{
@@ -386,8 +391,9 @@ export function Services() {
                 Formă, proporții, morfologie și ocluzie, proiectate digital și verificate în fiecare etapă.
               </p>
             </div>
-          </article>
-          <article
+          </a>
+          <a
+            href="/servicii/ghiduri-chirurgicale"
             data-reveal
             data-lift
             style={{
@@ -455,7 +461,7 @@ export function Services() {
                 Planificarea implanturilor cu ghidaj protetic, pentru un profil de emergență corect.
               </p>
             </div>
-          </article>
+          </a>
         </div>
         <div data-reveal style={{ marginTop: "48px" }}>
           <button
@@ -477,6 +483,20 @@ export function Services() {
             {"Cere ofertă pentru un serviciu "}
             <span style={{ color: "#26B7BC" }}>→</span>
           </button>
+          <a
+            className="idl-hover-9 link-after"
+            href="/servicii"
+            style={{
+              display: "inline-block",
+              marginLeft: "26px", fontSize: "15px",
+              color: "#0F0053",
+              borderBottom: "1px solid rgba(15,0,83,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Vezi toate serviciile "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
         </div>
       </div>
     </section>

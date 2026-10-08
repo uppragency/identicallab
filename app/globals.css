@@ -197,3 +197,16 @@ details[open] > summary [data-acc-icon] { transform: rotate(45deg); }
   .flow-scroll::-webkit-scrollbar { display: none; }
   .flow-scroll > div { flex: 0 0 74vw; max-width: 360px; scroll-snap-align: start; padding-right: 0 !important; }
 }
+
+/* secondary text links placed after a CTA button on the homepage */
+@media (max-width: 640px) {
+  .link-after { display: block !important; width: fit-content; margin-left: 0 !important; margin-top: 22px; }
+}
+
+/* Cookie banner: entrance animation, bottom sheet on phones */
+@keyframes idl-cookie-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+.idl-cookie { animation: idl-cookie-in .5s cubic-bezier(.2,.7,.2,1) both; }
+@media (max-width: 640px) {
+  .idl-cookie { left: 12px !important; right: 12px; bottom: 12px !important; width: auto !important; padding: 22px 20px 18px !important; }
+}
+@media (prefers-reduced-motion: reduce) { .idl-cookie { animation: none; } }

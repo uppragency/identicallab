@@ -153,6 +153,20 @@ export function About() {
             {"Începe o colaborare "}
             <span style={{ color: "#26B7BC" }}>→</span>
           </button>
+          <a
+            className="idl-hover-9 link-after"
+            href="/despre-noi"
+            style={{
+              display: "inline-block",
+              marginLeft: "26px", fontSize: "15px",
+              color: "#FFFFFF",
+              borderBottom: "1px solid rgba(255,255,255,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Despre noi "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
         </div>
       </div>
     </section>

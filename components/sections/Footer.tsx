@@ -452,19 +452,19 @@ export function Footer() {
           }}
         >
           <div style={{ display: "flex", flexWrap: "wrap", gap: "22px" }}>
-            <a className="idl-hover-9" href="/#top" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <a className="idl-hover-9" href="/termeni-si-conditii" style={{ color: "rgba(255,255,255,0.6)" }}>
               Termeni și condiții
             </a>
-            <a className="idl-hover-9" href="/#top" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <a className="idl-hover-9" href="/politica-de-confidentialitate" style={{ color: "rgba(255,255,255,0.6)" }}>
               Politica de confidențialitate
             </a>
-            <a className="idl-hover-9" href="/#top" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <a className="idl-hover-9" href="/politica-cookie" style={{ color: "rgba(255,255,255,0.6)" }}>
               Cookie-uri
             </a>
-            <a className="idl-hover-9" href="https://anpc.ro" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <a className="idl-hover-9" href="https://anpc.ro" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.6)" }}>
               ANPC
             </a>
-            <a className="idl-hover-9" href="https://ec.europa.eu/consumers/odr" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <a className="idl-hover-9" href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.6)" }}>
               SOL
             </a>
           </div>

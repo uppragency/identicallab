@@ -63,6 +63,20 @@ export function Contact() {
             </a>
             <span>0724 065 767 · București</span>
           </div>
+          <a
+            className="idl-hover-9"
+            href="/contact"
+            style={{
+              display: "inline-block",
+              marginTop: "28px", fontSize: "15px",
+              color: "#FFFFFF",
+              borderBottom: "1px solid rgba(255,255,255,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Toate datele de contact "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
         </div>
         <form data-reveal style={{ display: "grid", gap: "18px" }} data-form="contact">
           <input

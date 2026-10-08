@@ -58,6 +58,20 @@ export function AboutIntro() {
           <p style={{ margin: "28px 0 0", maxWidth: "52ch", fontSize: "15px", lineHeight: "1.6", color: "#6E6E78", fontWeight: "300" }}>
             Tehnologia nu înlocuiește experiența clinicianului — o susține cu date și cu un obiect pe care îl poți ține în mână.
           </p>
+          <a
+            className="idl-hover-9"
+            href="/despre-noi"
+            style={{
+              display: "inline-block",
+              marginTop: "28px", fontSize: "15px",
+              color: "#0F0053",
+              borderBottom: "1px solid rgba(15,0,83,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Despre noi "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
         </div>
       </div>
     </section>

@@ -341,6 +341,20 @@ export function StackableGuides() {
           >
             Trimite un caz cu ghid
           </button>
+          <a
+            className="idl-hover-9 link-after"
+            href="/servicii/ghiduri-chirurgicale"
+            style={{
+              display: "inline-block",
+              marginLeft: "26px", fontSize: "15px",
+              color: "#FFFFFF",
+              borderBottom: "1px solid rgba(255,255,255,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Despre ghidurile chirurgicale "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
           <span style={{ fontSize: "15px", color: "rgba(255,255,255,0.6)", fontWeight: "300" }}>
             [ completează termenul de execuție pentru ghiduri ]
           </span>

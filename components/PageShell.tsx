@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
 import rootStyleJson from "@/components/rootStyle.json";
+import CookieBanner from "@/components/CookieBanner";
 import SiteBehaviors from "@/components/SiteBehaviors";
 import { Footer } from "@/components/sections/Footer";
 import { FooterMarquee } from "@/components/sections/FooterMarquee";
@@ -26,6 +27,7 @@ export function PageShell({ children }: { children: ReactNode }) {
         <Footer />
       </div>
       <SiteBehaviors />
+      <CookieBanner />
     </>
   );
 }

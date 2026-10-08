@@ -1,6 +1,7 @@
 import { features } from "@/lib/features";
 import type { CSSProperties } from "react";
 import rootStyleJson from "@/components/rootStyle.json";
+import CookieBanner from "@/components/CookieBanner";
 import SiteBehaviors from "@/components/SiteBehaviors";
 import { About } from "@/components/sections/About";
 import { AboutIntro } from "@/components/sections/AboutIntro";
@@ -78,6 +79,7 @@ export default function Page() {
         <Footer />
       </div>
       <SiteBehaviors />
+      <CookieBanner />
     </>
   );
 }

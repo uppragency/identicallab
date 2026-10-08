@@ -140,6 +140,20 @@ export function Planning() {
               </p>
             </div>
           </div>
+          <a
+            className="idl-hover-9"
+            href="/cum-lucram#planificare"
+            style={{
+              display: "inline-block",
+              marginTop: "28px", fontSize: "15px",
+              color: "#0F0053",
+              borderBottom: "1px solid rgba(15,0,83,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Despre planificarea digitală "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
         </div>
       </div>
     </section>

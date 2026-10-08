@@ -54,6 +54,20 @@ export function Faq() {
             {"Scrie-ne despre cazul tău "}
             <span style={{ color: "#26B7BC" }}>→</span>
           </button>
+          <a
+            className="idl-hover-9 link-after"
+            href="/intrebari"
+            style={{
+              display: "inline-block",
+              marginLeft: "26px", fontSize: "15px",
+              color: "#0F0053",
+              borderBottom: "1px solid rgba(15,0,83,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Toate întrebările "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
         </div>
         <div data-reveal style={{ display: "flex", flexDirection: "column" }}>
           <details style={{ borderTop: "1px solid rgba(26,26,26,0.12)", padding: "26px 0" }}>

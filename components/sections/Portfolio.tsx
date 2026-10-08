@@ -287,7 +287,7 @@ export function Portfolio() {
                 Coroane și fațete
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                Reabilitare frontală superioară
+                <a className="idl-hover-9" href="/portofoliu">Reabilitare frontală superioară</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
                 Șase coroane și fațete, integrare cromatică cu dinții vecini.
@@ -433,7 +433,7 @@ export function Portfolio() {
                 Fațete feldspatice
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                Fațete feldspatice, caz estetic
+                <a className="idl-hover-9" href="/portofoliu">Fațete feldspatice, caz estetic</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
                 Stratificare manuală pe refractar, grosime minimă.
@@ -579,7 +579,7 @@ export function Portfolio() {
                 Ghiduri chirurgicale
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                Ghid pentru două implanturi
+                <a className="idl-hover-9" href="/portofoliu">Ghid pentru două implanturi</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
                 Poziționare cu ghidaj protetic, profil de emergență planificat.
@@ -725,7 +725,7 @@ export function Portfolio() {
                 Modele 3D
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                Model mandibular din CBCT
+                <a className="idl-hover-9" href="/portofoliu">Model mandibular din CBCT</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
                 Model printat pentru măsurători și planificare preoperatorie.
@@ -871,7 +871,7 @@ export function Portfolio() {
                 Coroane și fațete
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                Reabilitare orală completă
+                <a className="idl-hover-9" href="/portofoliu">Reabilitare orală completă</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
                 Plan în etape, verificare a ocluziei pe parcurs.
@@ -1017,7 +1017,7 @@ export function Portfolio() {
                 Modele 3D
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                Wax-up digital și model de studiu
+                <a className="idl-hover-9" href="/portofoliu">Wax-up digital și model de studiu</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
                 Simulare digitală transformată în model fizic pentru probă.
@@ -1045,6 +1045,20 @@ export function Portfolio() {
             {"Trimite un caz similar "}
             <span style={{ color: "#26B7BC" }}>→</span>
           </button>
+          <a
+            className="idl-hover-9 link-after"
+            href="/portofoliu"
+            style={{
+              display: "inline-block",
+              marginLeft: "26px", fontSize: "15px",
+              color: "#0F0053",
+              borderBottom: "1px solid rgba(15,0,83,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Vezi tot portofoliul "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
         </div>
         <p data-reveal data-cases-empty style={{ display: "none", margin: "40px 0 0", fontSize: "16px", color: "#6E6E78" }}>
           Nu avem încă un caz publicat pe această categorie.

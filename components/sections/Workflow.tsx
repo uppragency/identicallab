@@ -248,6 +248,20 @@ export function Workflow() {
             {"Trimite primul fișier "}
             <span style={{ color: "#26B7BC" }}>→</span>
           </button>
+          <a
+            className="idl-hover-9 link-after"
+            href="/cum-lucram#proces"
+            style={{
+              display: "inline-block",
+              marginLeft: "26px", fontSize: "15px",
+              color: "#0F0053",
+              borderBottom: "1px solid rgba(15,0,83,0.4)",
+              paddingBottom: "3px",
+            }}
+          >
+            {"Cum lucrăm, pas cu pas "}
+            <span style={{ color: "#26B7BC" }}>→</span>
+          </a>
         </div>
       </div>
     </section>

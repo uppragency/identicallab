@@ -2,7 +2,7 @@ export type LegalSection = { h: string; p?: string[]; list?: string[] };
 export type LegalDoc = { slug: string; title: string; intro: string; updated: string; sections: LegalSection[] };
 
 const OPERATOR =
-  "DISTINGUISH DENT SRL, CUI 38260814, cu sediul în Str. Trotușului 31, București, Sector 1 (denumită în continuare „iDentical Lab”, „noi” sau „operatorul”). Nr. de înregistrare la Registrul Comerțului: [de completat]. Contact: gabriel.musetescu@identical.ro, 0724 065 767.";
+  "DISTINGUISH DENT SRL, CUI 38260814, Nr. Reg. Com. J2017016329409, EUID ROONRC.J2017016329409, cu sediul în Str. Trotușului 31, cod poștal 012141, Sector 1, București (denumită în continuare „iDentical Lab”, „noi” sau „operatorul”). Contact: gabriel.musetescu@identical.ro, 0724 065 767.";
 
 export const UPDATED = "8 octombrie 2026";
 

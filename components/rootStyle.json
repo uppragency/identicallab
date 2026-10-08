@@ -1,0 +1,7 @@
+{
+  "background": "#FFFFFF",
+  "color": "#1A1A1A",
+  "fontFamily": "var(--font-outfit), Helvetica, Arial, sans-serif",
+  "fontWeight": "400",
+  "overflowX": "hidden"
+}

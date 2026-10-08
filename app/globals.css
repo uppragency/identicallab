@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: url("/fonts/outfit-latin-ext-200-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: url("/fonts/outfit-latin-200-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url("/fonts/outfit-latin-ext-300-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url("/fonts/outfit-latin-300-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/outfit-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/outfit-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("/fonts/outfit-latin-ext-500-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("/fonts/outfit-latin-500-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("/fonts/outfit-latin-ext-600-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("/fonts/outfit-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root { --font-outfit: "Outfit"; }
+
+html, body { margin: 0; padding: 0; background: #FFFFFF; }
+* { box-sizing: border-box; }
+a { color: #1A1A1A; text-decoration: none; }
+a:hover { color: #0F0053; }
+summary::-webkit-details-marker { display: none; }
+summary { list-style: none; cursor: pointer; }
+@keyframes idl-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes idl-pan { from { background-position: 0 0, 0 0; } to { background-position: 0 0, 128px 0; } }
+@keyframes idl-drift { from { background-position: 0 0; } to { background-position: 0 96px; } }
+@keyframes idl-zoom { from { transform: scale(1); } to { transform: scale(1.07); } }
+@keyframes idl-glow { 0%, 100% { opacity: .55; transform: translate3d(0,0,0) scale(1); } 50% { opacity: .9; transform: translate3d(-2%, 2%, 0) scale(1.08); } }
+::selection { background: #0F0053; color: #FFFFFF; }
+[data-ba] { touch-action: pan-y; }
+[data-burger] { display: none; }
+@media (max-width: 1024px) {
+  [data-desktop-nav] { display: none !important; }
+  [data-burger] { display: inline-flex !important; }
+  [data-header] { padding: 14px 20px !important; }
+  section { padding-left: 20px !important; padding-right: 20px !important; }
+  .m-grid { grid-template-columns: 1fr !important; }
+  .m-gap { gap: 36px !important; }
+  .m-sticky { position: static !important; }
+  .m-nowrap { white-space: normal !important; }
+  .m-sb { flex-wrap: wrap !important; }
+  [data-drag-cursor] { display: none !important; }
+  [data-ba] { cursor: grab !important; }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .m-rep { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  section { padding-top: 76px !important; padding-bottom: 76px !important; }
+  h1 { font-size: clamp(38px, 12vw, 60px) !important; }
+  h2 { letter-spacing: -0.02em !important; }
+  h3 { font-size: 24px !important; }
+  [data-form-card] { padding: 30px 22px 28px !important; }
+  [data-search-overlay] { padding: 10vh 20px 24px !important; }
+  .m-26vw { font-size: 38vw !important; }
+  .m-ar45 { aspect-ratio: 4/3 !important; }
+}
+
+/* hover states generated from style-hover attributes */
+.idl-hover-0:hover { color: #0F0053 !important; }
+.idl-hover-1:hover { background: #F4F7F9 !important; }
+.idl-hover-2:hover { border-color: #0F0053 !important; color: #0F0053 !important; }
+.idl-hover-3:hover { background: #0F0053 !important; }
+.idl-hover-4:hover { background: #26B7BC !important; }
+.idl-hover-5:hover { background: #1A1A1A !important; }
+.idl-hover-6:hover { opacity: 0 !important; }
+.idl-hover-7:hover { border-color: #0F0053 !important; }
+.idl-hover-8:hover { background: #26B7BC !important; color: #FFFFFF !important; }
+.idl-hover-9:hover { color: #26B7BC !important; }
+.idl-hover-a:hover { border-color: #26B7BC !important; color: #26B7BC !important; }
+.idl-hover-b:hover { background: #FFFFFF !important; color: #0F0053 !important; }
+.idl-hover-c:hover { color: #26B7BC !important; border-color: #26B7BC !important; }
+
+/* Pre-hydration hidden states so the entrance animations do not flash.
+   The class "js" is added by an inline script in <head>; behaviours then take
+   over with inline styles. A CSS fallback un-hides everything after 4s. */
+@keyframes idl-unhide { to { opacity: 1; transform: none; clip-path: inset(0 0 0 0); } }
+html.js [data-reveal] { opacity: 0; transform: translateY(18px); animation: idl-unhide 0s 4s forwards; }
+html.js [data-lines] { opacity: 0; animation: idl-unhide 0s 4s forwards; }
+html.js [data-mask] { clip-path: inset(100% 0 0 0); }
+/* .m-ar45 mirrors the design rule [style*="aspect-ratio: 4/5"] (4/3 on mobile). It never matched in the approved render, so no element uses it. */

@@ -194,7 +194,7 @@ export function MobileDrawer() {
           Cere ofertă
         </button>
         <a
-          href="tel:+40740000000"
+          href="tel:+40724065767"
           style={{
             padding: "16px 26px",
             border: "1px solid rgba(26,26,26,0.18)",

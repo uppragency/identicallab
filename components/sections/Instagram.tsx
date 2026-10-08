@@ -28,7 +28,9 @@ export function Instagram() {
           </div>
           <a
             className="m-nowrap idl-hover-2"
-            href="https://instagram.com"
+            href="https://www.instagram.com/identical.lab/"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               padding: "14px 26px",
               borderRadius: "999px",
@@ -38,13 +40,15 @@ export function Instagram() {
               whiteSpace: "nowrap",
             }}
           >
-            {"@identicallab "}
+            {"@identical.lab "}
             <span style={{ color: "#26B7BC" }}>→</span>
           </a>
         </div>
         <div className="m-grid" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gap: "12px" }}>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/identical.lab/"
+            target="_blank"
+            rel="noopener noreferrer"
             data-reveal
             data-mask
             style={{
@@ -64,7 +68,9 @@ export function Instagram() {
             </span>
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/identical.lab/"
+            target="_blank"
+            rel="noopener noreferrer"
             data-reveal
             data-mask
             style={{
@@ -84,7 +90,9 @@ export function Instagram() {
             </span>
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/identical.lab/"
+            target="_blank"
+            rel="noopener noreferrer"
             data-reveal
             data-mask
             style={{
@@ -104,7 +112,9 @@ export function Instagram() {
             </span>
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/identical.lab/"
+            target="_blank"
+            rel="noopener noreferrer"
             data-reveal
             data-mask
             style={{
@@ -124,7 +134,9 @@ export function Instagram() {
             </span>
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/identical.lab/"
+            target="_blank"
+            rel="noopener noreferrer"
             data-reveal
             data-mask
             style={{
@@ -144,7 +156,9 @@ export function Instagram() {
             </span>
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/identical.lab/"
+            target="_blank"
+            rel="noopener noreferrer"
             data-reveal
             data-mask
             style={{

@@ -735,7 +735,7 @@ class SiteBehaviors {
         contact: "Mulțumim. Am primit cererea și revenim în cel mai scurt timp.",
         newsletter: "Te-ai abonat. Mulțumim.",
       },
-      error: "Nu am putut trimite acum. Încearcă din nou sau scrie-ne la contact@identicallab.ro.",
+      error: "Nu am putut trimite acum. Încearcă din nou sau scrie-ne la gabriel.musetescu@identical.ro.",
     };
     forms.forEach((form) => {
       const kind = form.getAttribute("data-form");

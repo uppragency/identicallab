@@ -60,7 +60,7 @@ export function Footer() {
               </button>
               <a
                 className="idl-hover-a"
-                href="tel:+40000000000"
+                href="tel:+40724065767"
                 style={{
                   padding: "15px 28px",
                   borderRadius: "999px",
@@ -69,11 +69,11 @@ export function Footer() {
                   fontSize: "15px",
                 }}
               >
-                [ telefon ]
+                0724 065 767
               </a>
               <a
                 className="idl-hover-a"
-                href="https://wa.me/40000000000"
+                href="https://wa.me/40724065767"
                 style={{
                   padding: "15px 28px",
                   borderRadius: "999px",
@@ -288,20 +288,47 @@ export function Footer() {
               Contact
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>
-              <a className="idl-hover-9" href="mailto:contact@identicallab.ro" style={{ color: "rgba(255,255,255,0.82)" }}>
-                contact@identicallab.ro
+              <a className="idl-hover-9" href="mailto:gabriel.musetescu@identical.ro" style={{ color: "rgba(255,255,255,0.82)" }}>
+                gabriel.musetescu@identical.ro
               </a>
-              <a className="idl-hover-9" href="tel:+40000000000" style={{ color: "rgba(255,255,255,0.82)" }}>
-                [ telefon ]
+              <a className="idl-hover-9" href="tel:+40724065767" style={{ color: "rgba(255,255,255,0.82)" }}>
+                0724 065 767
               </a>
-              <a className="idl-hover-9" href="#contact" style={{ color: "rgba(255,255,255,0.82)" }}>
-                [ adresă laborator ]
+              <a
+                className="idl-hover-9"
+                href="https://www.google.com/maps/search/?api=1&query=Str.+Fabricii+46,+Bucharest,+013141"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "rgba(255,255,255,0.82)" }}
+              >
+                Str. Fabricii 46, București, 013141
               </a>
-              <a className="idl-hover-9" href="https://instagram.com" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a
+                className="idl-hover-9"
+                href="https://www.instagram.com/identical.lab/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "rgba(255,255,255,0.82)" }}
+              >
                 Instagram
               </a>
-              <a className="idl-hover-9" href="https://facebook.com" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a
+                className="idl-hover-9"
+                href="https://www.facebook.com/identical.lab"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "rgba(255,255,255,0.82)" }}
+              >
                 Facebook
+              </a>
+              <a
+                className="idl-hover-9"
+                href="https://www.tiktok.com/@identical.lab"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "rgba(255,255,255,0.82)" }}
+              >
+                TikTok
               </a>
             </div>
           </div>

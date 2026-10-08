@@ -58,10 +58,10 @@ export function Contact() {
               color: "rgba(255,255,255,0.72)",
             }}
           >
-            <a className="idl-hover-9" href="mailto:contact@identicallab.ro" style={{ color: "#FFFFFF" }}>
-              contact@identicallab.ro
+            <a className="idl-hover-9" href="mailto:gabriel.musetescu@identical.ro" style={{ color: "#FFFFFF" }}>
+              gabriel.musetescu@identical.ro
             </a>
-            <span>[ telefon ] · [ oraș ]</span>
+            <span>0724 065 767 · București</span>
           </div>
         </div>
         <form data-reveal style={{ display: "grid", gap: "18px" }} data-form="contact">

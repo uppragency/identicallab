@@ -408,7 +408,11 @@ class SiteBehaviors {
         b.addEventListener("click", () => {
           panel.style.display = "none";
           const s = root.querySelector("#servicii");
-          if (s) window.scrollTo({ top: window.scrollY + s.getBoundingClientRect().top - 90, behavior: "smooth" });
+          if (!s) {
+            window.location.href = "/#servicii";
+            return;
+          }
+          window.scrollTo({ top: window.scrollY + s.getBoundingClientRect().top - 90, behavior: "smooth" });
         });
       });
     }
@@ -585,7 +589,15 @@ class SiteBehaviors {
   _initScroll(root) {
     const bar = root.querySelector("[data-progress]");
     const links = Array.from(root.querySelectorAll("header nav a"));
-    const targets = links.map((a) => root.querySelector(a.getAttribute("href")));
+    const targets = links.map((a) => {
+      const h = (a.getAttribute("href") || "").replace(/^\/(?=#)/, "");
+      if (h.charAt(0) !== "#" || h.length < 2) return null;
+      try {
+        return root.querySelector(h);
+      } catch (e) {
+        return null;
+      }
+    });
     const parallax = Array.from(root.querySelectorAll("[data-parallax]"));
     const onScroll = () => {
       const h = document.documentElement;

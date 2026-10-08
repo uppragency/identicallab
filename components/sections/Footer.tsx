@@ -168,7 +168,7 @@ export function Footer() {
             </form>
             <a
               className="idl-hover-9"
-              href="#contact"
+              href="/#contact"
               style={{
                 display: "inline-block",
                 marginTop: "26px",
@@ -201,19 +201,19 @@ export function Footer() {
               Navigație
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>
-              <a className="idl-hover-9" href="#despre" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/despre-noi" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Despre noi
               </a>
-              <a className="idl-hover-9" href="#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Servicii
               </a>
-              <a className="idl-hover-9" href="#portofoliu" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#portofoliu" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Portofoliu
               </a>
-              <a className="idl-hover-9" href="#proces" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#proces" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Proces
               </a>
-              <a className="idl-hover-9" href="#intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Întrebări
               </a>
             </div>
@@ -231,19 +231,19 @@ export function Footer() {
               Servicii
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>
-              <a className="idl-hover-9" href="#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Modele mandibulare 3D
               </a>
-              <a className="idl-hover-9" href="#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Segmentare CBCT
               </a>
-              <a className="idl-hover-9" href="#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Design CAD/CAM
               </a>
-              <a className="idl-hover-9" href="#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Ghiduri chirurgicale
               </a>
-              <a className="idl-hover-9" href="#planificare" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#planificare" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Planificare digitală
               </a>
             </div>
@@ -261,16 +261,16 @@ export function Footer() {
               Pentru cabinete
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>
-              <a className="idl-hover-9" href="#intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Cum trimiți un caz
               </a>
-              <a className="idl-hover-9" href="#materiale" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#materiale" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Materiale și tehnologii
               </a>
-              <a className="idl-hover-9" href="#livrare" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#livrare" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Termene de livrare
               </a>
-              <a className="idl-hover-9" href="#acreditari" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/#acreditari" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Certificări și parteneri
               </a>
             </div>
@@ -446,13 +446,13 @@ export function Footer() {
           }}
         >
           <div style={{ display: "flex", flexWrap: "wrap", gap: "22px" }}>
-            <a className="idl-hover-9" href="#top" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <a className="idl-hover-9" href="/#top" style={{ color: "rgba(255,255,255,0.6)" }}>
               Termeni și condiții
             </a>
-            <a className="idl-hover-9" href="#top" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <a className="idl-hover-9" href="/#top" style={{ color: "rgba(255,255,255,0.6)" }}>
               Politica de confidențialitate
             </a>
-            <a className="idl-hover-9" href="#top" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <a className="idl-hover-9" href="/#top" style={{ color: "rgba(255,255,255,0.6)" }}>
               Cookie-uri
             </a>
             <a className="idl-hover-9" href="https://anpc.ro" style={{ color: "rgba(255,255,255,0.6)" }}>

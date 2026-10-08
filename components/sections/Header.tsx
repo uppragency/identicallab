@@ -21,7 +21,7 @@ export function Header() {
       }}
     >
       <a
-        href="#top"
+        href="/#top"
         style={{
           fontFamily: "var(--font-outfit), Helvetica, sans-serif",
           fontSize: "25px",
@@ -34,11 +34,11 @@ export function Header() {
         <span style={{ fontWeight: "200", color: "#26B7BC" }}>lab</span>
       </a>
       <nav data-desktop-nav style={{ display: "flex", gap: "30px", fontSize: "14px", letterSpacing: "0.01em" }}>
-        <a className="idl-hover-0" href="#despre">
+        <a className="idl-hover-0" href="/despre-noi">
           Despre noi
         </a>
         <span data-svc-wrap style={{ position: "relative", display: "inline-block" }}>
-          <a className="idl-hover-0" href="#servicii">
+          <a className="idl-hover-0" href="/#servicii">
             Servicii
           </a>
           <span
@@ -171,27 +171,27 @@ export function Header() {
             </span>
           </span>
         </span>
-        <a className="idl-hover-0" href="#portofoliu">
+        <a className="idl-hover-0" href="/#portofoliu">
           Portofoliu
         </a>
-        <a className="idl-hover-0" href="#proces">
+        <a className="idl-hover-0" href="/#proces">
           Proces
         </a>
-        <a className="idl-hover-0" href="#planificare">
+        <a className="idl-hover-0" href="/#planificare">
           Planificare
         </a>
-        <a className="idl-hover-0" href="#livrare">
+        <a className="idl-hover-0" href="/#livrare">
           Livrare
         </a>
-        <a className="idl-hover-0" href="#ghiduri">
+        <a className="idl-hover-0" href="/#ghiduri">
           Ghiduri
         </a>
         {features.blog && (
-        <a className="idl-hover-0" href="#blog">
+        <a className="idl-hover-0" href="/#blog">
           Blog
         </a>
         )}
-        <a className="idl-hover-0" href="#intrebari">
+        <a className="idl-hover-0" href="/#intrebari">
           Întrebări
         </a>
       </nav>

@@ -50,7 +50,7 @@ export function MobileDrawer() {
       </div>
       <nav style={{ display: "flex", flexDirection: "column" }}>
         <a
-          href="#despre"
+          href="/despre-noi"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -64,7 +64,7 @@ export function MobileDrawer() {
           Despre noi
         </a>
         <a
-          href="#servicii"
+          href="/#servicii"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -78,7 +78,7 @@ export function MobileDrawer() {
           Servicii
         </a>
         <a
-          href="#portofoliu"
+          href="/#portofoliu"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -92,7 +92,7 @@ export function MobileDrawer() {
           Portofoliu
         </a>
         <a
-          href="#proces"
+          href="/#proces"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -106,7 +106,7 @@ export function MobileDrawer() {
           Proces
         </a>
         <a
-          href="#planificare"
+          href="/#planificare"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -120,7 +120,7 @@ export function MobileDrawer() {
           Planificare
         </a>
         <a
-          href="#livrare"
+          href="/#livrare"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -134,7 +134,7 @@ export function MobileDrawer() {
           Livrare
         </a>
         <a
-          href="#ghiduri"
+          href="/#ghiduri"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -149,7 +149,7 @@ export function MobileDrawer() {
         </a>
         {features.blog && (
         <a
-          href="#blog"
+          href="/#blog"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -164,7 +164,7 @@ export function MobileDrawer() {
         </a>
         )}
         <a
-          href="#intrebari"
+          href="/#intrebari"
           data-drawer-link
           style={{
             padding: "16px 0",

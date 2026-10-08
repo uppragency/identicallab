@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { ADMIN_COOKIE, rpc, verifySession, type AdminLead, type AdminSub } from "@/lib/admin";
+import { PageShell } from "@/components/PageShell";
 import { Dashboard } from "./Dashboard";
 import { Login } from "./Login";
 
@@ -7,7 +8,11 @@ export const dynamic = "force-dynamic";
 
 export default async function Page() {
   const jar = await cookies();
-  if (!verifySession(jar.get(ADMIN_COOKIE)?.value)) return <Login />;
+  if (!verifySession(jar.get(ADMIN_COOKIE)?.value)) return (
+      <PageShell>
+        <Login />
+      </PageShell>
+    );
   let leads: AdminLead[] = [];
   let subs: AdminSub[] = [];
   let error = false;
@@ -16,5 +21,9 @@ export default async function Page() {
   } catch {
     error = true;
   }
-  return <Dashboard initialLeads={leads} subscribers={subs} error={error} />;
+  return (
+    <PageShell>
+      <Dashboard initialLeads={leads} subscribers={subs} error={error} />
+    </PageShell>
+  );
 }

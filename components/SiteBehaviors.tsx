@@ -814,6 +814,10 @@ class SiteBehaviors {
           });
           if (!res.ok) throw new Error("HTTP " + res.status);
           form.reset();
+          if (kind !== "newsletter") {
+            window.location.assign("/multumim");
+            return;
+          }
           show(MESSAGES.sent[kind], true);
         } catch (err) {
           show(MESSAGES.error, false);

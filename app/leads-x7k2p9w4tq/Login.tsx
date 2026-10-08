@@ -23,7 +23,7 @@ export function Login() {
   }
 
   return (
-    <main style={{ minHeight: "100vh", display: "grid", placeItems: "center", padding: 20, background: "#F4F7F9", fontFamily: font }}>
+    <main style={{ minHeight: "70vh", display: "grid", placeItems: "center", padding: "60px 20px", background: "#F4F7F9", fontFamily: font }}>
       <form onSubmit={submit} style={{ width: "100%", maxWidth: 380, background: "#fff", border: "1px solid rgba(26,26,26,0.1)", borderRadius: 14, padding: "36px 30px" }}>
         <div style={{ fontSize: 12, letterSpacing: "0.14em", textTransform: "uppercase", color: "#0F0053", marginBottom: 14 }}>[ iDentical Lab ]</div>
         <h1 style={{ margin: "0 0 24px", fontWeight: 200, fontSize: 34, letterSpacing: "-0.02em" }}>Acces lead-uri</h1>

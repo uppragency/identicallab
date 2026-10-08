@@ -46,8 +46,8 @@ export function Dashboard({ initialLeads, subscribers, error }: { initialLeads: 
   }
 
   return (
-    <main style={{ minHeight: "100vh", background: "#F4F7F9", fontFamily: font, color: "#1A1A1A" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "28px 20px 80px" }}>
+    <main style={{ background: "#F4F7F9", fontFamily: font, color: "#1A1A1A" }}>
+      <div style={{ maxWidth: 1440, margin: "0 auto", padding: "56px 40px 110px" }}>
         <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, flexWrap: "wrap", marginBottom: 24 }}>
           <div>
             <div style={{ fontSize: 12, letterSpacing: "0.14em", textTransform: "uppercase", color: navy }}>[ iDentical Lab ]</div>

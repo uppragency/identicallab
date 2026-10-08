@@ -55,6 +55,7 @@ export const COOKIES: LegalDoc = {
     { h: "Ce folosim acum", list: ["Necesare: reținem alegerea ta privind cookie-urile (cheia „idl-cookie-consent”, în stocarea locală a browserului, până o modifici sau o ștergi). Nu pot fi dezactivate, deoarece fără ele nu am putea respecta alegerea ta.", "Analitice: în prezent nu folosim instrumente de analiză. Dacă vom activa unele, vor rula doar cu acordul tău.", "Marketing: în prezent nu folosim cookie-uri sau pixeli de marketing. Dacă vom activa unele, vor rula doar cu acordul tău."] },
     { h: "Cum îți modifici alegerea", p: ["Poți schimba oricând preferințele folosind butonul de mai jos. Poți șterge oricând datele stocate și din setările browserului."] },
     { h: "Setările browserului", p: ["Majoritatea browserelor permit blocarea sau ștergerea cookie-urilor. Blocarea celor necesare poate face ca alegerea ta să nu fie reținută între vizite."] },
+    { h: "Operatorul site-ului", p: [OPERATOR] },
     { h: "Contact", p: ["Pentru întrebări despre această politică ne poți scrie la gabriel.musetescu@identical.ro."] },
   ],
 };

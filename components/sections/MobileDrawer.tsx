@@ -124,7 +124,7 @@ export function MobileDrawer() {
           Cum lucrăm
         </a>
         <a
-          href="/#ghiduri"
+          href="/ghiduri"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -154,7 +154,21 @@ export function MobileDrawer() {
         </a>
         )}
         <a
-          href="/#intrebari"
+          href="/intrebari"
+          data-drawer-link
+          style={{
+            padding: "16px 0",
+            borderTop: "1px solid rgba(26,26,26,0.1)",
+            fontFamily: "var(--font-outfit), Helvetica, sans-serif",
+            fontSize: "26px",
+            fontWeight: "200",
+            letterSpacing: "-0.02em",
+          }}
+        >
+          Întrebări
+        </a>
+        <a
+          href="/contact"
           data-drawer-link
           style={{
             padding: "16px 0",
@@ -166,7 +180,7 @@ export function MobileDrawer() {
             letterSpacing: "-0.02em",
           }}
         >
-          Întrebări
+          Contact
         </a>
       </nav>
       <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "28px" }}>

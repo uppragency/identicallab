@@ -47,7 +47,7 @@ export function AboutHero() {
               <button className="idl-hover-5" type="button" data-open-form="Începe o colaborare" data-magnetic style={pillPrimary}>
                 Începe o colaborare
               </button>
-              <a className="idl-hover-2" href="/#servicii" data-magnetic style={pillGhost}>
+              <a className="idl-hover-2" href="/servicii" data-magnetic style={pillGhost}>
                 {"Vezi serviciile "}
                 <span style={{ color: "#26B7BC" }}>→</span>
               </a>

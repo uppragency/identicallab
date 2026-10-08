@@ -43,7 +43,7 @@ export function Careers() {
             Transformi materiale în zâmbete și tehnologia în rezultate reale. Iar dacă ai deja experiență, avem o veste bună: angajăm.
           </p>
           <a
-            href="#contact"
+            href="/contact"
             style={{ fontSize: "15px", color: "#0F0053", borderBottom: "1px solid rgba(15,0,83,0.4)", paddingBottom: "3px" }}
           >
             {"Trimite-ne CV-ul "}
@@ -81,7 +81,7 @@ export function Careers() {
             fie abordate.
           </p>
           <a
-            href="#contact"
+            href="/contact"
             style={{ fontSize: "15px", color: "#0F0053", borderBottom: "1px solid rgba(15,0,83,0.4)", paddingBottom: "3px" }}
           >
             {"Propune un subiect "}

@@ -21,7 +21,7 @@ export function Header() {
       }}
     >
       <a
-        href="/#top"
+        href="/"
         style={{
           fontFamily: "var(--font-outfit), Helvetica, sans-serif",
           fontSize: "25px",
@@ -181,7 +181,7 @@ export function Header() {
         <a className="idl-hover-0" href="/cum-lucram">
           Cum lucrăm
         </a>
-        <a className="idl-hover-0" href="/#ghiduri">
+        <a className="idl-hover-0" href="/ghiduri">
           Ghiduri
         </a>
         {features.blog && (
@@ -189,8 +189,11 @@ export function Header() {
           Blog
         </a>
         )}
-        <a className="idl-hover-0" href="/#intrebari">
+        <a className="idl-hover-0" href="/intrebari">
           Întrebări
+        </a>
+        <a className="idl-hover-0" href="/contact">
+          Contact
         </a>
       </nav>
       <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>

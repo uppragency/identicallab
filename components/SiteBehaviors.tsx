@@ -60,6 +60,7 @@ class SiteBehaviors {
     this._initFormModal(root);
     this._initDrawer(root);
     this._initForms(root);
+    this._initFaqSearch(root);
   }
 
   _initDrawer(root) {
@@ -742,6 +743,30 @@ class SiteBehaviors {
         });
       }),
     );
+  }
+
+  _initFaqSearch(root) {
+    const input = root.querySelector("[data-faq-search]");
+    if (!input) return;
+    const items = Array.from(root.querySelectorAll("[data-faq-item]"));
+    const groups = Array.from(root.querySelectorAll("[data-faq-group]"));
+    const empty = root.querySelector("[data-faq-empty]");
+    input.addEventListener("input", () => {
+      const q = input.value.trim().toLowerCase();
+      items.forEach((it) => {
+        const hit = !q || (it.textContent || "").toLowerCase().includes(q);
+        it.style.display = hit ? "" : "none";
+        if (q && hit) it.open = true;
+        if (!q) it.open = false;
+      });
+      let shown = 0;
+      groups.forEach((g) => {
+        const any = Array.from(g.querySelectorAll("[data-faq-item]")).some((i) => i.style.display !== "none");
+        g.style.display = any ? "" : "none";
+        if (any) shown++;
+      });
+      if (empty) empty.style.display = shown ? "none" : "block";
+    });
   }
 
   _initForms(root) {

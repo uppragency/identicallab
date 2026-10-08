@@ -168,7 +168,7 @@ export function Footer() {
             </form>
             <a
               className="idl-hover-9"
-              href="/#contact"
+              href="/contact"
               style={{
                 display: "inline-block",
                 marginTop: "26px",
@@ -213,8 +213,14 @@ export function Footer() {
               <a className="idl-hover-9" href="/cum-lucram" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Cum lucrăm
               </a>
-              <a className="idl-hover-9" href="/#intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/ghiduri" style={{ color: "rgba(255,255,255,0.82)" }}>
+                Ghiduri
+              </a>
+              <a className="idl-hover-9" href="/intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Întrebări
+              </a>
+              <a className="idl-hover-9" href="/contact" style={{ color: "rgba(255,255,255,0.82)" }}>
+                Contact
               </a>
             </div>
           </div>
@@ -261,7 +267,7 @@ export function Footer() {
               Pentru cabinete
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>
-              <a className="idl-hover-9" href="/cum-lucram#proces" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/cum-lucram#trimite-un-caz" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Cum trimiți un caz
               </a>
               <a className="idl-hover-9" href="/#materiale" style={{ color: "rgba(255,255,255,0.82)" }}>

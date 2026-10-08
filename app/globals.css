@@ -154,3 +154,46 @@ html.js [data-mask] { clip-path: inset(100% 0 0 0); }
   .footer-cols > :not(:last-child) > div:first-child { min-height: 30px; }
 }
 details[open] > summary [data-acc-icon] { transform: rotate(45deg); }
+
+/* Header must stay sticky: the root wrapper uses overflow-x: clip (not hidden) so it does not become a scroll container. */
+
+/* Mobile menu: entrance animation and dropdown */
+@keyframes idl-drawer-in { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
+@keyframes idl-drawer-item { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes idl-acc-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+[data-drawer] { animation: idl-drawer-in .42s cubic-bezier(.2,.7,.2,1) both; }
+[data-drawer] nav > * { animation: idl-drawer-item .5s cubic-bezier(.2,.7,.2,1) both; }
+[data-drawer] nav > *:nth-child(1) { animation-delay: .06s; }
+[data-drawer] nav > *:nth-child(2) { animation-delay: .1s; }
+[data-drawer] nav > *:nth-child(3) { animation-delay: .14s; }
+[data-drawer] nav > *:nth-child(4) { animation-delay: .18s; }
+[data-drawer] nav > *:nth-child(5) { animation-delay: .22s; }
+[data-drawer] nav > *:nth-child(6) { animation-delay: .26s; }
+[data-drawer] nav > *:nth-child(7) { animation-delay: .3s; }
+[data-drawer] > div:last-child { animation: idl-drawer-item .5s .34s cubic-bezier(.2,.7,.2,1) both; }
+[data-drawer-acc][open] > div { animation: idl-acc-in .35s cubic-bezier(.2,.7,.2,1) both; }
+[data-drawer-acc][open] > div > a { animation: idl-drawer-item .4s cubic-bezier(.2,.7,.2,1) both; }
+[data-drawer-acc][open] > div > a:nth-child(2) { animation-delay: .04s; }
+[data-drawer-acc][open] > div > a:nth-child(3) { animation-delay: .08s; }
+[data-drawer-acc][open] > div > a:nth-child(4) { animation-delay: .12s; }
+[data-drawer-acc][open] > div > a:nth-child(5) { animation-delay: .16s; }
+@media (prefers-reduced-motion: reduce) {
+  [data-drawer], [data-drawer] nav > *, [data-drawer] > div:last-child, [data-drawer-acc][open] > div, [data-drawer-acc][open] > div > a { animation: none !important; }
+}
+
+/* Horizontal step rows scroll sideways on tablet/mobile instead of stacking */
+@media (max-width: 1024px) {
+  .flow-scroll {
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+    gap: 16px !important;
+    margin: 0 -20px;
+    padding: 0 20px 14px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .flow-scroll::-webkit-scrollbar { display: none; }
+  .flow-scroll > div { flex: 0 0 74vw; max-width: 360px; scroll-snap-align: start; padding-right: 0 !important; }
+}

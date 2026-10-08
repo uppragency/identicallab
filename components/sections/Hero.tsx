@@ -96,7 +96,7 @@ export function Hero() {
             </button>
             <a
               className="idl-hover-2"
-              href="#servicii"
+              href="/servicii"
               data-magnetic
               style={{
                 padding: "16px 30px",

@@ -13,13 +13,13 @@ export const SERVICES = [
   { slug: "ghiduri-chirurgicale", title: "Ghiduri chirurgicale", short: "Ghiduri pentru poziționarea implanturilor, din planificarea digitală aprobată.", n: "04" },
 ];
 
-const crumb = (items: [string, string?][]) => (
-  <Eyebrow style={{ marginBottom: "28px" }}>
+const crumb = (items: [string, string?][], dark?: boolean) => (
+  <Eyebrow style={{ marginBottom: "28px", color: dark ? "#FFFFFF" : undefined }}>
     {items.map(([t, h], i) => (
       <span key={t}>
         {i > 0 && " / "}
         {h ? (
-          <a href={h} style={{ opacity: 0.6 }}>
+          <a href={h} style={{ opacity: dark ? 0.75 : 0.6, color: dark ? "#FFFFFF" : undefined }}>
             {t}
           </a>
         ) : (
@@ -115,7 +115,7 @@ export function ServiceHero({ crumbs, title, intro, cta, photo, chips, variant }
         }}
       >
         <div style={wrap}>
-          <div style={{ color: "rgba(255,255,255,0.7)" }}>{crumb(crumbs)}</div>
+          {crumb(crumbs, true)}
           <h1 data-reveal data-lines style={{ ...h1, maxWidth: "16ch" }}>
             {title}
           </h1>
@@ -250,7 +250,7 @@ export function FlowDark({ id, eyebrow, title, steps }: { id?: string; eyebrow: 
         <SectionHead eyebrow={eyebrow} light>
           {title}
         </SectionHead>
-        <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: `repeat(${steps.length}, 1fr)`, gap: "0", position: "relative" }}>
+        <div className="flow-scroll" style={{ display: "grid", gridTemplateColumns: `repeat(${steps.length}, 1fr)`, gap: "0", position: "relative" }}>
           {steps.map(([t, d], i) => (
             <div key={t} data-reveal style={{ position: "relative", padding: "0 28px 0 0" }}>
               <div style={{ display: "flex", alignItems: "center", marginBottom: "30px" }}>

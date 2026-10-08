@@ -64,7 +64,7 @@ export function MobileDrawer() {
           Despre noi
         </a>
         <a
-          href="/#servicii"
+          href="/servicii"
           data-drawer-link
           style={{
             padding: "16px 0",

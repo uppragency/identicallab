@@ -177,8 +177,7 @@ export function Contact() {
             }}
           />
           <p style={{ margin: "6px 0 0", fontSize: "13px", lineHeight: "1.5", color: "rgba(255,255,255,0.5)" }}>
-            După trimitere primești pe email confirmarea și brosura iDentical Lab în PDF. Fișierele CBCT le trimiți la primul răspuns, pe
-            canalul agreat.
+            După trimitere primești pe email confirmarea. Fișierele CBCT le trimiți la primul răspuns, pe canalul agreat.
           </p>
           <button
             className="idl-hover-4"

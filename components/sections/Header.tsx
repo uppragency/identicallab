@@ -38,7 +38,7 @@ export function Header() {
           Despre noi
         </a>
         <span data-svc-wrap style={{ position: "relative", display: "inline-block" }}>
-          <a className="idl-hover-0" href="/#servicii">
+          <a className="idl-hover-0" href="/servicii">
             Servicii
           </a>
           <span
@@ -64,6 +64,7 @@ export function Header() {
                 className="idl-hover-1"
                 type="button"
                 data-svc="model mandibular printat"
+                data-href="/servicii/modele-mandibulare-3d"
                 style={{
                   display: "block",
                   width: "100%",
@@ -87,6 +88,7 @@ export function Header() {
                 className="idl-hover-1"
                 type="button"
                 data-svc="segmentare CBCT pe ecran"
+                data-href="/servicii/segmentare-cbct"
                 style={{
                   display: "block",
                   width: "100%",
@@ -110,6 +112,7 @@ export function Header() {
                 className="idl-hover-1"
                 type="button"
                 data-svc="design CAD în lucru"
+                data-href="/servicii/design-cad-cam"
                 style={{
                   display: "block",
                   width: "100%",
@@ -133,6 +136,7 @@ export function Header() {
                 className="idl-hover-1"
                 type="button"
                 data-svc="ghid chirurgical printat"
+                data-href="/servicii/ghiduri-chirurgicale"
                 style={{
                   display: "block",
                   width: "100%",

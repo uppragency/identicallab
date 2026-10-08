@@ -407,6 +407,11 @@ class SiteBehaviors {
         });
         b.addEventListener("click", () => {
           panel.style.display = "none";
+          const dest = b.getAttribute("data-href");
+          if (dest) {
+            window.location.href = dest;
+            return;
+          }
           const s = root.querySelector("#servicii");
           if (!s) {
             window.location.href = "/#servicii";

@@ -177,7 +177,7 @@ export function OfferModal() {
             }}
           />
           <p style={{ margin: "4px 0 0", fontSize: "13px", lineHeight: "1.5", color: "#9AA3AA" }}>
-            După trimitere primești pe email confirmarea și brosura iDentical Lab în PDF.
+            După trimitere primești pe email confirmarea.
           </p>
           <button
             className="idl-hover-4"

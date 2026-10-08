@@ -204,7 +204,7 @@ export function Footer() {
               <a className="idl-hover-9" href="/despre-noi" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Despre noi
               </a>
-              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Servicii
               </a>
               <a className="idl-hover-9" href="/#portofoliu" style={{ color: "rgba(255,255,255,0.82)" }}>
@@ -231,16 +231,16 @@ export function Footer() {
               Servicii
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>
-              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/servicii/modele-mandibulare-3d" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Modele mandibulare 3D
               </a>
-              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/servicii/segmentare-cbct" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Segmentare CBCT
               </a>
-              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/servicii/design-cad-cam" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Design CAD/CAM
               </a>
-              <a className="idl-hover-9" href="/#servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/servicii/ghiduri-chirurgicale" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Ghiduri chirurgicale
               </a>
               <a className="idl-hover-9" href="/#planificare" style={{ color: "rgba(255,255,255,0.82)" }}>

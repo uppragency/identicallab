@@ -145,3 +145,11 @@ html.js [data-reveal] { opacity: 0; transform: translateY(18px); animation: idl-
 html.js [data-lines] { opacity: 0; animation: idl-unhide 0s 4s forwards; }
 html.js [data-mask] { clip-path: inset(100% 0 0 0); }
 /* .m-ar45 mirrors the design rule [style*="aspect-ratio: 4/5"] (4/3 on mobile). It never matched in the approved render, so no element uses it. */
+
+/* Footer link columns: 2 per row on tablet/mobile
+   (Navigație | Servicii, Pentru cabinete | Contact, Date firmă full width). */
+@media (max-width: 1024px) {
+  .footer-cols.m-grid { grid-template-columns: 1fr 1fr !important; gap: 36px 24px !important; }
+  .footer-cols > :last-child { grid-column: 1 / -1; }
+  .footer-cols > :not(:last-child) > div:first-child { min-height: 30px; }
+}

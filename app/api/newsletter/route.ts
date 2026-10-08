@@ -1,3 +1,4 @@
+import { features } from "@/lib/features";
 import { NextResponse } from "next/server";
 import { getSupabase } from "@/lib/supabase";
 import { clean, isEmail } from "@/lib/validation";
@@ -5,6 +6,7 @@ import { clean, isEmail } from "@/lib/validation";
 export const runtime = "nodejs";
 
 export async function POST(request: Request) {
+  if (!features.newsletter) return NextResponse.json({ ok: false, error: "disabled" }, { status: 404 });
   let body: Record<string, unknown>;
   try {
     body = await request.json();

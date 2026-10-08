@@ -1,3 +1,4 @@
+import { features } from "@/lib/features";
 export function Header() {
   return (
     <header
@@ -185,9 +186,11 @@ export function Header() {
         <a className="idl-hover-0" href="#ghiduri">
           Ghiduri
         </a>
+        {features.blog && (
         <a className="idl-hover-0" href="#blog">
           Blog
         </a>
+        )}
         <a className="idl-hover-0" href="#intrebari">
           Întrebări
         </a>

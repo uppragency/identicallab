@@ -1,3 +1,4 @@
+import { features } from "@/lib/features";
 import type { CSSProperties } from "react";
 import rootStyleJson from "@/components/rootStyle.json";
 import SiteBehaviors from "@/components/SiteBehaviors";
@@ -67,8 +68,8 @@ export default function Page() {
         <Accreditations />
         <GoogleReviews />
         <RingDivider />
-        <ArticleOverlay />
-        <Blog />
+        {features.blog && <ArticleOverlay />}
+        {features.blog && <Blog />}
         <Instagram />
         <Careers />
         <Contact />

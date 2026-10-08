@@ -1,3 +1,4 @@
+import { features } from "@/lib/features";
 export function MobileDrawer() {
   return (
     <div
@@ -146,6 +147,7 @@ export function MobileDrawer() {
         >
           Ghiduri
         </a>
+        {features.blog && (
         <a
           href="#blog"
           data-drawer-link
@@ -160,6 +162,7 @@ export function MobileDrawer() {
         >
           Blog
         </a>
+        )}
         <a
           href="#intrebari"
           data-drawer-link

@@ -1,3 +1,4 @@
+import { features } from "@/lib/features";
 export function Footer() {
   return (
     <footer
@@ -95,6 +96,7 @@ export function Footer() {
               </span>
             </div>
           </div>
+          {features.newsletter && (
           <div>
             <div
               style={{
@@ -180,6 +182,7 @@ export function Footer() {
               <span style={{ color: "#26B7BC" }}>↓</span>
             </a>
           </div>
+          )}
         </div>
         <div
           className="m-grid m-rep footer-cols"

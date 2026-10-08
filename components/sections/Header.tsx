@@ -175,7 +175,7 @@ export function Header() {
             </span>
           </span>
         </span>
-        <a className="idl-hover-0" href="/#portofoliu">
+        <a className="idl-hover-0" href="/portofoliu">
           Portofoliu
         </a>
         <a className="idl-hover-0" href="/#proces">

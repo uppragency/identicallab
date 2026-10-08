@@ -207,7 +207,7 @@ export function Footer() {
               <a className="idl-hover-9" href="/servicii" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Servicii
               </a>
-              <a className="idl-hover-9" href="/#portofoliu" style={{ color: "rgba(255,255,255,0.82)" }}>
+              <a className="idl-hover-9" href="/portofoliu" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Portofoliu
               </a>
               <a className="idl-hover-9" href="/#proces" style={{ color: "rgba(255,255,255,0.82)" }}>

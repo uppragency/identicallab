@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
+import { metaFor } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
-import { CardGrid, Compare, FlowDark, InOut, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
+import { CardGrid, Compare, FlowDark, InOut, RelatedGuides, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
 import { Accent } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Modele mandibulare 3D | iDentical Lab",
-  description: "Modele mandibulare printate 3D pe baza CBCT: replică fidelă a anatomiei osoase pentru analiză, măsurători și planificarea intervenției.",
-  alternates: { canonical: "/servicii/modele-mandibulare-3d" },
-};
+export const metadata: Metadata = metaFor("/servicii/modele-mandibulare-3d");
 
 export default function Page() {
   return (
     <PageShell>
+      <JsonLd data={[breadcrumbLd([["Acasă", "/"], ["Servicii", "/servicii"], ["Modele mandibulare 3D", "/servicii/modele-mandibulare-3d"]]), serviceLd("/servicii/modele-mandibulare-3d", "Modele mandibulare 3D")]} />
       <ServiceHero
         variant="split"
         crumbs={[["Acasă", "/"], ["Servicii", "/servicii"], ["Modele mandibulare 3D"]]}
         title={<>{"Anatomia pacientului, "}<Accent>în mâna ta</Accent>.</>}
         intro="Realizăm modele mandibulare personalizate, printate 3D pe baza investigației CBCT. Modelul reproduce fidel anatomia osoasă și îți permite să analizezi cazul, să măsori și să planifici intervenția înainte de etapa chirurgicală."
         cta="Model mandibular 3D"
-        photo="model mandibular printat, prim-plan"
+        photo="FOTO44"
         chips={["Din CBCT", "Replică personalizată", "Pentru planificare chirurgicală"]}
       />
       <CardGrid
@@ -79,6 +79,7 @@ export default function Page() {
         intro="Descrie-ne pe scurt cazul și zona de interes. Revenim cu termenul de execuție și cu prețul înainte să începem."
         checklist={["Setul DICOM din CBCT (la primul răspuns)", "Zona de interes și scopul modelului", "Termenul dorit"]}
       />
+      <RelatedGuides service="modele-mandibulare-3d" />
       <RelatedServices current="modele-mandibulare-3d" />
     </PageShell>
   );

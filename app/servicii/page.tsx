@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
+import { metaFor } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
 import { Compare, FlowDark, ServiceFaq, ServiceForm, ServiceHero, Statement } from "@/components/pages/blocks";
 import { ServiceRows } from "@/components/pages/ServiceRows";
 import { Accent } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Servicii | iDentical Lab",
-  description:
-    "Modele mandibulare 3D, segmentare CBCT, design CAD/CAM și ghiduri chirurgicale: serviciile digitale ale laboratorului iDentical Lab din București.",
-  alternates: { canonical: "/servicii" },
-};
+export const metadata: Metadata = metaFor("/servicii");
 
 export default function Page() {
   return (
     <PageShell>
+      <JsonLd data={breadcrumbLd([["Acasă", "/"], ["Servicii", "/servicii"]])} />
       <ServiceHero
         variant="dark"
         crumbs={[["Acasă", "/"], ["Servicii"]]}
@@ -25,7 +24,7 @@ export default function Page() {
         }
         intro="Patru servicii care se leagă între ele: de la fișierul CBCT la modelul din mână, de la designul digital la ghidul din timpul intervenției. Un singur laborator răspunde pentru tot lanțul."
         cta="Cerere de ofertă"
-        photo="masă de lucru din laborator, mai multe lucrări"
+        photo="FOTO38"
         chips={["Modele mandibulare 3D", "Segmentare CBCT", "Design CAD/CAM", "Ghiduri chirurgicale"]}
       />
       <ServiceRows />
@@ -84,7 +83,7 @@ export default function Page() {
         }
         sub="Îți spunem direct ce serviciu se potrivește, ce date ne trebuie și în cât timp putem livra."
         cta="Cerere de ofertă"
-        photo="echipa iDentical în laborator"
+        photo="FOTO43"
       />
       <ServiceForm
         workType="Servicii iDentical Lab"

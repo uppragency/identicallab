@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { features } from "@/lib/features";
 import type { CSSProperties } from "react";
 import rootStyleJson from "@/components/rootStyle.json";
@@ -18,7 +19,6 @@ import { FullBleed } from "@/components/sections/FullBleed";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
-import { Instagram } from "@/components/sections/Instagram";
 import { Materials } from "@/components/sections/Materials";
 import { MobileDrawer } from "@/components/sections/MobileDrawer";
 import { OfferModal } from "@/components/sections/OfferModal";
@@ -37,6 +37,8 @@ import { Values } from "@/components/sections/Values";
 import { Workflow } from "@/components/sections/Workflow";
 
 const rootStyle = rootStyleJson as CSSProperties;
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function Page() {
   return (
@@ -71,7 +73,6 @@ export default function Page() {
         <RingDivider />
         {features.blog && <ArticleOverlay />}
         {features.blog && <Blog />}
-        <Instagram />
         <Careers />
         <Contact />
         <RingDivider />

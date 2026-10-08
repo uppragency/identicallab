@@ -60,6 +60,7 @@ export function Photo({
     <div
       data-reveal
       data-mask
+      data-ph={label}
       style={{
         aspectRatio: height ? undefined : ratio,
         height,
@@ -72,8 +73,8 @@ export function Photo({
         ...style,
       }}
     >
-      <span style={{ fontFamily: font, fontSize: "11px", letterSpacing: "0.08em", color: dark ? "rgba(255,255,255,0.6)" : "#6E6E78" }}>
-        [ FOTO ] {label}
+      <span style={{ fontFamily: font, fontSize: "14px", fontWeight: 500, letterSpacing: "0.08em", color: dark ? "rgba(255,255,255,0.7)" : "#6E6E78" }}>
+        [ {label} ]
       </span>
     </div>
   );

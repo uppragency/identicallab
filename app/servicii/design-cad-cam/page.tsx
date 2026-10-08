@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
+import { metaFor } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
-import { CardGrid, Compare, FlowDark, InOut, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
+import { CardGrid, Compare, FlowDark, InOut, RelatedGuides, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
 import { Accent } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Design CAD/CAM | iDentical Lab",
-  description: "Design CAD/CAM pentru lucrări protetice: proiectare digitală cu control asupra formei, ocluziei și esteticii, aprobată de medic înainte de producție.",
-  alternates: { canonical: "/servicii/design-cad-cam" },
-};
+export const metadata: Metadata = metaFor("/servicii/design-cad-cam");
 
 export default function Page() {
   return (
     <PageShell>
+      <JsonLd data={[breadcrumbLd([["Acasă", "/"], ["Servicii", "/servicii"], ["Design CAD/CAM", "/servicii/design-cad-cam"]]), serviceLd("/servicii/design-cad-cam", "Design CAD/CAM")]} />
       <ServiceHero
         variant="centered"
         crumbs={[["Acasă", "/"], ["Servicii", "/servicii"], ["Design CAD/CAM"]]}
         title={<>{"Forma corectă, "}<Accent>proiectată</Accent>{" digital."}</>}
         intro="Proiectăm lucrările protetice în CAD, cu control asupra formei, ocluziei și integrării estetice. Tu aprobi designul înainte să înceapă producția."
         cta="Design CAD/CAM"
-        photo="design CAD în lucru"
+        photo="FOTO47"
         chips={["Scan sau amprentă digitală", "Aprobare înainte de producție", "Verificare la fiecare etapă"]}
       />
       <TagWall
@@ -77,6 +77,7 @@ export default function Page() {
         intro="Spune-ne ce lucrare ai nevoie. Revenim cu termenul de execuție și cu prețul înainte să începem."
         checklist={["Tipul de lucrare și numărul de elemente", "Scan sau amprentă (la primul răspuns)", "Culoarea și indicațiile clinice"]}
       />
+      <RelatedGuides service="design-cad-cam" />
       <RelatedServices current="design-cad-cam" />
     </PageShell>
   );

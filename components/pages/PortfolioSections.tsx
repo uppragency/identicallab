@@ -9,11 +9,12 @@ const hatchBefore = "repeating-linear-gradient(45deg, rgba(15,0,83,0.09) 0 1px, 
 const pill: CSSProperties = { position: "absolute", top: "12px", padding: "5px 12px", borderRadius: "999px", background: "rgba(255,255,255,0.9)", fontSize: "11px", letterSpacing: "0.1em", textTransform: "uppercase" };
 
 /** Before/after slider (behaviour comes from SiteBehaviors: [data-ba]). */
-export function BeforeAfter({ ratio = "4/3", radius = "8px" }: { ratio?: string; radius?: string }) {
+export function BeforeAfter({ id, ratio = "4/3", radius = "8px" }: { id: string; ratio?: string; radius?: string }) {
   return (
     <div data-ba style={{ position: "relative", aspectRatio: ratio, borderRadius: radius, overflow: "hidden", backgroundColor: "#EDF1F3", cursor: "none" }}>
       <div style={{ position: "absolute", inset: "0", backgroundColor: "#EDF1F3", backgroundImage: hatch }} />
       <div style={{ ...pill, right: "14px", color: navy }}>după</div>
+      <span data-ph={id} style={{ position: "absolute", right: "14px", bottom: "14px", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78", pointerEvents: "none" }}>[ {id} ]</span>
       <div data-ba-top style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "50%", overflow: "hidden", backgroundColor: "#E4EAEE", backgroundImage: hatchBefore }}>
         <div className="m-nowrap" style={{ ...pill, left: "14px", color: "#6E6E78", whiteSpace: "nowrap" }}>înainte</div>
       </div>
@@ -105,7 +106,7 @@ export function FeaturedCase() {
         </SectionHead>
         <div className="m-grid m-gap" style={{ display: "grid", gridTemplateColumns: "1.25fr 0.75fr", gap: "64px", alignItems: "start" }}>
           <div data-reveal>
-            <BeforeAfter ratio="16/11" radius="6px" />
+            <BeforeAfter id="CAZ07" ratio="16/11" radius="6px" />
           </div>
           <div data-reveal>
             {rows.map(([t, d]) => (
@@ -166,7 +167,7 @@ export function CasesGrid() {
           ))}
         </div>
         <div className="m-grid m-rep" data-cases style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "32px 28px" }}>
-          {CASES.map(([cat, title, text]) => (
+          {CASES.map(([cat, title, text], ci) => (
             <article
               key={title}
               data-case={cat}
@@ -174,7 +175,7 @@ export function CasesGrid() {
               data-lift
               style={{ position: "relative", display: "flex", flexDirection: "column", gap: "18px", padding: "14px", margin: "-14px", borderRadius: "12px", transition: "background .4s ease" }}
             >
-              <BeforeAfter />
+              <BeforeAfter id={`CAZ${String(7+ci+1).padStart(2, "0")}`} />
               <div>
                 <div style={{ fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: navy, marginBottom: "8px" }}>{cat}</div>
                 <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>{title}</h3>

@@ -145,7 +145,7 @@ export function Blog() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] imagine articol</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO26 ]</span>
             </div>
             <div>
               <div
@@ -209,7 +209,7 @@ export function Blog() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] imagine articol</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO27 ]</span>
             </div>
             <div>
               <div
@@ -273,7 +273,7 @@ export function Blog() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] imagine articol</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO28 ]</span>
             </div>
             <div>
               <div
@@ -337,7 +337,7 @@ export function Blog() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] imagine articol</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO29 ]</span>
             </div>
             <div>
               <div
@@ -401,7 +401,7 @@ export function Blog() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] imagine articol</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO30 ]</span>
             </div>
             <div>
               <div
@@ -465,7 +465,7 @@ export function Blog() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] imagine articol</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO31 ]</span>
             </div>
             <div>
               <div

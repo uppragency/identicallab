@@ -77,7 +77,7 @@ export function Accreditations() {
               color: "#9AA3AA",
             }}
           >
-            [ LOGO ]
+            [ LOGO01 ]
           </div>
           <div
             data-reveal
@@ -92,7 +92,7 @@ export function Accreditations() {
               color: "#9AA3AA",
             }}
           >
-            [ LOGO ]
+            [ LOGO02 ]
           </div>
           <div
             data-reveal
@@ -107,7 +107,7 @@ export function Accreditations() {
               color: "#9AA3AA",
             }}
           >
-            [ LOGO ]
+            [ LOGO03 ]
           </div>
           <div
             data-reveal
@@ -122,7 +122,7 @@ export function Accreditations() {
               color: "#9AA3AA",
             }}
           >
-            [ LOGO ]
+            [ LOGO04 ]
           </div>
           <div
             data-reveal
@@ -137,7 +137,7 @@ export function Accreditations() {
               color: "#9AA3AA",
             }}
           >
-            [ LOGO ]
+            [ LOGO05 ]
           </div>
           <div
             data-reveal
@@ -152,7 +152,7 @@ export function Accreditations() {
               color: "#9AA3AA",
             }}
           >
-            [ LOGO ]
+            [ LOGO06 ]
           </div>
         </div>
         <div

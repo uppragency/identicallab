@@ -1,3 +1,6 @@
+import { JsonLd } from "@/components/JsonLd";
+import { faqLd } from "@/lib/jsonld";
+import { GUIDES } from "@/lib/guides";
 import type { CSSProperties, ReactNode } from "react";
 import { Accent, Eyebrow, H2, Photo, cardStyle, font, pillGhost, pillPrimary } from "@/components/ui";
 
@@ -153,9 +156,9 @@ export function ServiceHero({ crumbs, title, intro, cta, photo, chips, variant }
             <Chips chips={chips} />
           </div>
           <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr 1fr", gap: "20px", marginTop: "72px", alignItems: "end" }}>
-            <Photo label="detaliu" ratio="3/4" />
+            <Photo label={photo + "A"} ratio="3/4" />
             <Photo label={photo} ratio="4/5" />
-            <Photo label="detaliu" ratio="3/4" />
+            <Photo label={photo + "B"} ratio="3/4" />
           </div>
         </div>
       </section>
@@ -427,6 +430,8 @@ export function Statement({ id, text, sub, cta, photo }: { id?: string; text: Re
 /** Per-service FAQ. */
 export function ServiceFaq({ id, title, items, cta }: { id?: string; title: ReactNode; items: [string, string][]; cta: string }) {
   return (
+    <>
+    <JsonLd data={faqLd(items)} />
     <section id={id} style={{ padding: "120px 40px 130px" }}>
       <div className="m-grid m-gap" style={{ ...wrap, display: "grid", gridTemplateColumns: "0.36fr 0.64fr", gap: "64px", alignItems: "start" }}>
         <div className="m-sticky" data-reveal style={{ position: "sticky", top: "120px" }}>
@@ -450,10 +455,13 @@ export function ServiceFaq({ id, title, items, cta }: { id?: string; title: Reac
         </div>
       </div>
     </section>
+    </>
   );
 }
 
 /** Links to the other services. */
+const RELATED_PH: Record<string, string> = {"modele-mandibulare-3d": "FOTO51", "segmentare-cbct": "FOTO52", "design-cad-cam": "FOTO53", "ghiduri-chirurgicale": "FOTO54"};
+
 export function RelatedServices({ current }: { current?: string }) {
   const list = SERVICES.filter((s) => s.slug !== current);
   return (
@@ -466,7 +474,7 @@ export function RelatedServices({ current }: { current?: string }) {
         <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: `repeat(${list.length}, 1fr)`, gap: "24px" }}>
           {list.map((s) => (
             <a key={s.slug} href={`/servicii/${s.slug}`} data-reveal data-lift style={{ display: "block" }}>
-              <Photo label={s.title.toLowerCase()} ratio="4/3" />
+              <Photo label={RELATED_PH[s.slug]} ratio="4/3" />
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "16px", borderTop: "1px solid rgba(26,26,26,0.12)", marginTop: "16px", paddingTop: "16px" }}>
                 <h3 style={{ margin: "0", fontSize: "21px", fontWeight: "500", letterSpacing: "-0.01em" }}>{s.title}</h3>
                 <span style={{ color: "#26B7BC", fontSize: "20px" }}>→</span>
@@ -536,6 +544,46 @@ export function ServiceForm({ workType, intro, checklist }: { workType: string; 
             Trimite cererea
           </button>
         </form>
+      </div>
+    </section>
+  );
+}
+
+
+/** Internal links from a service page to the guides that support it. */
+export function RelatedGuides({ service }: { service: string }) {
+  const list = GUIDES.filter((g) => g.service === service);
+  if (!list.length) return null;
+  return (
+    <section id="ghiduri-utile" style={{ padding: "0 40px 110px" }}>
+      <div style={wrap}>
+        <SectionHead eyebrow="Ghiduri utile">
+          {"Citește înainte să "}
+          <Accent>trimiți cazul</Accent>
+        </SectionHead>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          {list.map((g) => (
+            <a
+              key={g.slug}
+              className="idl-hover-9"
+              href={`/ghiduri/${g.slug}`}
+              data-reveal
+              style={{ display: "flex", justifyContent: "space-between", gap: "24px", alignItems: "baseline", padding: "24px 0", borderTop: "1px solid rgba(26,26,26,0.14)" }}
+            >
+              <span>
+                <span style={{ display: "block", fontFamily: font, fontWeight: "300", fontSize: "clamp(20px, 2vw, 28px)", letterSpacing: "-0.015em" }}>{g.title}</span>
+                <span style={{ display: "block", marginTop: "6px", fontSize: "15px", color: "#6E6E78", fontWeight: "300" }}>{g.excerpt}</span>
+              </span>
+              <span style={{ color: "#26B7BC", flex: "none" }}>→</span>
+            </a>
+          ))}
+          <div style={{ borderTop: "1px solid rgba(26,26,26,0.14)", paddingTop: "22px" }}>
+            <a className="idl-hover-9" href="/ghiduri" style={{ color: navy, fontSize: "15px" }}>
+              {"Toate ghidurile "}
+              <span style={{ color: "#26B7BC" }}>→</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

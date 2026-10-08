@@ -1,21 +1,25 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
+import { SEO } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { orgGraph } from "@/lib/jsonld";
 
-const description =
-  "Laborator dentar high-end pentru cabinete stomatologice: scanare 3D, design CAD/CAM, ghiduri chirurgicale și modele printate. 30 de ani de experiență, peste 700 de cabinete partenere.";
+const description = SEO["/"].description;
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://identicallab.vercel.app"),
-  title: "iDentical Lab | Laborator dentar digital în București",
+  title: SEO["/"].title,
   description,
   openGraph: {
     type: "website",
     locale: "ro_RO",
     siteName: "iDentical Lab",
-    title: "iDentical Lab | Identically Crafted, Uniquely Yours.",
+    title: SEO["/"].title,
     description,
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "iDentical Lab, laborator dentar digital" }],
   },
+  twitter: { card: "summary_large_image", title: SEO["/"].title, description, images: ["/og.png"] },
   // Keep the preview out of search engines until the production domain is live.
   robots: process.env.ALLOW_INDEXING === "true" ? { index: true, follow: true } : { index: false, follow: false },
 };
@@ -35,7 +39,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="preload" href="/fonts/outfit-latin-300-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
-      <body>{children}</body>
+      <body>
+        <JsonLd data={orgGraph()} />
+        {children}
+      </body>
     </html>
   );
 }

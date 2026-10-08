@@ -28,7 +28,7 @@ export function Planning() {
           <span
             style={{ fontFamily: "var(--font-outfit), Helvetica, sans-serif", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78" }}
           >
-            [ CAPTURĂ ] suprapunere CT-uri, dual scan technique
+            [ FOTO17 ]
           </span>
         </div>
         <div data-reveal>

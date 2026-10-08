@@ -111,7 +111,7 @@ export function ContactMap() {
             <span style={{ color: "#26B7BC" }}>↗</span>
           </a>
         </div>
-        <Photo label="hartă, Str. Fabricii 46, București" ratio="16/10" />
+        <Photo label="FOTO67" ratio="16/10" />
       </div>
     </section>
   );

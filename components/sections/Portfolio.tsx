@@ -198,6 +198,7 @@ export function Portfolio() {
               >
                 după
               </div>
+              <span data-ph="CAZ01" style={{ position: "absolute", right: "14px", bottom: "14px", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78", pointerEvents: "none" }}>[ CAZ01 ]</span>
               <div
                 data-ba-top
                 style={{
@@ -344,6 +345,7 @@ export function Portfolio() {
               >
                 după
               </div>
+              <span data-ph="CAZ02" style={{ position: "absolute", right: "14px", bottom: "14px", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78", pointerEvents: "none" }}>[ CAZ02 ]</span>
               <div
                 data-ba-top
                 style={{
@@ -490,6 +492,7 @@ export function Portfolio() {
               >
                 după
               </div>
+              <span data-ph="CAZ03" style={{ position: "absolute", right: "14px", bottom: "14px", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78", pointerEvents: "none" }}>[ CAZ03 ]</span>
               <div
                 data-ba-top
                 style={{
@@ -636,6 +639,7 @@ export function Portfolio() {
               >
                 după
               </div>
+              <span data-ph="CAZ04" style={{ position: "absolute", right: "14px", bottom: "14px", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78", pointerEvents: "none" }}>[ CAZ04 ]</span>
               <div
                 data-ba-top
                 style={{
@@ -782,6 +786,7 @@ export function Portfolio() {
               >
                 după
               </div>
+              <span data-ph="CAZ05" style={{ position: "absolute", right: "14px", bottom: "14px", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78", pointerEvents: "none" }}>[ CAZ05 ]</span>
               <div
                 data-ba-top
                 style={{
@@ -928,6 +933,7 @@ export function Portfolio() {
               >
                 după
               </div>
+              <span data-ph="CAZ06" style={{ position: "absolute", right: "14px", bottom: "14px", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78", pointerEvents: "none" }}>[ CAZ06 ]</span>
               <div
                 data-ba-top
                 style={{

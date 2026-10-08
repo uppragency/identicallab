@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
+import { metaFor } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
-import { CardGrid, Compare, FlowDark, InOut, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
+import { CardGrid, Compare, FlowDark, InOut, RelatedGuides, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
 import { Accent } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Ghiduri chirurgicale | iDentical Lab",
-  description: "Ghiduri chirurgicale pentru poziționarea implanturilor, realizate din planificarea digitală aprobată de medic, cu verificarea potrivirii înainte de livrare.",
-  alternates: { canonical: "/servicii/ghiduri-chirurgicale" },
-};
+export const metadata: Metadata = metaFor("/servicii/ghiduri-chirurgicale");
 
 export default function Page() {
   return (
     <PageShell>
+      <JsonLd data={[breadcrumbLd([["Acasă", "/"], ["Servicii", "/servicii"], ["Ghiduri chirurgicale", "/servicii/ghiduri-chirurgicale"]]), serviceLd("/servicii/ghiduri-chirurgicale", "Ghiduri chirurgicale")]} />
       <ServiceHero
         variant="photoLeft"
         crumbs={[["Acasă", "/"], ["Servicii", "/servicii"], ["Ghiduri chirurgicale"]]}
         title={<>{"Planul digital, "}<Accent>transferat</Accent>{" în gura pacientului."}</>}
         intro="Realizăm ghiduri chirurgicale pornind de la planificarea implantară aprobată de tine. Ghidul transferă poziția și direcția implanturilor din plan în intervenție."
         cta="Ghid chirurgical"
-        photo="ghid chirurgical printat"
+        photo="FOTO48"
         chips={["Din plan aprobat", "Verificat pe model", "Livrat cu indicații de utilizare"]}
       />
       <CardGrid
@@ -64,7 +64,7 @@ export default function Page() {
         text={<>{"Intervenția nu începe în sala de operație, ci "}<Accent>pe ecran</Accent>.</>}
         sub="Cu cât planul este mai bine gândit, cu atât mai predictibil este tratamentul. Ghidul este puntea dintre cele două."
         cta="Ghid chirurgical"
-        photo="plan implantar digital"
+        photo="FOTO49"
       />
       <ServiceFaq
         id="intrebari"
@@ -82,6 +82,7 @@ export default function Page() {
         intro="Spune-ne despre caz și despre sistemul de implanturi. Revenim cu termenul de execuție și cu prețul înainte să începem."
         checklist={["CBCT și, dacă ai, planul implantar", "Sistemul de implanturi folosit", "Termenul intervenției"]}
       />
+      <RelatedGuides service="ghiduri-chirurgicale" />
       <RelatedServices current="ghiduri-chirurgicale" />
     </PageShell>
   );

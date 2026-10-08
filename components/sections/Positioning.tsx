@@ -77,7 +77,7 @@ export function Positioning() {
           <span
             style={{ fontFamily: "var(--font-outfit), Helvetica, sans-serif", fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78" }}
           >
-            [ FOTO ] echipa în laborator
+            [ FOTO14 ]
           </span>
         </div>
       </div>

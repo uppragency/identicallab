@@ -63,7 +63,7 @@ export function Header() {
               <button
                 className="idl-hover-1"
                 type="button"
-                data-svc="model mandibular printat"
+                data-svc="model mandibular printat" data-ph="FOTO22"
                 data-href="/servicii/modele-mandibulare-3d"
                 style={{
                   display: "block",
@@ -87,7 +87,7 @@ export function Header() {
               <button
                 className="idl-hover-1"
                 type="button"
-                data-svc="segmentare CBCT pe ecran"
+                data-svc="segmentare CBCT pe ecran" data-ph="FOTO23"
                 data-href="/servicii/segmentare-cbct"
                 style={{
                   display: "block",
@@ -111,7 +111,7 @@ export function Header() {
               <button
                 className="idl-hover-1"
                 type="button"
-                data-svc="design CAD în lucru"
+                data-svc="design CAD în lucru" data-ph="FOTO24"
                 data-href="/servicii/design-cad-cam"
                 style={{
                   display: "block",
@@ -135,7 +135,7 @@ export function Header() {
               <button
                 className="idl-hover-1"
                 type="button"
-                data-svc="ghid chirurgical printat"
+                data-svc="ghid chirurgical printat" data-ph="FOTO25"
                 data-href="/servicii/ghiduri-chirurgicale"
                 style={{
                   display: "block",
@@ -171,7 +171,7 @@ export function Header() {
                 color: "#6E6E78",
               }}
             >
-              [ FOTO ] model mandibular printat
+              [ FOTO22 ]
             </span>
           </span>
         </span>

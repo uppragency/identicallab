@@ -80,10 +80,14 @@ export function Testimonials() {
                   borderRadius: "999px",
                   backgroundColor: "#E4EAEE",
                   backgroundImage: "repeating-linear-gradient(135deg, rgba(26,26,26,0.06) 0 1px, transparent 1px 7px)",
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "8px",
+                  color: "#6E6E78",
                   flex: "0 0 auto",
                 }}
-              ></span>
+               data-ph="AV01">AV01</span>
               <span>Dr. Nume Prenume · Clinică</span>
             </footer>
           </blockquote>
@@ -120,10 +124,14 @@ export function Testimonials() {
                   borderRadius: "999px",
                   backgroundColor: "#E4EAEE",
                   backgroundImage: "repeating-linear-gradient(135deg, rgba(26,26,26,0.06) 0 1px, transparent 1px 7px)",
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "8px",
+                  color: "#6E6E78",
                   flex: "0 0 auto",
                 }}
-              ></span>
+               data-ph="AV02">AV02</span>
               <span>Dr. Nume Prenume · Clinică</span>
             </footer>
           </blockquote>
@@ -160,10 +168,14 @@ export function Testimonials() {
                   borderRadius: "999px",
                   backgroundColor: "#E4EAEE",
                   backgroundImage: "repeating-linear-gradient(135deg, rgba(26,26,26,0.06) 0 1px, transparent 1px 7px)",
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "8px",
+                  color: "#6E6E78",
                   flex: "0 0 auto",
                 }}
-              ></span>
+               data-ph="AV03">AV03</span>
               <span>Dr. Nume Prenume · Clinică</span>
             </footer>
           </blockquote>
@@ -200,10 +212,14 @@ export function Testimonials() {
                   borderRadius: "999px",
                   backgroundColor: "#E4EAEE",
                   backgroundImage: "repeating-linear-gradient(135deg, rgba(26,26,26,0.06) 0 1px, transparent 1px 7px)",
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "8px",
+                  color: "#6E6E78",
                   flex: "0 0 auto",
                 }}
-              ></span>
+               data-ph="AV04">AV04</span>
               <span>Dr. Nume Prenume · Clinică</span>
             </footer>
           </blockquote>
@@ -240,10 +256,14 @@ export function Testimonials() {
                   borderRadius: "999px",
                   backgroundColor: "#E4EAEE",
                   backgroundImage: "repeating-linear-gradient(135deg, rgba(26,26,26,0.06) 0 1px, transparent 1px 7px)",
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "8px",
+                  color: "#6E6E78",
                   flex: "0 0 auto",
                 }}
-              ></span>
+               data-ph="AV05">AV05</span>
               <span>Dr. Nume Prenume · Clinică</span>
             </footer>
           </blockquote>

@@ -19,7 +19,7 @@ export function FullBleed() {
         <span
           style={{ fontFamily: "var(--font-outfit), Helvetica, sans-serif", fontSize: "11px", letterSpacing: "0.1em", color: "#6E6E78" }}
         >
-          [ FOTO FULL-BLEED ] masă de lucru din laborator / model pe suport
+          [ FOTO15 ]
         </span>
       </div>
     </section>

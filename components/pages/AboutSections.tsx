@@ -87,7 +87,7 @@ export function AboutHero() {
 export function AboutBand() {
   return (
     <section style={{ padding: "0 0 130px", overflow: "hidden" }}>
-      <Photo label="laboratorul iDentical, vedere de ansamblu" height="62vh" style={{ minHeight: "420px", padding: "28px 40px", animation: "idl-zoom 22s ease-in-out infinite alternate" }} />
+      <Photo label="FOTO33" height="62vh" style={{ minHeight: "420px", padding: "28px 40px", animation: "idl-zoom 22s ease-in-out infinite alternate" }} />
     </section>
   );
 }
@@ -259,7 +259,7 @@ export function AboutTeam() {
         <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "24px" }}>
           {team.map(([n, r], i) => (
             <div key={i}>
-              <Photo label="portret" ratio="4/5" />
+              <Photo label={`FOTO${String(34+i).padStart(2, "0")}`} ratio="4/5" />
               <div style={{ marginTop: "16px", borderTop: "1px solid rgba(26,26,26,0.12)", paddingTop: "14px" }}>
                 <div style={{ fontFamily: font, fontSize: "20px", fontWeight: "300" }}>{n}</div>
                 <div style={{ marginTop: "4px", fontSize: "13px", letterSpacing: "0.04em", color: "#6E6E78" }}>{r}</div>

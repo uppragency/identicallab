@@ -63,7 +63,7 @@ export function About() {
               color: "rgba(255,255,255,0.6)",
             }}
           >
-            [ FOTO ] tehnician la lucru, detaliu de finisare
+            [ FOTO16 ]
           </span>
         </div>
         <div data-reveal>

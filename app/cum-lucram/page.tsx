@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { metaFor } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
 import { CardGrid, Compare, InOut, ServiceFaq, ServiceForm, StickyList, Statement } from "@/components/pages/blocks";
 import { PhaseDivider, WorkHero } from "@/components/pages/WorkSections";
@@ -8,16 +11,12 @@ import { StackableGuides } from "@/components/sections/StackableGuides";
 import { Workflow } from "@/components/sections/Workflow";
 import { Accent } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Cum lucrăm | iDentical Lab",
-  description:
-    "Procesul de lucru, planificarea digitală și livrarea la iDentical Lab: de la fișierul CBCT la lucrarea ajunsă în cabinet.",
-  alternates: { canonical: "/cum-lucram" },
-};
+export const metadata: Metadata = metaFor("/cum-lucram");
 
 export default function Page() {
   return (
     <PageShell>
+      <JsonLd data={breadcrumbLd([["Acasă", "/"], ["Cum lucrăm", "/cum-lucram"]])} />
       <WorkHero />
 
       <PhaseDivider n="01" title="Proces" />
@@ -109,7 +108,7 @@ export default function Page() {
         }
         sub="Spune-ne ce lucrare ai nevoie și revenim rapid, cu un răspuns clar direct de la laborator."
         cta="Cerere de ofertă"
-        photo="echipa iDentical în laborator"
+        photo="FOTO50"
       />
       <ServiceForm
         workType="Cum lucrăm, trimitere caz"

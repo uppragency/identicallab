@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
+import { metaFor } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
 import { ServiceForm, StickyList } from "@/components/pages/blocks";
 import { CasesGrid, DragCursor, FeaturedCase, PortfolioCta, PortfolioHero } from "@/components/pages/PortfolioSections";
-import { Instagram } from "@/components/sections/Instagram";
 import { Accent } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Portofoliu | iDentical Lab",
-  description: "Cazuri înainte și după realizate de iDentical Lab: coroane și fațete, ghiduri chirurgicale, modele 3D și segmentare CBCT.",
-  alternates: { canonical: "/portofoliu" },
-};
+export const metadata: Metadata = metaFor("/portofoliu");
 
 export default function Page() {
   return (
     <PageShell>
+      <JsonLd data={breadcrumbLd([["Acasă", "/"], ["Portofoliu", "/portofoliu"]])} />
       <DragCursor />
       <PortfolioHero />
       <FeaturedCase />
@@ -38,7 +37,6 @@ export default function Page() {
         ]}
       />
       <PortfolioCta />
-      <Instagram />
       <ServiceForm
         workType="Caz din portofoliu"
         intro="Ai un caz asemănător cu unul din portofoliu? Descrie-l pe scurt. Revenim cu termenul de execuție și cu prețul înainte să începem."

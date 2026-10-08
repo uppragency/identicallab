@@ -141,9 +141,11 @@ summary { list-style: none; cursor: pointer; }
    The class "js" is added by an inline script in <head>; behaviours then take
    over with inline styles. A CSS fallback un-hides everything after 4s. */
 @keyframes idl-unhide { to { opacity: 1; transform: none; clip-path: inset(0 0 0 0); } }
-html.js [data-reveal] { opacity: 0; transform: translateY(18px); animation: idl-unhide 0s 4s forwards; }
+html.js [data-reveal]:not([data-mask]) { opacity: 0; transform: translateY(18px); animation: idl-unhide 0s 4s forwards; }
 html.js [data-lines] { opacity: 0; animation: idl-unhide 0s 4s forwards; }
-html.js [data-mask] { clip-path: inset(100% 0 0 0); }
+@keyframes idl-mask-in { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
+/* Photo placeholders animate on first paint (CSS only, no wait for hydration or scroll). */
+html.js [data-mask] { animation: idl-mask-in .55s cubic-bezier(.16,.84,.2,1) both; }
 /* .m-ar45 mirrors the design rule [style*="aspect-ratio: 4/5"] (4/3 on mobile). It never matched in the approved render, so no element uses it. */
 
 /* Footer link columns: 2 per row on tablet/mobile

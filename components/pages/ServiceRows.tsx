@@ -4,19 +4,19 @@ import { SERVICES, SectionHead, wrap } from "@/components/pages/blocks";
 const details: Record<string, { bullets: string[]; photo: string }> = {
   "modele-mandibulare-3d": {
     bullets: ["Replică 1:1 a anatomiei osoase", "Măsurători și planificare pe obiect fizic", "Din CBCT, înainte de etapa chirurgicală"],
-    photo: "model mandibular printat",
+    photo: "FOTO39",
   },
   "segmentare-cbct": {
     bullets: ["Din setul DICOM, structuri izolate", "Mandibulă, maxilar, canale, dinți", "Export STL pentru planificare și printare"],
-    photo: "segmentare CBCT pe ecran",
+    photo: "FOTO40",
   },
   "design-cad-cam": {
     bullets: ["Coroane, punți, fațete, wax-up", "Formă, ocluzie și estetică controlate", "Design aprobat de medic înainte de producție"],
-    photo: "design CAD în lucru",
+    photo: "FOTO41",
   },
   "ghiduri-chirurgicale": {
     bullets: ["Din planificarea implantară aprobată", "Poziționare ghidată a implanturilor", "Verificare de potrivire înainte de livrare"],
-    photo: "ghid chirurgical printat",
+    photo: "FOTO42",
   },
 };
 

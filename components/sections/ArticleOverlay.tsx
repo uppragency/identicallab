@@ -92,7 +92,7 @@ export function ArticleOverlay() {
             padding: "16px",
           }}
         >
-          <span style={{ fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] imagine principală articol</span>
+          <span style={{ fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO32 ]</span>
         </div>
         <p style={{ margin: "0 0 24px", fontSize: "21px", lineHeight: "1.55", color: "#1A1A1A", fontWeight: "300" }}>
           [ intro: două-trei propoziții care spun despre ce e articolul și pentru cine e util ]

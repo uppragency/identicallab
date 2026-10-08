@@ -77,7 +77,7 @@ export function Services() {
                     color: "#0F0053",
                   }}
                 >
-                  [ FOTO ] proces în laborator
+                  [ FOTO02 ]
                 </span>
               </div>
               <div
@@ -101,7 +101,7 @@ export function Services() {
                     color: "#6E6E78",
                   }}
                 >
-                  [ FOTO ] model mandibular
+                  [ FOTO03 ]
                 </span>
               </div>
             </div>
@@ -147,7 +147,7 @@ export function Services() {
                     color: "#0F0053",
                   }}
                 >
-                  [ FOTO ] proces în laborator
+                  [ FOTO04 ]
                 </span>
               </div>
               <div
@@ -171,7 +171,7 @@ export function Services() {
                     color: "#6E6E78",
                   }}
                 >
-                  [ CAPTURĂ ] segmentare CBCT
+                  [ FOTO05 ]
                 </span>
               </div>
             </div>
@@ -217,7 +217,7 @@ export function Services() {
                     color: "#0F0053",
                   }}
                 >
-                  [ FOTO ] proces în laborator
+                  [ FOTO06 ]
                 </span>
               </div>
               <div
@@ -241,7 +241,7 @@ export function Services() {
                     color: "#6E6E78",
                   }}
                 >
-                  [ CAPTURĂ ] fișier STL
+                  [ FOTO07 ]
                 </span>
               </div>
             </div>
@@ -287,7 +287,7 @@ export function Services() {
                     color: "#0F0053",
                   }}
                 >
-                  [ FOTO ] proces în laborator
+                  [ FOTO08 ]
                 </span>
               </div>
               <div
@@ -311,7 +311,7 @@ export function Services() {
                     color: "#6E6E78",
                   }}
                 >
-                  [ FOTO ] imprimantă 3D
+                  [ FOTO09 ]
                 </span>
               </div>
             </div>
@@ -357,7 +357,7 @@ export function Services() {
                     color: "#0F0053",
                   }}
                 >
-                  [ FOTO ] proces în laborator
+                  [ FOTO10 ]
                 </span>
               </div>
               <div
@@ -381,7 +381,7 @@ export function Services() {
                     color: "#6E6E78",
                   }}
                 >
-                  [ CAPTURĂ ] design CAD
+                  [ FOTO11 ]
                 </span>
               </div>
             </div>
@@ -427,7 +427,7 @@ export function Services() {
                     color: "#0F0053",
                   }}
                 >
-                  [ FOTO ] proces în laborator
+                  [ FOTO12 ]
                 </span>
               </div>
               <div
@@ -451,7 +451,7 @@ export function Services() {
                     color: "#6E6E78",
                   }}
                 >
-                  [ FOTO ] ghid chirurgical
+                  [ FOTO13 ]
                 </span>
               </div>
             </div>

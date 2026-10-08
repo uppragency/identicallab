@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
+import { metaFor } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
 import { PageShell } from "@/components/PageShell";
-import { CardGrid, Compare, FlowDark, InOut, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
+import { CardGrid, Compare, FlowDark, InOut, RelatedGuides, RelatedServices, ServiceFaq, ServiceForm, ServiceHero, StickyList, Statement, TagWall } from "@/components/pages/blocks";
 import { Accent } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Segmentare CBCT | iDentical Lab",
-  description: "Segmentare CBCT: izolarea structurilor de interes din setul DICOM, cu verificare a acurateței, pentru planificare și printare 3D.",
-  alternates: { canonical: "/servicii/segmentare-cbct" },
-};
+export const metadata: Metadata = metaFor("/servicii/segmentare-cbct");
 
 export default function Page() {
   return (
     <PageShell>
+      <JsonLd data={[breadcrumbLd([["Acasă", "/"], ["Servicii", "/servicii"], ["Segmentare CBCT", "/servicii/segmentare-cbct"]]), serviceLd("/servicii/segmentare-cbct", "Segmentare CBCT")]} />
       <ServiceHero
         variant="dark"
         crumbs={[["Acasă", "/"], ["Servicii", "/servicii"], ["Segmentare CBCT"]]}
         title={<>{"Din DICOM, "}<Accent>structurile</Accent>{" de care ai nevoie."}</>}
         intro="Transformăm setul DICOM al pacientului în modele 3D curate: structurile de interes sunt izolate, verificate și pregătite pentru planificare sau printare."
         cta="Segmentare CBCT"
-        photo="segmentare CBCT pe ecran"
+        photo="FOTO45"
         chips={["Format DICOM", "Export STL", "Verificare a acurateței"]}
       />
       <TagWall
@@ -54,7 +54,7 @@ export default function Page() {
         text={<>{"Planificarea bună începe cu o "}<Accent>segmentare corectă</Accent>.</>}
         sub="Orice model printat și orice ghid chirurgical pornește de aici. Cu cât segmentarea e mai curată, cu atât tratamentul este mai predictibil."
         cta="Segmentare CBCT"
-        photo="comparație între imaginea CBCT și modelul 3D"
+        photo="FOTO46"
       />
       <InOut
         id="date"
@@ -78,6 +78,7 @@ export default function Page() {
         intro="Spune-ne ce structuri te interesează. Revenim cu termenul de execuție și cu prețul înainte să începem."
         checklist={["Setul DICOM (la primul răspuns)", "Structurile de interes", "Formatul de export dorit"]}
       />
+      <RelatedGuides service="segmentare-cbct" />
       <RelatedServices current="segmentare-cbct" />
     </PageShell>
   );

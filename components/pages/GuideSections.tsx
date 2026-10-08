@@ -68,7 +68,7 @@ export function GuidesGrid() {
             >
               <div style={{ position: "relative", aspectRatio: "16/10", borderRadius: "6px", backgroundColor: "#EDF1F3", backgroundImage: "repeating-linear-gradient(135deg, rgba(26,26,26,0.05) 0 1px, transparent 1px 9px)", display: "flex", alignItems: "flex-end", justifyContent: "space-between", padding: "16px 18px" }}>
                 <span style={{ fontFamily: font, fontWeight: "200", fontSize: "44px", lineHeight: "1", letterSpacing: "-0.03em", color: navy }}>{String(i + 1).padStart(2, "0")}</span>
-                <span style={{ fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] ilustrație ghid</span>
+                <span style={{ fontSize: "11px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO{String(54+i+1).padStart(2, "0")} ]</span>
               </div>
               <div>
                 <div style={{ display: "flex", justifyContent: "space-between", gap: "12px", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: navy, marginBottom: "10px" }}>

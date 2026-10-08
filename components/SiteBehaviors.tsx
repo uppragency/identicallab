@@ -14,7 +14,7 @@ import { useEffect } from "react";
 class SiteBehaviors {
   root: ParentNode | null = null;
   mount() {
-    const els = Array.from(this.root ? this.root.querySelectorAll("[data-reveal]") : document.querySelectorAll("[data-reveal]"));
+    const els = Array.from(this.root ? this.root.querySelectorAll("[data-reveal]:not([data-mask])") : document.querySelectorAll("[data-reveal]:not([data-mask])"));
     els.forEach((el, i) => {
       el.style.opacity = "0";
       el.style.transform = "translateY(18px)";
@@ -354,12 +354,16 @@ class SiteBehaviors {
   }
 
   _initMasks(root) {
+    /* Photo placeholders are animated by CSS (idl-mask-in) from first paint. */
+    if (root) return;
     const els = Array.from(root.querySelectorAll("[data-mask]"));
     els.forEach((el) => {
       el.style.clipPath = "inset(100% 0 0 0)";
-      el.style.transition = (el.style.transition ? el.style.transition + ", " : "") + "clip-path 1.15s cubic-bezier(.16,.84,.2,1)";
+      el.style.transition = "opacity .3s ease, transform .3s ease, clip-path .5s cubic-bezier(.16,.84,.2,1)";
     });
     const show = (el) => {
+      el.style.opacity = "1";
+      el.style.transform = "none";
       el.style.clipPath = "inset(0 0 0 0)";
     };
     if (!("IntersectionObserver" in window)) {
@@ -375,11 +379,11 @@ class SiteBehaviors {
           }
         });
       },
-      { threshold: 0.15 },
+      { rootMargin: "0px 0px 12% 0px", threshold: 0.01 },
     );
     els.forEach((el) => io.observe(el));
     this._maskIo = io;
-    this._maskFallback = setTimeout(() => els.forEach(show), 3000);
+    this._maskFallback = setTimeout(() => els.forEach(show), 1200);
   }
 
   _initHeaderExtras(root) {
@@ -404,7 +408,7 @@ class SiteBehaviors {
       panel.addEventListener("pointerleave", hide);
       Array.from(panel.querySelectorAll("[data-svc]")).forEach((b) => {
         b.addEventListener("pointerenter", () => {
-          if (img) img.textContent = "[ FOTO ] " + b.getAttribute("data-svc");
+          if (img) img.textContent = "[ " + b.getAttribute("data-ph") + " ]";
         });
         b.addEventListener("click", () => {
           panel.style.display = "none";

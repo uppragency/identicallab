@@ -94,7 +94,7 @@ export function StackableGuides() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] scanare intraorală / CBCT</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO18 ]</span>
             </div>
             <div style={{ padding: "26px 24px 30px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
@@ -157,7 +157,7 @@ export function StackableGuides() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] design 3D al ghidului</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO19 ]</span>
             </div>
             <div style={{ padding: "26px 24px 30px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
@@ -220,7 +220,7 @@ export function StackableGuides() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] ghid printat, manșoane montate</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO20 ]</span>
             </div>
             <div style={{ padding: "26px 24px 30px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
@@ -283,7 +283,7 @@ export function StackableGuides() {
                 padding: "14px",
               }}
             >
-              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO ] ghid poziționat pe model</span>
+              <span style={{ fontSize: "10px", letterSpacing: "0.08em", color: "#6E6E78" }}>[ FOTO21 ]</span>
             </div>
             <div style={{ padding: "26px 24px 30px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>

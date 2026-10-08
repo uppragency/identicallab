@@ -132,7 +132,7 @@ export function Hero() {
                 color: "#6E6E78",
               }}
             >
-              [ FOTO ] model mandibular printat, prim-plan
+              [ FOTO01 ]
             </span>
           </div>
           <div

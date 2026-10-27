@@ -146,3 +146,13 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   d. "MIHM-VOGT" apare scris cu două "T" în ortografia mărcii (MIHM-VOGT); păstrez cum a scris clientul.
   e. Lista de la Software e lungă (7 produse): o afișez pe mai multe rânduri în coloana din dreapta. Verific lizibilitatea pe mobil la implementare.
   f. Secțiunea "Accreditations" (components/sections/Accreditations.tsx) are text similar și placeholder "[ brand de aparatură / materiale ]": se aliniază cu aceste branduri sau rămâne separat?
+
+## 11. Homepage, secțiunea "[ CARIERE ] Te-ai gândit vreodată să devii tehnician dentar?"
+- Fișier: components/sections/Careers.tsx (titlul linia ~40, paragraful linia ~43)
+- Screenshot: docs/modificari-client/11-a.png
+- Cerință client: titlul nu mai sugerează că se poate deveni tehnician dentar fără școală (e nevoie de studii). Propunere client: "Vrei să te alături echipei?" (formularea exactă: "ceva de genul: vrei să te alături echipei?").
+- Titlu nou propus: "Vrei să te alături echipei?"
+- Întrebări la final:
+  a. Paragraful de sub titlu: "Transformi materiale în zâmbete și tehnologia în rezultate reale. Iar dacă ai deja experiență, avem o veste bună: angajăm." Se leagă de ideea veche (cineva fără experiență). Propun: "Transformi materiale în zâmbete și tehnologia în rezultate reale. Dacă ai experiență în tehnică dentară, avem o veste bună: angajăm." De validat de client.
+  b. Butonul "Trimite-ne CV-ul" rămâne.
+  c. Titlul pe pagina de cariere, dacă există (verific la implementare dacă se repetă în footer sau meniu: "Cariere").

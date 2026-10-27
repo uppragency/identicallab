@@ -45,3 +45,16 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   a. Descrierile din dreapta fiecărui pas (acum despre DICOM, segmentare, STL, printare) nu mai corespund. Le scriu eu pe baza noilor titluri, sau le dă clientul?
   b. Titlul "Patru pași de la fișier la obiect" mai e valabil? Pașii noi pornesc de la scanare, nu de la fișier. Propun "Patru pași de la scanare la lucrare", de validat.
   c. Se schimbă la fel și pagina /cum-lucram, FAQ și ghidurile care repetă fluxul DICOM, segmentare, STL, printare, sau doar homepage-ul?
+
+## 05. Homepage, secțiunea "[ GHIDURI STACKABLE ] Ghiduri stackable, pas cu pas"
+- Fișier: components/sections/StackableGuides.tsx (linia ~54)
+- Screenshot: docs/modificari-client/05-a.png (starea actuală: pașii Scanare, Design 3D, Producție, Chirurgie; placeholdere FOTO18 la FOTO21)
+- Cerințe client, interpretare:
+  1. Primul paragraf (sus): lista "osteotomie, poziționare, inserție" devine "osteotomie, poziționare, inserție și lucrare provizorie". Text nou: "Ghidurile stackable se așează unul peste altul și păstrează aceeași referință pe tot parcursul intervenției: osteotomie, poziționare, inserție și lucrare provizorie. Poziția planificată digital rămâne aceeași și în sala de operație."
+  2. Al doilea paragraf: "Le realizăm din rezină biocompatibilă" (înlocuiește "Le realizăm din rezine biocompatibile, pe baza planificării făcute împreună cu medicul").
+  3. Titlurile pașilor, în ordine: 1. Achiziția de date: CBCT, scanare intraorală, poze documentare; 2. Planificare protetică și chirurgicală; 3. Producție; 4. Chirurgie.
+- Întrebări la final:
+  a. La punctul 2, se elimină complet partea "pe baza planificării făcute împreună cu medicul", sau textul clientului completează doar începutul propoziției?
+  b. Descrierile de sub pașii 1, 2 și 3 (acum despre CBCT cu dual scan, Design 3D, Producție) rămân ca acum sau se rescriu pentru titlurile noi? Mai ales pasul 1, care acum include și scanare intraorală și poze.
+  c. Titlul pasului 1 e lung ("Achiziția de date: CBCT, scanare intraorală, poze documentare"). Îl folosesc ca titlu pe cardul îngust sau titlu "Achiziția de date" cu restul ca descriere?
+  d. Placeholderul din dreapta jos "[ completează termenul de execuție pentru ghiduri ]" rămâne neschimbat până primim termenul real.

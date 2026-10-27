@@ -15,3 +15,20 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
 - Cerință client: înlocuim porțiunea tăiată cu "de la departamentul de turnare modele, către cel de design asistat de calculator, până la cel de frezare computerizată, ajungând în cele din urmă în departamentul de ceramică și finisare".
 - Text nou: "... O lucrare dentară digitală trece prin mâinile mai multor specialiști – de la departamentul de turnare modele, către cel de design asistat de calculator, până la cel de frezare computerizată, ajungând în cele din urmă în departamentul de ceramică și finisare. Perfect adaptată, verificată în fiecare etapă și livrată rapid, pentru confortul și siguranța pacientului."
 - Întrebare la final: semnul "–" dinaintea porțiunii rămâne? Propun să-l înlocuiesc cu două puncte, conform regulii tale fără linii de separare. Textul clientului are diacritice corectate față de dictare ("către", "până", "ceramică").
+
+## 03. Homepage, secțiunea "Ce livrăm clinicii" (6 carduri de servicii)
+- Fișier: components/sections/Services.tsx
+- Screenshot: docs/modificari-client/03-a.png (starea actuală: Modele mandibulare, Segmentare CBCT, Prelucrare digitală, Printare 3D, Design CAD/CAM, Ghiduri chirurgicale; placeholdere FOTO03, 05, 07, 09, 11, 13)
+- Cerință client: lista nouă de 6 servicii, în această ordine:
+  1. Reabilitări totale înșurubate
+  2. Fațete dentare
+  3. Coroane și punți
+  4. Bonturi personalizate
+  5. SmileCloud wax up
+  6. Ghiduri chirurgicale
+- Corespondență propusă cu cardurile actuale (în ordinea poziției): 1 înlocuiește Modele mandibulare, 2 Segmentare CBCT, 3 Prelucrare digitală, 4 Printare 3D, 5 Design CAD/CAM, 6 Ghiduri chirurgicale (rămâne).
+- Întrebări la final:
+  a. Descrierile scurte de sub fiecare titlu pentru cele 5 servicii noi: le scriu eu (fără promisiuni neverificabile, de validat de client) sau le dă clientul?
+  b. Linkurile cardurilor: există pagini doar pentru Modele mandibulare, Segmentare CBCT, Design CAD/CAM, Ghiduri chirurgicale. Serviciile noi duc la formularul de ofertă sau cer pagini noi?
+  c. Se schimbă și meniul Servicii, pagina /servicii, footerul, sitemap, SEO și JSON-LD, ca să fie consecvente cu lista nouă? Sau doar homepage-ul?
+  d. Paginile existente (modele mandibulare, segmentare CBCT, design CAD/CAM) rămân active, nelistate pe homepage?

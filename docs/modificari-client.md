@@ -194,3 +194,16 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   b. Descrierea de la pasul 04 nu a fost dată de client: propunerea de mai sus.
   c. "Ne trimiți cererea ... le trimiți la primul răspuns" conține numărul de telefon 0724 065 767, rămâne.
   d. Același bloc ("Revenim cu termenul de execuție și cu prețul...") poate exista pe homepage sau în paginile de servicii: verific la implementare cu grep și aliniez.
+
+## 15. Pagina /cum-lucram, secțiunea "[ COMUNICARE ] Ce se întâmplă dacă apare o problemă"
+- Fișier: app/cum-lucram/page.tsx (liniile ~80 la ~90, tabel Situația / Ce facem noi / Ce faci tu)
+- Screenshot: docs/modificari-client/15-a.png (3 rânduri: Lipsesc date sau scanul nu e clar; Designul are nevoie de ajustări; Cazul are nevoie de altă abordare)
+- Cerințe client, interpretare:
+  1. Rândul 1: situația devine "Lipsesc date", iar "Ce facem noi" devine "Te sunăm și îți spunem exact ce lipsește" (acum: "Te sunăm în aceeași zi și spunem exact ce lipsește"). Coloana "Ce faci tu" ("Retrimiți fișierul sau confirmi cum continuăm.") rămâne neschimbată.
+  2. Rândul 2: "La cazurile complexe îți trimitem design-ul pentru validare". Interpretare: situația devine "Cazuri complexe" (acum "Designul are nevoie de ajustări"), iar "Ce facem noi" devine "Îți trimitem design-ul pentru validare" (acum "Îți trimitem designul pentru validare, cu observații tehnice.").
+- Întrebări la final:
+  a. Rândul 1: elimin "în aceeași zi" (clientul scrie "te sunăm și îți spunem exact ce lipsește"). Intenționat, ca să nu promitem termenul de aceeași zi? Atunci și pasul 03 din "Cum trimiți un caz" ("te contactăm în aceeași zi") ar trebui aliniat.
+  b. Rândul 2: coloana "Ce faci tu" ("Aprobi sau ceri modificări, înainte de producție.") rămâne neschimbată?
+  c. Rândul 3 ("Cazul are nevoie de altă abordare / Spunem direct și propunem alternativa. / Alegi varianta potrivită clinic.") nu a fost menționat: rămâne neschimbat?
+  d. Nota de sub tabel ("Termenele reale pe tip de lucrare și regimul de urgență se confirmă la ofertă.") menționează oferta: după modificarea 14 (fără preț/ofertă) trebuie ajustată? Propun: "Termenele se stabilesc la începerea proiectării."
+  e. "Design-ul" apare cu cratimă la client; în restul site-ului e "designul". Folosesc "designul" pentru consecvență.

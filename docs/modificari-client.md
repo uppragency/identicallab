@@ -165,3 +165,14 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
 - Întrebări la final:
   a. Două puncte după "printre care" (cum a scris clientul) sunt corecte gramatical cu enumerare; le păstrez. Altfel varianta fără două puncte: "printre care metode de execuție...".
   b. "Dual Scan Technique" mai apare în panoul din secțiunea Planificare (modificarea 07, eticheta mică). Rămâne decizia de la 07.
+
+## 13. Pagina /cum-lucram, hero cu cele 3 carduri (Proces, Planificare, Livrare)
+- Fișiere: components/pages/WorkSections.tsx (WorkHero, tabs liniile ~6 la ~8), app/cum-lucram/page.tsx (PhaseDivider n="01" title="Proces", și probabil titlurile separatoarelor 02 și 03)
+- Screenshot: docs/modificari-client/13-a.png (titlu "De la fișier la lucrarea livrată.", cardurile 01 Proces, 02 Planificare, 03 Livrare)
+- Cerință client: etichetele cardurilor devin: 1. Procesare, 2. Planificare, 3. Livrare. Practic singura schimbare de text: "Proces" devine "Procesare" (Planificare și Livrare rămân).
+- Se aplică și în titlul separatorului de fază "01 Proces" din pagină (PhaseDivider), pentru consecvență. Ancora linkului (#proces) rămâne neschimbată ca să nu strice linkuri existente, sau se schimbă în #procesare cu redirect? Propun să rămână #proces.
+- Întrebări la final:
+  a. Descrierile cardurilor ("De la fișierul primit la modelul din cabinet, în patru pași.", "Scanări, simulări 3D și ghiduri, înainte de intervenție.", "Preluare, design, validare, execuție și expediere.") rămân? Prima se referă la fluxul vechi DICOM, segmentare, STL, printare, care se schimbă la modificarea 04, iar a doua la planificare/CBCT.
+  b. Titlul paginii "De la fișier la lucrarea livrată." mai e valabil? Pașii noi pornesc de la scanare (modificarea 04). Propun "De la scanare la lucrarea livrată.", de validat.
+  c. Pașii "Cum trimiți un caz" de pe aceeași pagină (Alegi serviciul: Modele mandibulare, segmentare CBCT, design CAD/CAM sau ghiduri chirurgicale; fișiere DICOM, STL) se schimbă cu lista nouă de servicii (modificarea 03) și cu noul flux?
+  d. Această pagină folosește aceeași secțiune Workflow de pe homepage: modificarea 04 se aplică automat și aici, sau doar pe homepage?

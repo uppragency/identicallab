@@ -69,3 +69,16 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   a. Cercurile 1, 2, 3 rămân (presupun că da, doar textul "ZIUA n" dispare)?
   b. Placeholderul "[ completează termenele reale pe tip de lucrare și regimul de urgență ]" și butonul "Verifică termenul pentru cazul tău" rămân? Fără "primele trei zile" în titlu, promisiunea de termen dispare din titlu, dar rămâne în buton.
   c. Se aplică și pe paginile care repetă blocul (verific la implementare unde apare "Ziua 1/2/3" și "primele trei zile", inclusiv SEO și FAQ)?
+
+## 07. Homepage, secțiunea "[ Planificare digitală ] Viitorul stomatologiei este digital" (comparator Cu ghid / Fără ghid)
+- Fișier: components/sections/Planning.tsx (titlul linia ~58, butoanele și panourile liniile ~90 la ~140)
+- Screenshot: nu a fost atașat la acest mesaj (textul a venit fără imagine). Locul a fost identificat în cod.
+- Cerințe client:
+  1. Titlu nou: "Prezentul stomatologiei este digital" (înlocuiește "Viitorul stomatologiei este digital"; cuvântul "digital" rămâne evidențiat turcoaz).
+  2. Butonul și panoul "Cu ghid protetic" (acum "Cu ghidaj protetic", text despre Dual scan technique) primește textul: "Cu ajutorul ghidului chirurgical, planificăm cazul înainte de prima incizie, pornind de la un avatar digital al pacientului, care devine reperul comun pentru toate etapele tratamentului. Planificarea pornește de la viitoarele restaurări protetice, provizorie și definitivă, în funcție de care stabilim pozițiile optime ale implanturilor."
+  3. Butonul și panoul "Fără ghid" (acum "Fără ghidaj") primește textul: "Preluăm cazul în etapa postchirurgicală și realizăm restaurările protetice provizorie și definitivă pe implanturi deja inserate free-hand. Poziția acestora poate fi justificată chirurgical de anatomia osoasă, însă nu întotdeauna favorizează o restaurare protetică optimă. Pot apărea compromisuri ale profilului de emergență, dificultăți de execuție și disconfort pentru pacient."
+- Întrebări la final:
+  a. Etichetele mici din panouri: "Dual scan technique" (panoul Cu ghid) și "Fără ghidaj protetic" (panoul Fără ghid). Se păstrează, se elimină sau se redenumesc "Cu ghid protetic" / "Fără ghid"? Propun a doua variantă pentru consecvență cu butoanele.
+  b. Cei doi paragrafi introductivi (despre scanări și ghiduri, respectiv DICOM, segmentare și imprimare 3D) rămân neschimbați?
+  c. Terminologia "ghidaj" apare și în alte locuri (Portofoliu, meniu, Servicii, pagina Portofoliu). Propun să le aliniez la "ghid" doar dacă clientul confirmă, altfel rămân.
+  d. Textul clientului folosește "free-hand" (anglicism). Îl păstrez ca atare, conform textului primit.

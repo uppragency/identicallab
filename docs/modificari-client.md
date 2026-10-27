@@ -164,5 +164,4 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
 - Text nou: "Publicăm serii educative despre implantologia digitală, printre care: metode de execuție ale coroanelor și punților înșurubate, planificări digitale și chirurgicale 3D. Scrie-ne ce subiecte ai avea nevoie să fie abordate."
 - Întrebări la final:
   a. Două puncte după "printre care" (cum a scris clientul) sunt corecte gramatical cu enumerare; le păstrez. Altfel varianta fără două puncte: "printre care metode de execuție...".
-  b. Titlul "Educație bazată pe practică, tehnologie și rezultate predictibile." are "practică" fără diacritică corectă în screenshot ("practica" scris cu ă în titlu), deci rămâne.
-  c. "Dual Scan Technique" mai apare în panoul din secțiunea Planificare (modificarea 07, eticheta mică). Rămâne decizia de la 07.
+  b. "Dual Scan Technique" mai apare în panoul din secțiunea Planificare (modificarea 07, eticheta mică). Rămâne decizia de la 07.

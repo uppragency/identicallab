@@ -32,3 +32,16 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   b. Linkurile cardurilor: există pagini doar pentru Modele mandibulare, Segmentare CBCT, Design CAD/CAM, Ghiduri chirurgicale. Serviciile noi duc la formularul de ofertă sau cer pagini noi?
   c. Se schimbă și meniul Servicii, pagina /servicii, footerul, sitemap, SEO și JSON-LD, ca să fie consecvente cu lista nouă? Sau doar homepage-ul?
   d. Paginile existente (modele mandibulare, segmentare CBCT, design CAD/CAM) rămân active, nelistate pe homepage?
+
+## 04. Homepage, secțiunea "[ WORKFLOW ] Patru pași de la fișier la obiect"
+- Fișier: components/sections/Workflow.tsx (titlul apare și în app/cum-lucram/page.tsx, linia ~30, unde pașii pot fi duplicați)
+- Screenshot: docs/modificari-client/04-a.png (starea actuală: 01 DICOM, 02 Segmentare, 03 STL, 04 Printare 3D)
+- Cerință client: cei 4 pași devin, în ordine:
+  1. Scanare intraorală
+  2. Fotografii documentare
+  3. Validare proiect design
+  4. Execuție și finisare
+- Întrebări la final:
+  a. Descrierile din dreapta fiecărui pas (acum despre DICOM, segmentare, STL, printare) nu mai corespund. Le scriu eu pe baza noilor titluri, sau le dă clientul?
+  b. Titlul "Patru pași de la fișier la obiect" mai e valabil? Pașii noi pornesc de la scanare, nu de la fișier. Propun "Patru pași de la scanare la lucrare", de validat.
+  c. Se schimbă la fel și pagina /cum-lucram, FAQ și ghidurile care repetă fluxul DICOM, segmentare, STL, printare, sau doar homepage-ul?

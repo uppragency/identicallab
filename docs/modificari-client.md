@@ -58,3 +58,14 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   b. Descrierile de sub pașii 1, 2 și 3 (acum despre CBCT cu dual scan, Design 3D, Producție) rămân ca acum sau se rescriu pentru titlurile noi? Mai ales pasul 1, care acum include și scanare intraorală și poze.
   c. Titlul pasului 1 e lung ("Achiziția de date: CBCT, scanare intraorală, poze documentare"). Îl folosesc ca titlu pe cardul îngust sau titlu "Achiziția de date" cu restul ca descriere?
   d. Placeholderul din dreapta jos "[ completează termenul de execuție pentru ghiduri ]" rămâne neschimbat până primim termenul real.
+
+## 06. Homepage, secțiunea "[ LIVRARE ] Ce se întâmplă în primele trei zile"
+- Fișier: components/sections/Delivery.tsx (titlul linia ~30, etichetele "Ziua 1/2/3" linia ~62; probabil și pagina Livrare și pagina /cum-lucram folosesc blocul)
+- Screenshot: docs/modificari-client/06-a.png (3 carduri: Preluare și verificare, Design și validare, Execuție și expediere)
+- Cerințe client:
+  1. Titlu nou: "Ce se întâmplă după ce primim cazul tău" (înlocuiește "Ce se întâmplă în primele trei zile").
+  2. Se elimină etichetele "ZIUA 1", "ZIUA 2", "ZIUA 3" de pe carduri (cercurile numerotate 1, 2, 3 rămân).
+- Întrebări la final:
+  a. Cercurile 1, 2, 3 rămân (presupun că da, doar textul "ZIUA n" dispare)?
+  b. Placeholderul "[ completează termenele reale pe tip de lucrare și regimul de urgență ]" și butonul "Verifică termenul pentru cazul tău" rămân? Fără "primele trei zile" în titlu, promisiunea de termen dispare din titlu, dar rămâne în buton.
+  c. Se aplică și pe paginile care repetă blocul (verific la implementare unde apare "Ziua 1/2/3" și "primele trei zile", inclusiv SEO și FAQ)?

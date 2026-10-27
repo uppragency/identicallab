@@ -235,3 +235,6 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
 - 16b/c. "da": se adaugă UTM la linkul către DMA: https://dentalmasters.ro/?utm_source=identical.ro&utm_medium=menu (în footer: utm_medium=footer).
 - 17. "ascunde și pagina ghiduri": se ascunde complet, inclusiv pagina /ghiduri și paginile individuale /ghiduri/[slug]: întorc 404, ies din sitemap, căutare, JSON-LD și toate linkurile. Flag lib/features.ts `guides: false`.
 - 17c. "videoclipurile vor fi 16:9": embed 16:9 cu youtube-nocookie.com, la reactivare.
+
+## Clarificare 16a (15:06)
+- "Cursuri" apare în header (meniu desktop și mobil, înainte de Contact) și în footer. Ambiguitatea de mai sus e rezolvată: varianta (i).

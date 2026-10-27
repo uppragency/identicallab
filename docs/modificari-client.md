@@ -176,3 +176,21 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   b. Titlul paginii "De la fișier la lucrarea livrată." mai e valabil? Pașii noi pornesc de la scanare (modificarea 04). Propun "De la scanare la lucrarea livrată.", de validat.
   c. Pașii "Cum trimiți un caz" de pe aceeași pagină (Alegi serviciul: Modele mandibulare, segmentare CBCT, design CAD/CAM sau ghiduri chirurgicale; fișiere DICOM, STL) se schimbă cu lista nouă de servicii (modificarea 03) și cu noul flux?
   d. Această pagină folosește aceeași secțiune Workflow de pe homepage: modificarea 04 se aplică automat și aici, sau doar pe homepage?
+
+## 14. Pagina /cum-lucram, secțiunea "[ CUM TRIMIȚI UN CAZ ] Patru pași simpli"
+- Fișier: app/cum-lucram/page.tsx (StickyList id="trimite-un-caz", items liniile ~35 la ~40; același bloc poate apărea și în alte pagini, de verificat la implementare)
+- Screenshot: docs/modificari-client/14-a.png (starea actuală: 01 Alegi serviciul, 02 Ne trimiți cererea, 03 Confirmăm cazul, 04 Primești oferta)
+- Cerințe client:
+  1. Pasul 01 "Alegi serviciul": descrierea trebuie să listeze produsele din oferta reală (lista nouă de la modificarea 03: Reabilitări totale înșurubate, Fațete dentare, Coroane și punți, Bonturi personalizate, SmileCloud wax up, Ghiduri chirurgicale), nu "Modele mandibulare, segmentare CBCT, design CAD/CAM sau ghiduri chirurgicale".
+  2. Se elimină tot ce ține de preț: pasul 04 "Primești oferta / Revenim cu termenul de execuție și cu prețul înainte să începem lucrul" dispare ca formulare. Se păstrează "confirmăm cazul" (pasul 03 rămâne).
+  3. Pasul 04 devine: "Începem proiectarea și stabilim termenele".
+- Propunere text (de validat):
+  - 01 Alegi serviciul: "Reabilitări totale înșurubate, fațete dentare, coroane și punți, bonturi personalizate, SmileCloud wax up sau ghiduri chirurgicale. Dacă nu ești sigur, descrie cazul."
+  - 02 Ne trimiți cererea: neschimbat în text, cu excepția fișierelor: "Fișierele (DICOM, STL, scan) le trimiți la primul răspuns." devine "Fișierele scanării intraorale și fotografiile de documentare le trimiți la primul răspuns." (aliniat cu FAQ-ul de la modificarea 09), de validat.
+  - 03 Confirmăm cazul: neschimbat ("Verificăm datele și, dacă lipsește ceva, te contactăm în aceeași zi.").
+  - 04 Începem proiectarea și stabilim termenele: "Odată cazul confirmat, începem proiectarea și stabilim împreună termenul de execuție." (descriere propusă, clientul a dat doar titlul).
+- Întrebări și riscuri la final:
+  a. "Tăiem treaba cu prețul": confirm că înseamnă eliminarea oricărei mențiuni a prețului din acest bloc (pasul 04 vechi). Dar FAQ-ul de la modificarea 09 spune că oferim "catalogul de produse și lista de prețuri" la cerere: coerent, dar prețul nu mai e promis înainte de lucru. Ok pentru client?
+  b. Descrierea de la pasul 04 nu a fost dată de client: propunerea de mai sus.
+  c. "Ne trimiți cererea ... le trimiți la primul răspuns" conține numărul de telefon 0724 065 767, rămâne.
+  d. Același bloc ("Revenim cu termenul de execuție și cu prețul...") poate exista pe homepage sau în paginile de servicii: verific la implementare cu grep și aliniez.

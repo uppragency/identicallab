@@ -45,10 +45,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>Zirconiu multistrat</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                coroane, punți, reabilitări întinse
-              </span>
+              <span style={{ fontSize: "17px" }}>Zirconiu multilayer</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>Dentsply Sirona sau Ivoclar</span>
             </div>
             <div
               className="m-sb"
@@ -62,9 +60,7 @@ export function Materials() {
               }}
             >
               <span style={{ fontSize: "17px" }}>Disilicat de litiu</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                coroane și fațete în zona estetică
-              </span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>Ivoclar IPS e.max CAD</span>
             </div>
             <div
               className="m-sb"
@@ -78,9 +74,7 @@ export function Materials() {
               }}
             >
               <span style={{ fontSize: "17px" }}>Ceramică feldspatică</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                fațete subțiri, stratificare manuală
-              </span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>selectată în funcție de caz</span>
             </div>
             <div
               className="m-sb"
@@ -93,10 +87,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>Ceramică pe refractar</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                cazuri estetice cu grosime minimă
-              </span>
+              <span style={{ fontSize: "17px" }}>Compozit</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>COLTENE BRILLIANT Crios sau VOCO Grandio disc multicolor</span>
             </div>
             <div
               className="m-sb"
@@ -109,10 +101,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>PMMA și compozit</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                lucrări provizorii, probe funcționale
-              </span>
+              <span style={{ fontSize: "17px" }}>Rășini biocompatibile</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>Stratasys MED610 și VeroGlaze MED620</span>
             </div>
             <div
               className="m-sb"
@@ -125,26 +115,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>Rezine biocompatibile</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                ghiduri chirurgicale, gutiere
-              </span>
-            </div>
-            <div
-              className="m-sb"
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "baseline",
-                gap: "24px",
-                padding: "18px 0",
-                borderTop: "1px solid rgba(26,26,26,0.12)",
-              }}
-            >
-              <span style={{ fontSize: "17px" }}>Rezine pentru modele</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                modele de studiu și modele CBCT
-              </span>
+              <span style={{ fontSize: "17px" }}>Rășini pentru modele</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>Stratasys VeroDent PureWhite, VeroMagentaV, VeroCyanV și VeroYellowV</span>
             </div>
           </div>
           <div data-reveal>
@@ -162,8 +134,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>Scanere de laborator</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>[ brand / model ]</span>
+              <span style={{ fontSize: "17px" }}>Scanner de laborator</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>Medit T710</span>
             </div>
             <div
               className="m-sb"
@@ -176,8 +148,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>Software CAD dentar</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>[ brand / model ]</span>
+              <span style={{ fontSize: "17px" }}>Software de proiectare și fabricație digitală</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>exocad, inLab, Materialise Magics, MillBox, SUM3D, GrabCAD Print și Blender for Dental</span>
             </div>
             <div
               className="m-sb"
@@ -190,10 +162,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>Planificare implantară</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                dual scan technique, suprapunere CT
-              </span>
+              <span style={{ fontSize: "17px" }}>Software de planificare implantară</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>coDiagnostiX</span>
             </div>
             <div
               className="m-sb"
@@ -206,8 +176,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>Imprimante 3D</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>[ brand / model ]</span>
+              <span style={{ fontSize: "17px" }}>Imprimantă 3D</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>Stratasys J5 DentaJet</span>
             </div>
             <div
               className="m-sb"
@@ -220,8 +190,8 @@ export function Materials() {
                 borderTop: "1px solid rgba(26,26,26,0.12)",
               }}
             >
-              <span style={{ fontSize: "17px" }}>Freze CAM</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>[ brand / model ]</span>
+              <span style={{ fontSize: "17px" }}>Mașini de frezat</span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>imes-icore</span>
             </div>
             <div
               className="m-sb"
@@ -235,23 +205,7 @@ export function Materials() {
               }}
             >
               <span style={{ fontSize: "17px" }}>Cuptoare de sinterizare</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>[ brand / model ]</span>
-            </div>
-            <div
-              className="m-sb"
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "baseline",
-                gap: "24px",
-                padding: "18px 0",
-                borderTop: "1px solid rgba(26,26,26,0.12)",
-              }}
-            >
-              <span style={{ fontSize: "17px" }}>Control final</span>
-              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300" }}>
-                verificare a ocluziei și a adaptării
-              </span>
+              <span style={{ fontSize: "14px", color: "#6E6E78", textAlign: "right", fontWeight: "300", maxWidth: "26em" }}>Dentsply Sirona și MIHM-VOGT</span>
             </div>
           </div>
         </div>

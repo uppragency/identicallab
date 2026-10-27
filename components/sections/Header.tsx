@@ -181,9 +181,11 @@ export function Header() {
         <a className="idl-hover-0" href="/cum-lucram">
           Cum lucrăm
         </a>
+        {features.guides && (
         <a className="idl-hover-0" href="/ghiduri">
           Ghiduri
         </a>
+        )}
         {features.blog && (
         <a className="idl-hover-0" href="/#blog">
           Blog
@@ -191,6 +193,10 @@ export function Header() {
         )}
         <a className="idl-hover-0" href="/intrebari">
           Întrebări
+        </a>
+        <a className="idl-hover-0" href="https://dentalmasters.ro/?utm_source=identical.ro&utm_medium=menu" target="_blank" rel="noopener noreferrer">
+          {"Cursuri "}
+          <span aria-hidden="true" style={{ color: "#26B7BC" }}>↗</span>
         </a>
         <a className="idl-hover-0" href="/contact">
           Contact

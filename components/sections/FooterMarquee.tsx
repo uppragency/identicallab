@@ -20,25 +20,25 @@ export function FooterMarquee() {
         }}
       >
         <div style={{ display: "flex", gap: "28px", paddingRight: "28px", alignItems: "center" }}>
-          <span data-word="DICOM">DICOM</span>
+          <span data-word="Scanare intraorală">Scanare intraorală</span>
           <span style={{ color: "#26B7BC" }}>→</span>
-          <span data-word="Segmentare">Segmentare</span>
+          <span data-word="Fotografii documentare">Fotografii documentare</span>
           <span style={{ color: "#26B7BC" }}>→</span>
-          <span data-word="STL">STL</span>
+          <span data-word="Validare proiect design">Validare proiect design</span>
           <span style={{ color: "#26B7BC" }}>→</span>
-          <span data-word="Printare 3D">Printare 3D</span>
+          <span data-word="Execuție și finisare">Execuție și finisare</span>
           <span style={{ color: "#26B7BC" }}>→</span>
           <span>Livrare în cabinet</span>
           <span style={{ color: "#26B7BC" }}>→</span>
         </div>
         <div style={{ display: "flex", gap: "28px", paddingRight: "28px", alignItems: "center" }}>
-          <span data-word="DICOM">DICOM</span>
+          <span data-word="Scanare intraorală">Scanare intraorală</span>
           <span style={{ color: "#26B7BC" }}>→</span>
-          <span data-word="Segmentare">Segmentare</span>
+          <span data-word="Fotografii documentare">Fotografii documentare</span>
           <span style={{ color: "#26B7BC" }}>→</span>
-          <span data-word="STL">STL</span>
+          <span data-word="Validare proiect design">Validare proiect design</span>
           <span style={{ color: "#26B7BC" }}>→</span>
-          <span data-word="Printare 3D">Printare 3D</span>
+          <span data-word="Execuție și finisare">Execuție și finisare</span>
           <span style={{ color: "#26B7BC" }}>→</span>
           <span>Livrare în cabinet</span>
           <span style={{ color: "#26B7BC" }}>→</span>

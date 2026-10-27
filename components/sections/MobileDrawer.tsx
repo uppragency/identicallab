@@ -123,6 +123,7 @@ export function MobileDrawer() {
         >
           Cum lucrăm
         </a>
+        {features.guides && (
         <a
           href="/ghiduri"
           data-drawer-link
@@ -137,6 +138,7 @@ export function MobileDrawer() {
         >
           Ghiduri
         </a>
+        )}
         {features.blog && (
         <a
           href="/#blog"
@@ -166,6 +168,23 @@ export function MobileDrawer() {
           }}
         >
           Întrebări
+        </a>
+        <a
+          href="https://dentalmasters.ro/?utm_source=identical.ro&utm_medium=menu"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-drawer-link
+          style={{
+            padding: "16px 0",
+            borderTop: "1px solid rgba(26,26,26,0.1)",
+            fontFamily: "var(--font-outfit), Helvetica, sans-serif",
+            fontSize: "26px",
+            fontWeight: "200",
+            letterSpacing: "-0.02em",
+          }}
+        >
+          {"Cursuri "}
+          <span aria-hidden="true" style={{ color: "#26B7BC" }}>↗</span>
         </a>
         <a
           href="/contact"

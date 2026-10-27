@@ -25,9 +25,9 @@ export function Delivery() {
             }}
             data-lines
           >
-            Ce se întâmplă în
+            Ce se întâmplă
             <br />
-            <span style={{ color: "#26B7BC" }}>primele trei zile</span>
+            <span style={{ color: "#26B7BC" }}>după ce primim cazul tău</span>
           </h2>
         </div>
         <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
@@ -59,7 +59,6 @@ export function Delivery() {
               >
                 1
               </span>
-              <span style={{ fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053" }}>Ziua 1</span>
             </div>
             <h3
               style={{
@@ -104,7 +103,6 @@ export function Delivery() {
               >
                 2
               </span>
-              <span style={{ fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053" }}>Ziua 2</span>
             </div>
             <h3
               style={{
@@ -149,7 +147,6 @@ export function Delivery() {
               >
                 3
               </span>
-              <span style={{ fontSize: "12px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053" }}>Ziua 3</span>
             </div>
             <h3
               style={{

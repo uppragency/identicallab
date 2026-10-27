@@ -55,7 +55,7 @@ export function Planning() {
             }}
             data-lines
           >
-            {"Viitorul stomatologiei este "}
+            {"Prezentul stomatologiei este "}
             <span style={{ color: "#26B7BC" }}>digital</span>.
           </h2>
           <p
@@ -92,7 +92,7 @@ export function Planning() {
                   cursor: "pointer",
                 }}
               >
-                Cu ghidaj protetic
+                Cu ghid protetic
               </button>
               <button
                 type="button"
@@ -108,7 +108,7 @@ export function Planning() {
                   cursor: "pointer",
                 }}
               >
-                Fără ghidaj
+                Fără ghid
               </button>
             </div>
             <div
@@ -118,11 +118,12 @@ export function Planning() {
               <div
                 style={{ fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053", marginBottom: "10px" }}
               >
-                Dual scan technique
+                Cu ghid protetic
               </div>
               <p style={{ margin: "0", fontSize: "16px", lineHeight: "1.55", color: "#3A3A44", fontWeight: "300" }}>
-                Planificăm implanturile după suprapunerea tuturor datelor și a celor două CT-uri. Poziția este stabilită împreună cu
-                proiectul protetic, iar profilul de emergență rezultă corect.
+                Cu ajutorul ghidului chirurgical, planificăm cazul înainte de prima incizie, pornind de la un avatar digital al pacientului,
+                care devine reperul comun pentru toate etapele tratamentului. Planificarea pornește de la viitoarele restaurări protetice,
+                provizorie și definitivă, în funcție de care stabilim pozițiile optime ale implanturilor.
               </p>
             </div>
             <div
@@ -132,11 +133,13 @@ export function Planning() {
               <div
                 style={{ fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#A65252", marginBottom: "10px" }}
               >
-                Fără ghidaj protetic
+                Fără ghid
               </div>
               <p style={{ margin: "0", fontSize: "16px", lineHeight: "1.55", color: "#3A3A44", fontWeight: "300" }}>
-                Poziția poate fi corectă chirurgical, dar adaptarea protetică devine dificilă: profil de emergență incorect, disconfort
-                pentru pacient și dificultăți la restaurare.
+                Preluăm cazul în etapa postchirurgicală și realizăm restaurările protetice provizorie și definitivă pe implanturi deja
+                inserate free-hand. Poziția acestora poate fi justificată chirurgical de anatomia osoasă, însă nu întotdeauna favorizează o
+                restaurare protetică optimă. Pot apărea compromisuri ale profilului de emergență, dificultăți de execuție și disconfort pentru
+                pacient.
               </p>
             </div>
           </div>

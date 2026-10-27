@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/PageShell";
 import { font } from "@/components/ui";
+import { features } from "@/lib/features";
 
 export const metadata: Metadata = { title: "Pagina nu a fost găsită | iDentical Lab" };
 
-const links: [string, string][] = [
+const allLinks: [string, string][] = [
   ["Servicii", "/servicii"],
   ["Portofoliu", "/portofoliu"],
   ["Cum lucrăm", "/cum-lucram"],
@@ -12,6 +13,7 @@ const links: [string, string][] = [
   ["Întrebări", "/intrebari"],
   ["Contact", "/contact"],
 ];
+const links = allLinks.filter(([, href]) => features.guides || href !== "/ghiduri");
 
 export default function NotFound() {
   return (

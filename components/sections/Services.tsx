@@ -43,7 +43,7 @@ export function Services() {
         </div>
         <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "28px 28px" }}>
           <a
-            href="/servicii/modele-mandibulare-3d"
+            href="/contact"
             data-reveal
             data-lift
             style={{
@@ -106,14 +106,14 @@ export function Services() {
               </div>
             </div>
             <div>
-              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Modele mandibulare</h3>
+              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Reabilitări totale înșurubate</h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Replici printate 3D ale anatomiei osoase, pornind de la CBCT-ul pacientului.
+                Restaurări complete pe implanturi, proiectate digital și realizate în laborator.
               </p>
             </div>
           </a>
           <a
-            href="/servicii/segmentare-cbct"
+            href="/contact"
             data-reveal
             data-lift
             style={{
@@ -176,14 +176,14 @@ export function Services() {
               </div>
             </div>
             <div>
-              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Segmentare CBCT</h3>
+              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Fațete dentare</h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Izolarea structurilor de interes din setul DICOM, cu verificare a acurateței.
+                Fațete proiectate digital, pentru un aspect natural și o adaptare precisă.
               </p>
             </div>
           </a>
           <a
-            href="/servicii/segmentare-cbct"
+            href="/contact"
             data-reveal
             data-lift
             style={{
@@ -246,14 +246,14 @@ export function Services() {
               </div>
             </div>
             <div>
-              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Prelucrare digitală</h3>
+              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Coroane și punți</h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Curățare și pregătire a modelului STL pentru printare sau pentru planificare pe ecran.
+                Coroane și punți din materiale alese în funcție de fiecare caz.
               </p>
             </div>
           </a>
           <a
-            href="/servicii/modele-mandibulare-3d"
+            href="/contact"
             data-reveal
             data-lift
             style={{
@@ -316,14 +316,14 @@ export function Services() {
               </div>
             </div>
             <div>
-              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Printare 3D</h3>
+              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Bonturi personalizate</h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Execuție în laborator și livrare către cabinet, cu documentația cazului.
+                Bonturi realizate pe măsura implantului și a țesuturilor moi.
               </p>
             </div>
           </a>
           <a
-            href="/servicii/design-cad-cam"
+            href="/contact"
             data-reveal
             data-lift
             style={{
@@ -386,9 +386,9 @@ export function Services() {
               </div>
             </div>
             <div>
-              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>Design CAD/CAM</h3>
+              <h3 style={{ margin: "0 0 8px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>SmileCloud wax up</h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Formă, proporții, morfologie și ocluzie, proiectate digital și verificate în fiecare etapă.
+                Wax up digital, ca rezultatul să poată fi văzut și validat înainte de execuție.
               </p>
             </div>
           </a>

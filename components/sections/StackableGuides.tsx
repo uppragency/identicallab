@@ -52,7 +52,7 @@ export function StackableGuides() {
               }}
             >
               Ghidurile stackable se așează unul peste altul și păstrează aceeași referință pe tot parcursul intervenției: osteotomie,
-              poziționare, inserție. Poziția planificată digital rămâne aceeași și în sala de operație.
+              poziționare, inserție și lucrare provizorie. Poziția planificată digital rămâne aceeași și în sala de operație.
             </p>
             <p
               style={{
@@ -64,7 +64,7 @@ export function StackableGuides() {
                 fontWeight: "300",
               }}
             >
-              Le realizăm din rezine biocompatibile, pe baza planificării făcute împreună cu medicul.
+              Le realizăm din rășină biocompatibilă.
             </p>
           </div>
         </div>
@@ -125,10 +125,10 @@ export function StackableGuides() {
                   color: "#1A1A1A",
                 }}
               >
-                Scanare
+                Achiziția de date
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-                Preluăm CBCT-ul și amprenta digitală, apoi suprapunem datele prin dual scan technique.
+                CBCT, scanare intraorală și fotografii documentare, suprapuse într-un singur set de date.
               </p>
             </div>
           </div>
@@ -188,7 +188,7 @@ export function StackableGuides() {
                   color: "#1A1A1A",
                 }}
               >
-                Design 3D
+                Planificare protetică și chirurgicală
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
                 Planificăm poziția implanturilor împreună cu proiectul protetic și desenăm setul de ghiduri.

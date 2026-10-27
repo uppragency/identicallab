@@ -119,7 +119,7 @@ export function Values() {
               Relații
             </h3>
             <p style={{ margin: "0", fontSize: "16px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              Peste 700 de cabinete lucrează cu noi pentru că răspundem repede și spunem lucrurile pe față, inclusiv când un caz are nevoie
+              Peste 700 de cabinete lucrează cu noi pentru că avem un grad de expertiză avansat și spunem lucrurile pe față, inclusiv când un caz are nevoie
               de o altă abordare.
             </p>
           </div>

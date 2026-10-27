@@ -82,11 +82,11 @@ export function Faq() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Ce fișiere trebuie să trimit?
+              Ce informații sunt necesare pentru a trimite un caz?
               <span style={{ color: "#0F0053" }}>+</span>
             </summary>
             <p style={{ margin: "16px 0 0", maxWidth: "60ch", fontSize: "16px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              Setul complet de imagini DICOM din investigația CBCT, plus o scurtă descriere a zonei de interes și a scopului clinic.
+              Fișierele scanării intraorale, fotografiile de documentare și informațiile aferente comenzii. Suntem prezenți pe platformele cloud ale principalilor producători de scanere, astfel încât să ne poți transmite fișierele direct.
             </p>
           </details>
           <details style={{ borderTop: "1px solid rgba(26,26,26,0.12)", padding: "26px 0" }}>
@@ -101,11 +101,11 @@ export function Faq() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Cât durează realizarea unui model?
+              Care este termenul de execuție?
               <span style={{ color: "#0F0053" }}>+</span>
             </summary>
             <p style={{ margin: "16px 0 0", maxWidth: "60ch", fontSize: "16px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              [ completează termenul obișnuit de livrare și opțiunea de urgență, dacă există ]
+              Termenul mediu de execuție este de 5 zile lucrătoare.
             </p>
           </details>
           <details style={{ borderTop: "1px solid rgba(26,26,26,0.12)", padding: "26px 0" }}>
@@ -120,11 +120,11 @@ export function Faq() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Primesc și fișierul STL?
+              Cum se stabilește necesarul de componente protetice?
               <span style={{ color: "#0F0053" }}>+</span>
             </summary>
             <p style={{ margin: "16px 0 0", maxWidth: "60ch", fontSize: "16px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              [ completează: dacă STL-ul se livrează separat sau împreună cu modelul printat ]
+              Odată ce cazul intră în etapa de proiectare, selectăm componentele necesare și îți transmitem lista pentru a le comanda.
             </p>
           </details>
           <details style={{ borderTop: "1px solid rgba(26,26,26,0.12)", padding: "26px 0" }}>
@@ -139,12 +139,11 @@ export function Faq() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Cum se stabilește prețul?
+              Cum pot solicita catalogul de produse și lista de prețuri?
               <span style={{ color: "#0F0053" }}>+</span>
             </summary>
             <p style={{ margin: "16px 0 0", maxWidth: "60ch", fontSize: "16px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              Prețul depinde de complexitatea cazului și de volumul modelului. Trimite fișierele și primești o ofertă înainte de începerea
-              lucrului.
+              Completează formularul de contact, iar noi te vom contacta pentru a-ți oferi catalogul de produse și lista de prețuri.
             </p>
           </details>
           <details style={{ borderTop: "1px solid rgba(26,26,26,0.12)", borderBottom: "1px solid rgba(26,26,26,0.12)", padding: "26px 0" }}>
@@ -159,11 +158,11 @@ export function Faq() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Lucrați cu clinici din toată țara?
+              Colaborați cu clinici din afara țării?
               <span style={{ color: "#0F0053" }}>+</span>
             </summary>
             <p style={{ margin: "16px 0 0", maxWidth: "60ch", fontSize: "16px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              [ completează zona acoperită și modul de livrare ]
+              Da, colaborăm cu clinici atât din România, cât și din Europa. Livrările sunt realizate prin servicii externe de curierat.
             </p>
           </details>
         </div>

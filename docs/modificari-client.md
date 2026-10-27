@@ -238,3 +238,8 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
 
 ## Clarificare 16a (15:06)
 - "Cursuri" apare în header (meniu desktop și mobil, înainte de Contact) și în footer. Ambiguitatea de mai sus e rezolvată: varianta (i).
+
+## Status implementare (27.10.2026)
+- Implementate: 01 la 17, cu valorile implicite propuse în note. Decizii luate fără răspuns explicit: titlul de la 08 ("până în prezent"), eticheta "Rată de refacere", titlurile "Patru pași de la scanare la lucrare" (04) și "De la scanare la lucrarea livrată" (13), cardurile noi de servicii duc la /contact (03), pasul 1 din Ghiduri stackable are titlul "Achiziția de date" (05), 09 doar pe homepage (/intrebari neschimbat), 17 flag guides:false.
+- Neatinse (nepromise de client): meniul mega Servicii din header, pagina /servicii, /intrebari, secțiunile Planificare de pe /cum-lucram, FAQ-urile de pe paginile de servicii.
+- Next.js actualizat 16.4.0 la 16.4.3 (patch de securitate, build-ul nu mai trecea).

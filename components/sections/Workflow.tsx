@@ -37,8 +37,8 @@ export function Workflow() {
             }}
             data-lines
           >
-            {"Patru pași de la fișier la "}
-            <span style={{ color: "#26B7BC" }}>obiect</span>
+            {"Patru pași de la scanare la "}
+            <span style={{ color: "#26B7BC" }}>lucrare</span>
           </h2>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -80,12 +80,12 @@ export function Workflow() {
                 fontSize: "32px",
                 letterSpacing: "-0.015em",
               }}
-              data-step="DICOM"
+              data-step="Scanare intraorală"
             >
-              DICOM
+              Scanare intraorală
             </h3>
             <p style={{ margin: "0", maxWidth: "56ch", fontSize: "17px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              Primim setul de imagini CBCT al pacientului, împreună cu indicațiile cazului și zona de interes.
+              Primim fișierele scanării intraorale, împreună cu indicațiile cazului și informațiile comenzii.
             </p>
           </div>
           <div
@@ -126,12 +126,12 @@ export function Workflow() {
                 fontSize: "32px",
                 letterSpacing: "-0.015em",
               }}
-              data-step="Segmentare"
+              data-step="Fotografii documentare"
             >
-              Segmentare
+              Fotografii documentare
             </h3>
             <p style={{ margin: "0", maxWidth: "56ch", fontSize: "17px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              Separăm structurile anatomice relevante și verificăm corespondența cu imaginile radiologice.
+              Fotografiile de documentare completează scanarea și ne ajută să reproducem corect forma, culoarea și aspectul natural.
             </p>
           </div>
           <div
@@ -172,12 +172,12 @@ export function Workflow() {
                 fontSize: "32px",
                 letterSpacing: "-0.015em",
               }}
-              data-step="STL"
+              data-step="Validare proiect design"
             >
-              STL
+              Validare proiect design
             </h3>
             <p style={{ margin: "0", maxWidth: "56ch", fontSize: "17px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              Modelul digital este pregătit pentru printare și poate fi folosit și pentru analiză pe ecran.
+              Îți trimitem proiectul digital pentru validare, iar execuția începe doar după acordul tău.
             </p>
           </div>
           <div
@@ -219,12 +219,12 @@ export function Workflow() {
                 fontSize: "32px",
                 letterSpacing: "-0.015em",
               }}
-              data-step="Printare 3D"
+              data-step="Execuție și finisare"
             >
-              Printare 3D
+              Execuție și finisare
             </h3>
             <p style={{ margin: "0", maxWidth: "56ch", fontSize: "17px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              Modelul fizic ajunge în cabinet pentru măsurători, planificarea intervenției și discuția cu pacientul.
+              Lucrarea este executată, finisată și verificată, apoi livrată către cabinet.
             </p>
           </div>
         </div>
@@ -232,7 +232,7 @@ export function Workflow() {
           <button
             className="idl-hover-4"
             type="button"
-            data-open-form="Cerere de ofertă — trimitere fișier CBCT"
+            data-open-form="Cerere de ofertă — trimitere caz"
             data-magnetic
             style={{
               padding: "16px 30px",
@@ -245,7 +245,7 @@ export function Workflow() {
               cursor: "pointer",
             }}
           >
-            {"Trimite primul fișier "}
+            {"Trimite primul caz "}
             <span style={{ color: "#26B7BC" }}>→</span>
           </button>
           <a

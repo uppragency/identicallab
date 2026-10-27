@@ -31,21 +31,8 @@ export function Results() {
               color: "#FFFFFF",
             }}
           >
-            Suntem mândri să spunem că, în acest an, am realizat peste:
+            Suntem mândri să spunem că, până în prezent, am realizat peste:
           </h2>
-          <span
-            className="m-nowrap"
-            style={{
-              fontFamily: "var(--font-outfit), Helvetica, sans-serif",
-              fontSize: "11px",
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.45)",
-              whiteSpace: "nowrap",
-            }}
-          >
-            valori de completat
-          </span>
         </div>
         <div
           className="m-grid m-rep"
@@ -68,7 +55,7 @@ export function Results() {
                 whiteSpace: "nowrap",
               }}
             >
-              0 000
+              45.000
             </div>
             <div style={{ marginTop: "14px", fontSize: "14px", lineHeight: "1.5", color: "rgba(255,255,255,0.66)" }}>Coroane și fațete</div>
           </div>
@@ -83,10 +70,10 @@ export function Results() {
                 whiteSpace: "nowrap",
               }}
             >
-              000
+              3.500
             </div>
             <div style={{ marginTop: "14px", fontSize: "14px", lineHeight: "1.5", color: "rgba(255,255,255,0.66)" }}>
-              Modele mandibulare printate 3D
+              Modele printate pe Stratasys
             </div>
           </div>
           <div data-reveal style={{ background: "rgba(255,255,255,0.05)", padding: "40px 28px" }}>
@@ -100,7 +87,7 @@ export function Results() {
                 whiteSpace: "nowrap",
               }}
             >
-              000
+              870
             </div>
             <div style={{ marginTop: "14px", fontSize: "14px", lineHeight: "1.5", color: "rgba(255,255,255,0.66)" }}>
               Ghiduri chirurgicale
@@ -117,7 +104,7 @@ export function Results() {
                 whiteSpace: "nowrap",
               }}
             >
-              000
+              3.000
             </div>
             <div style={{ marginTop: "14px", fontSize: "14px", lineHeight: "1.5", color: "rgba(255,255,255,0.66)" }}>
               Wax-up-uri și planificări digitale
@@ -134,10 +121,10 @@ export function Results() {
                 whiteSpace: "nowrap",
               }}
             >
-              00+
+              15.000
             </div>
             <div style={{ marginTop: "14px", fontSize: "14px", lineHeight: "1.5", color: "rgba(255,255,255,0.66)" }}>
-              Cazuri complexe procesate
+              Cazuri procesate
             </div>
           </div>
           <div data-reveal style={{ background: "rgba(255,255,255,0.05)", padding: "40px 28px" }}>
@@ -169,10 +156,10 @@ export function Results() {
                 whiteSpace: "nowrap",
               }}
             >
-              00 h
+              5 zile
             </div>
             <div style={{ marginTop: "14px", fontSize: "14px", lineHeight: "1.5", color: "rgba(255,255,255,0.66)" }}>
-              Timp mediu de livrare
+              Timp mediu de livrare (zile lucrătoare)
             </div>
           </div>
           <div data-reveal style={{ background: "rgba(255,255,255,0.05)", padding: "40px 28px" }}>
@@ -186,10 +173,10 @@ export function Results() {
                 whiteSpace: "nowrap",
               }}
             >
-              0,0 mm
+              0,2%
             </div>
             <div style={{ marginTop: "14px", fontSize: "14px", lineHeight: "1.5", color: "rgba(255,255,255,0.66)" }}>
-              Toleranță declarată
+              Rată de refacere
             </div>
           </div>
         </div>

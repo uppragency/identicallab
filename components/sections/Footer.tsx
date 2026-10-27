@@ -213,11 +213,17 @@ export function Footer() {
               <a className="idl-hover-9" href="/cum-lucram" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Cum lucrăm
               </a>
+              {features.guides && (
               <a className="idl-hover-9" href="/ghiduri" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Ghiduri
               </a>
+              )}
               <a className="idl-hover-9" href="/intrebari" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Întrebări
+              </a>
+              <a className="idl-hover-9" href="https://dentalmasters.ro/?utm_source=identical.ro&utm_medium=footer" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.82)" }}>
+                {"Cursuri "}
+                <span aria-hidden="true" style={{ color: "#26B7BC" }}>↗</span>
               </a>
               <a className="idl-hover-9" href="/contact" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Contact

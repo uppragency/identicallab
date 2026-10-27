@@ -19,7 +19,7 @@ export default function Page() {
       <JsonLd data={breadcrumbLd([["Acasă", "/"], ["Cum lucrăm", "/cum-lucram"]])} />
       <WorkHero />
 
-      <PhaseDivider n="01" title="Proces" />
+      <PhaseDivider n="01" title="Procesare" />
       <Workflow />
       <StickyList
         id="trimite-un-caz"
@@ -34,10 +34,10 @@ export default function Page() {
         intro="Nu ai nevoie de un formular lung. Ne spui ce lucrare vrei, iar restul îl clarificăm împreună."
         cta="Cerere de ofertă, trimitere caz"
         items={[
-          ["Alegi serviciul", "Modele mandibulare, segmentare CBCT, design CAD/CAM sau ghiduri chirurgicale. Dacă nu ești sigur, descrie cazul."],
-          ["Ne trimiți cererea", "Completezi formularul sau ne suni la 0724 065 767. Fișierele (DICOM, STL, scan) le trimiți la primul răspuns."],
+          ["Alegi serviciul", "Reabilitări totale înșurubate, fațete dentare, coroane și punți, bonturi personalizate, SmileCloud wax up sau ghiduri chirurgicale. Dacă nu ești sigur, descrie cazul."],
+          ["Ne trimiți cererea", "Completezi formularul sau ne suni la 0724 065 767. Fișierele scanării intraorale și fotografiile de documentare le trimiți la primul răspuns."],
           ["Confirmăm cazul", "Verificăm datele și, dacă lipsește ceva, te contactăm în aceeași zi."],
-          ["Primești oferta", "Revenim cu termenul de execuție și cu prețul înainte să începem lucrul."],
+          ["Începem proiectarea și stabilim termenele", "Odată cazul confirmat, începem proiectarea și stabilim împreună termenul de execuție."],
         ]}
       />
 
@@ -81,11 +81,11 @@ export default function Page() {
         }
         heads={["Situația", "Ce facem noi", "Ce faci tu"]}
         rows={[
-          ["Lipsesc date sau scanul nu e clar", "Te sunăm în aceeași zi și spunem exact ce lipsește.", "Retrimiți fișierul sau confirmi cum continuăm."],
-          ["Designul are nevoie de ajustări", "Îți trimitem designul pentru validare, cu observații tehnice.", "Aprobi sau ceri modificări, înainte de producție."],
+          ["Lipsesc date", "Te sunăm și îți spunem exact ce lipsește.", "Retrimiți fișierul sau confirmi cum continuăm."],
+          ["Cazuri complexe", "Îți trimitem designul pentru validare.", "Aprobi sau ceri modificări, înainte de producție."],
           ["Cazul are nevoie de altă abordare", "Spunem direct și propunem alternativa.", "Alegi varianta potrivită clinic."],
         ]}
-        note="Termenele reale pe tip de lucrare și regimul de urgență se confirmă la ofertă."
+        note="Termenele se stabilesc la începerea proiectării."
       />
 
       <ServiceFaq

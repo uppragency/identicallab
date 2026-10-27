@@ -37,10 +37,10 @@ export function Careers() {
               maxWidth: "22ch",
             }}
           >
-            Te-ai gândit vreodată să devii tehnician dentar?
+            Vrei să te alături echipei?
           </h3>
           <p style={{ margin: "0 0 24px", maxWidth: "48ch", fontSize: "17px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-            Transformi materiale în zâmbete și tehnologia în rezultate reale. Iar dacă ai deja experiență, avem o veste bună: angajăm.
+            Transformi materiale în zâmbete și tehnologia în rezultate reale. Dacă ai experiență în tehnică dentară, avem o veste bună: angajăm.
           </p>
           <a
             href="/contact"
@@ -77,8 +77,8 @@ export function Careers() {
             Educație bazată pe practică, tehnologie și rezultate predictibile.
           </h3>
           <p style={{ margin: "0 0 24px", maxWidth: "48ch", fontSize: "17px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-            Publicăm serii educative despre implantologia digitală, printre care Dual Scan Technique. Scrie-ne ce subiecte ai avea nevoie să
-            fie abordate.
+            Publicăm serii educative despre implantologia digitală, printre care: metode de execuție ale coroanelor și punților înșurubate,
+            planificări digitale și chirurgicale 3D. Scrie-ne ce subiecte ai avea nevoie să fie abordate.
           </p>
           <a
             href="/contact"

@@ -3,7 +3,7 @@ import { wrap } from "@/components/pages/blocks";
 
 export function WorkHero() {
   const tabs: [string, string, string, string][] = [
-    ["01", "Proces", "#proces", "De la fișierul primit la modelul din cabinet, în patru pași."],
+    ["01", "Procesare", "#proces", "De la scanarea primită la lucrarea finită, în patru pași."],
     ["02", "Planificare", "#planificare", "Scanări, simulări 3D și ghiduri, înainte de intervenție."],
     ["03", "Livrare", "#livrare", "Preluare, design, validare, execuție și expediere."],
   ];
@@ -24,7 +24,7 @@ export function WorkHero() {
           {" / Cum lucrăm"}
         </Eyebrow>
         <h1 data-reveal data-lines style={{ margin: "0", fontFamily: font, fontWeight: "200", fontSize: "clamp(52px, 8vw, 132px)", lineHeight: "0.93", letterSpacing: "-0.035em", maxWidth: "14ch", textWrap: "balance" }}>
-          {"De la fișier la lucrarea "}
+          {"De la scanare la lucrarea "}
           <Accent>livrată</Accent>.
         </h1>
         <p data-reveal style={{ margin: "36px 0 0", maxWidth: "56ch", fontSize: "19px", lineHeight: "1.55", color: "#3A3A44", fontWeight: "300" }}>

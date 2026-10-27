@@ -57,8 +57,8 @@ export function Positioning() {
             }}
           >
             În spatele fiecărui zâmbet reușit există un proces precis. La iDentical Lab ne ocupăm de partea invizibilă, dar esențială. O
-            lucrare dentară digitală trece prin mâinile mai multor specialiști – de la scanare 3D precisă, la design CAD/CAM și realizare în
-            laborator. Perfect adaptată, verificată în fiecare etapă și livrată rapid, pentru confortul și siguranța pacientului.
+            lucrare dentară digitală trece prin mâinile mai multor specialiști: de la departamentul de turnare modele, către cel de design asistat de calculator, până la cel de frezare computerizată,
+            ajungând în cele din urmă în departamentul de ceramică și finisare. Perfect adaptată, verificată în fiecare etapă și livrată rapid, pentru confortul și siguranța pacientului.
           </p>
         </div>
         <div

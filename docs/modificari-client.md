@@ -156,3 +156,13 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   a. Paragraful de sub titlu: "Transformi materiale în zâmbete și tehnologia în rezultate reale. Iar dacă ai deja experiență, avem o veste bună: angajăm." Se leagă de ideea veche (cineva fără experiență). Propun: "Transformi materiale în zâmbete și tehnologia în rezultate reale. Dacă ai experiență în tehnică dentară, avem o veste bună: angajăm." De validat de client.
   b. Butonul "Trimite-ne CV-ul" rămâne.
   c. Titlul pe pagina de cariere, dacă există (verific la implementare dacă se repetă în footer sau meniu: "Cariere").
+
+## 12. Homepage, secțiunea "[ EDUCAȚIE ] Educație bazată pe practică, tehnologie și rezultate predictibile."
+- Fișier: components/sections/Careers.tsx (paragraful linia ~80; secțiunea Educație e în același fișier cu Cariere)
+- Screenshot: docs/modificari-client/12-a.png
+- Cerință client: în paragraf, "printre care Dual Scan Technique" se înlocuiește cu "printre care: metode de execuție ale coroanelor și punților înșurubate, planificări digitale și chirurgicale 3D".
+- Text nou: "Publicăm serii educative despre implantologia digitală, printre care: metode de execuție ale coroanelor și punților înșurubate, planificări digitale și chirurgicale 3D. Scrie-ne ce subiecte ai avea nevoie să fie abordate."
+- Întrebări la final:
+  a. Două puncte după "printre care" (cum a scris clientul) sunt corecte gramatical cu enumerare; le păstrez. Altfel varianta fără două puncte: "printre care metode de execuție...".
+  b. Titlul "Educație bazată pe practică, tehnologie și rezultate predictibile." are "practică" fără diacritică corectă în screenshot ("practica" scris cu ă în titlu), deci rămâne.
+  c. "Dual Scan Technique" mai apare în panoul din secțiunea Planificare (modificarea 07, eticheta mică). Rămâne decizia de la 07.

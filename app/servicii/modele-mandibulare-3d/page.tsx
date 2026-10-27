@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { features } from "@/lib/features";
 import { metaFor } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
@@ -9,6 +11,7 @@ import { Accent } from "@/components/ui";
 export const metadata: Metadata = metaFor("/servicii/modele-mandibulare-3d");
 
 export default function Page() {
+  if (!features.legacyServices) notFound();
   return (
     <PageShell>
       <JsonLd data={[breadcrumbLd([["Acasă", "/"], ["Servicii", "/servicii"], ["Modele mandibulare 3D", "/servicii/modele-mandibulare-3d"]]), serviceLd("/servicii/modele-mandibulare-3d", "Modele mandibulare 3D")]} />
@@ -71,12 +74,12 @@ export default function Page() {
           ["Pot comanda doar modelul, fără alte servicii?", "Da. Pornim de la CBCT-ul tău, facem segmentarea necesară și livrăm modelul."],
           ["Cât de fidel este modelul față de anatomia reală?", "Modelul este construit direct din datele CBCT, iar înainte de livrare îl verificăm față de modelul digital. Precizia finală depinde și de calitatea investigației."],
           ["Se poate printa doar o zonă, nu toată mandibula?", "Da, putem limita modelul la zona de interes, în funcție de scopul clinic."],
-          ["Cum aflu termenul?", "Îți comunicăm termenul și prețul înainte să începem, pe baza cazului descris."],
+          ["Cum aflu termenul?", "Termenul mediu de execuție este de 5 zile lucrătoare."],
         ]}
       />
       <ServiceForm
         workType="Model mandibular 3D"
-        intro="Descrie-ne pe scurt cazul și zona de interes. Revenim cu termenul de execuție și cu prețul înainte să începem."
+        intro="Descrie-ne pe scurt cazul și zona de interes. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil."
         checklist={["Setul DICOM din CBCT (la primul răspuns)", "Zona de interes și scopul modelului", "Termenul dorit"]}
       />
       <RelatedServices current="modele-mandibulare-3d" />

@@ -38,7 +38,7 @@ export function AboutIntro() {
               textWrap: "pretty",
             }}
           >
-            În laboratorul nostru realizăm modele mandibulare personalizate, printate 3D pe baza investigațiilor CBCT ale pacientului.
+            În laboratorul nostru realizăm lucrări protetice digitale personalizate, de la scanarea intraorală la ceramică și finisare.
           </p>
           <p
             style={{

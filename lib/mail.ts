@@ -46,7 +46,7 @@ function confirmation(cfg: NonNullable<ReturnType<typeof config>>, lead: Lead) {
   const text = [
     `Bună ziua, ${lead.name},`,
     "",
-    `Am primit cererea ta. Un specialist iDentical Lab te contactează în ${RESPONSE_SLA}, cu termenul de execuție și prețul, înainte să începem lucrul.`,
+    `Am primit cererea ta. Un specialist iDentical Lab te contactează în ${RESPONSE_SLA}, pentru a stabili termenele și a începe proiectarea.`,
     "",
     ...summary.map(([k, v]) => `${k}: ${v}`),
     cfg.brochureUrl ? `\nBroșura iDentical Lab: ${cfg.brochureUrl}` : "",
@@ -59,7 +59,7 @@ function confirmation(cfg: NonNullable<ReturnType<typeof config>>, lead: Lead) {
   const html = `<div style="font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#1A1A1A;max-width:560px">
 <p style="margin:0 0 20px;color:#0F0053;font-size:12px;letter-spacing:.14em;text-transform:uppercase">[ iDentical Lab ]</p>
 <p>Bună ziua, ${escapeHtml(lead.name)},</p>
-<p>Am primit cererea ta. Un specialist iDentical Lab te contactează în <strong>${RESPONSE_SLA}</strong>, cu termenul de execuție și prețul, înainte să începem lucrul.</p>
+<p>Am primit cererea ta. Un specialist iDentical Lab te contactează în <strong>${RESPONSE_SLA}</strong>, pentru a stabili termenele și a începe proiectarea.</p>
 ${summary.length ? `<table style="border-collapse:collapse;margin:8px 0 16px;font-size:15px">${summary.map(([k, v]) => row(k, v)).join("")}</table>` : ""}
 ${cfg.brochureUrl ? `<p><a href="${escapeHtml(cfg.brochureUrl)}" style="color:#0F0053">Descarcă broșura iDentical Lab (PDF)</a></p>` : ""}
 <p style="color:#6E6E78;font-size:14px">Dacă e urgent, răspunde direct la acest email.</p>

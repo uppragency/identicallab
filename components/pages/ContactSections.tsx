@@ -121,7 +121,7 @@ export function ContactSteps() {
   const steps: [string, string][] = [
     ["Primim cererea", "Un tehnician citește mesajul tău. Nu există formule standard și nici răspunsuri automate lungi."],
     ["Revenim cu întrebări", "Dacă lipsesc informații, te contactăm în aceeași zi, pe telefon sau pe email, după preferința ta."],
-    ["Primești oferta", "Cu termenul de execuție și prețul, înainte să începem orice lucru."],
+    ["Începem proiectarea", "Stabilim împreună termenele și începem proiectarea."],
   ];
   return (
     <section id="dupa" style={{ padding: "110px 40px 130px", backgroundColor: "#F4F7F9" }}>

@@ -18,7 +18,7 @@ export const SEO: Record<string, PageSeo> = {
   "/": {
     kw: "laborator dentar digital București",
     title: "Laborator dentar digital București | iDentical Lab",
-    description: "Laborator dentar digital în București: modele 3D, segmentare CBCT, CAD/CAM și ghiduri chirurgicale. Trimite primul caz și cere o ofertă.",
+    description: "Laborator dentar digital în București: reabilitări înșurubate, fațete, coroane și punți, bonturi personalizate, wax up și ghiduri chirurgicale. Trimite primul caz.",
     priority: 1,
   },
   "/despre-noi": {
@@ -30,7 +30,7 @@ export const SEO: Record<string, PageSeo> = {
   "/servicii": {
     kw: "servicii laborator dentar digital",
     title: "Servicii de laborator dentar digital | iDentical Lab",
-    description: "Modele mandibulare 3D, segmentare CBCT, design CAD/CAM și ghiduri chirurgicale pentru cabinete. Alege serviciul și cere o ofertă rapidă.",
+    description: "Reabilitări totale înșurubate, fațete dentare, coroane și punți, bonturi personalizate, SmileCloud wax up și ghiduri chirurgicale pentru cabinete. Alege serviciul.",
     priority: 0.9,
   },
   "/servicii/modele-mandibulare-3d": {
@@ -54,13 +54,13 @@ export const SEO: Record<string, PageSeo> = {
   "/servicii/ghiduri-chirurgicale": {
     kw: "ghid chirurgical implant",
     title: "Ghid chirurgical pentru implant | iDentical Lab",
-    description: "Ghid chirurgical pentru implanturi, realizat din planul digital aprobat de tine și verificat înainte de livrare. Cere ofertă pentru cazul tău.",
+    description: "Ghid chirurgical pentru implanturi, realizat din planul digital aprobat de tine și verificat înainte de livrare. Trimite cazul tău.",
     priority: 0.9,
   },
   "/portofoliu": {
     kw: "lucrări dentare înainte și după",
     title: "Portofoliu: lucrări dentare înainte și după | iDentical Lab",
-    description: "Vezi cazuri înainte și după: coroane, fațete, ghiduri chirurgicale, modele 3D și segmentare CBCT. Trimite cazul tău și primești o ofertă.",
+    description: "Vezi cazuri înainte și după: reabilitări înșurubate, fațete, coroane și punți, bonturi personalizate, wax up și ghiduri chirurgicale. Trimite cazul tău.",
     priority: 0.7,
   },
   "/cum-lucram": {
@@ -78,13 +78,13 @@ export const SEO: Record<string, PageSeo> = {
   "/intrebari": {
     kw: "întrebări laborator dentar digital",
     title: "Întrebări frecvente despre laborator dentar | iDentical Lab",
-    description: "Răspunsuri despre fișiere, servicii, termene, prețuri și colaborare cu un laborator dentar digital. Nu găsești răspunsul? Scrie-ne.",
+    description: "Răspunsuri despre trimiterea cazului, servicii, termene, catalog și colaborare cu un laborator dentar digital. Nu găsești răspunsul? Scrie-ne.",
     priority: 0.6,
   },
   "/contact": {
     kw: "contact laborator dentar București",
     title: "Contact laborator dentar București | iDentical Lab",
-    description: "Contactează iDentical Lab: telefon 0724 065 767, email, program și adresa din București. Completează formularul și primești oferta.",
+    description: "Contactează iDentical Lab: telefon 0724 065 767, email, program și adresa din București. Completează formularul și un specialist te contactează.",
     priority: 0.8,
   },
   "/termeni-si-conditii": {

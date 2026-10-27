@@ -61,7 +61,7 @@ export function OfferModal() {
           </button>
         </div>
         <p style={{ margin: "0 0 26px", fontSize: "16px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-          Descrie-ne pe scurt cazul și zona de interes. Revenim cu termenul de execuție și cu prețul înainte să începem.
+          Descrie-ne pe scurt cazul și zona de interes. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil.
         </p>
         <form style={{ display: "grid", gap: "14px" }} data-form="offer">
           <input

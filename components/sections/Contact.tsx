@@ -46,7 +46,7 @@ export function Contact() {
               fontWeight: "300",
             }}
           >
-            Descrie-ne pe scurt cazul și zona de interes. Revenim cu termenul de execuție și cu prețul înainte să începem.
+            Descrie-ne pe scurt cazul și zona de interes. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil.
           </p>
           <div
             style={{

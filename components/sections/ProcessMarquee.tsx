@@ -20,23 +20,23 @@ export function ProcessMarquee() {
         }}
       >
         <div style={{ display: "flex", gap: "44px", paddingRight: "44px", alignItems: "center" }}>
-          <span data-word="DICOM">DICOM</span>
+          <span data-word="Scanare intraorală">Scanare intraorală</span>
           <span style={{ color: "#0F0053" }}>→</span>
-          <span data-word="Segmentare">Segmentare</span>
+          <span data-word="Fotografii documentare">Fotografii documentare</span>
           <span style={{ color: "#0F0053" }}>→</span>
-          <span data-word="STL">STL</span>
+          <span data-word="Validare proiect design">Validare proiect design</span>
           <span style={{ color: "#0F0053" }}>→</span>
-          <span data-word="Printare 3D">Printare 3D</span>
+          <span data-word="Execuție și finisare">Execuție și finisare</span>
           <span style={{ color: "#0F0053" }}>→</span>
         </div>
         <div style={{ display: "flex", gap: "44px", paddingRight: "44px", alignItems: "center" }}>
-          <span data-word="DICOM">DICOM</span>
+          <span data-word="Scanare intraorală">Scanare intraorală</span>
           <span style={{ color: "#0F0053" }}>→</span>
-          <span data-word="Segmentare">Segmentare</span>
+          <span data-word="Fotografii documentare">Fotografii documentare</span>
           <span style={{ color: "#0F0053" }}>→</span>
-          <span data-word="STL">STL</span>
+          <span data-word="Validare proiect design">Validare proiect design</span>
           <span style={{ color: "#0F0053" }}>→</span>
-          <span data-word="Printare 3D">Printare 3D</span>
+          <span data-word="Execuție și finisare">Execuție și finisare</span>
           <span style={{ color: "#0F0053" }}>→</span>
         </div>
       </div>

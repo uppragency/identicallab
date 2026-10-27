@@ -10,11 +10,14 @@ const body: CSSProperties = { margin: "0", fontSize: "16px", lineHeight: "1.6", 
 const navy = "#0F0053";
 
 export const SERVICES = [
-  { slug: "modele-mandibulare-3d", title: "Modele mandibulare 3D", short: "Replici printate 3D ale anatomiei osoase, pornind de la CBCT-ul pacientului.", n: "01" },
-  { slug: "segmentare-cbct", title: "Segmentare CBCT", short: "Izolarea structurilor de interes din setul DICOM, cu verificare a acurateței.", n: "02" },
-  { slug: "design-cad-cam", title: "Design CAD/CAM", short: "Proiectare digitală a lucrărilor protetice, aprobată de medic înainte de producție.", n: "03" },
-  { slug: "ghiduri-chirurgicale", title: "Ghiduri chirurgicale", short: "Ghiduri pentru poziționarea implanturilor, din planificarea digitală aprobată.", n: "04" },
+  { slug: "reabilitari-totale-insurubate", title: "Reabilitări totale înșurubate", short: "Restaurări complete pe implanturi, proiectate digital și realizate în laborator.", n: "01", page: false },
+  { slug: "fatete-dentare", title: "Fațete dentare", short: "Fațete proiectate digital, pentru un aspect natural și o adaptare precisă.", n: "02", page: false },
+  { slug: "coroane-si-punti", title: "Coroane și punți", short: "Coroane și punți din materiale alese în funcție de fiecare caz.", n: "03", page: false },
+  { slug: "bonturi-personalizate", title: "Bonturi personalizate", short: "Bonturi realizate pe măsura implantului și a țesuturilor moi.", n: "04", page: false },
+  { slug: "smilecloud-wax-up", title: "SmileCloud wax up", short: "Wax up digital, ca rezultatul să poată fi văzut și validat înainte de execuție.", n: "05", page: false },
+  { slug: "ghiduri-chirurgicale", title: "Ghiduri chirurgicale", short: "Ghiduri pentru poziționarea implanturilor, din planificarea digitală aprobată.", n: "06", page: true },
 ];
+export const svcHref = (s: { slug: string; page: boolean }) => (s.page ? `/servicii/${s.slug}` : `/servicii#${s.slug}`);
 
 const crumb = (items: [string, string?][], dark?: boolean) => (
   <Eyebrow style={{ marginBottom: "28px", color: dark ? "#FFFFFF" : undefined }}>
@@ -460,7 +463,7 @@ export function ServiceFaq({ id, title, items, cta }: { id?: string; title: Reac
 }
 
 /** Links to the other services. */
-const RELATED_PH: Record<string, string> = {"modele-mandibulare-3d": "FOTO51", "segmentare-cbct": "FOTO52", "design-cad-cam": "FOTO53", "ghiduri-chirurgicale": "FOTO54"};
+const RELATED_PH: Record<string, string> = {"reabilitari-totale-insurubate": "FOTO51", "fatete-dentare": "FOTO52", "coroane-si-punti": "FOTO53", "bonturi-personalizate": "FOTO72", "smilecloud-wax-up": "FOTO73", "ghiduri-chirurgicale": "FOTO54"};
 
 export function RelatedServices({ current }: { current?: string }) {
   const list = SERVICES.filter((s) => s.slug !== current);
@@ -471,9 +474,9 @@ export function RelatedServices({ current }: { current?: string }) {
           {"Continuă fluxul "}
           <Accent>digital</Accent>
         </SectionHead>
-        <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: `repeat(${list.length}, 1fr)`, gap: "24px" }}>
+        <div className="m-grid m-rep" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
           {list.map((s) => (
-            <a key={s.slug} href={`/servicii/${s.slug}`} data-reveal data-lift style={{ display: "block" }}>
+            <a key={s.slug} href={svcHref(s)} data-reveal data-lift style={{ display: "block" }}>
               <Photo label={RELATED_PH[s.slug]} ratio="4/3" />
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "16px", borderTop: "1px solid rgba(26,26,26,0.12)", marginTop: "16px", paddingTop: "16px" }}>
                 <h3 style={{ margin: "0", fontSize: "21px", fontWeight: "500", letterSpacing: "-0.01em" }}>{s.title}</h3>

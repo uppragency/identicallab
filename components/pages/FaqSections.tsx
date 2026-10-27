@@ -8,38 +8,37 @@ export const FAQ_GROUPS: { id: string; title: string; items: [string, string][] 
     id: "trimiterea-cazului",
     title: "Trimiterea cazului",
     items: [
-      ["Cum trimit un caz?", "Completezi formularul de ofertă sau ne suni la 0724 065 767. Descrie pe scurt lucrarea și zona de interes; fișierele le trimiți la primul răspuns, pe canalul agreat."],
-      ["Ce fișiere trebuie să trimit?", "Pentru serviciile pornite din CBCT, setul complet de imagini DICOM. Pentru design CAD/CAM, scanul intraoral sau al modelului și indicațiile clinice. Adaugă fotografii dacă lucrarea este estetică."],
-      ["Ce se întâmplă dacă lipsesc date?", "Verificăm fișierele la primire. Dacă lipsește ceva, te contactăm în aceeași zi și spunem exact ce trebuie retrimis."],
-      ["Pot trimite doar o descriere, fără fișiere?", "Da, pentru o ofertă orientativă. Termenul și prețul se confirmă după ce vedem datele reale ale cazului."],
+      ["Cum trimit un caz?", "Completezi formularul de contact sau ne suni la 0724 065 767. Descrie pe scurt lucrarea și zona de interes; fișierele le trimiți la primul răspuns, pe canalul agreat."],
+      ["Ce informații sunt necesare pentru a trimite un caz?", "Fișierele scanării intraorale, fotografiile de documentare și informațiile aferente comenzii. Suntem prezenți pe platformele cloud ale principalilor producători de scanere, astfel încât să ne poți transmite fișierele direct."],
+      ["Ce se întâmplă dacă lipsesc date?", "Verificăm fișierele la primire. Dacă lipsește ceva, te sunăm și îți spunem exact ce trebuie retrimis."],
+      ["Pot trimite doar o descriere, fără fișiere?", "Da, pentru a discuta cazul. Termenele se stabilesc după ce vedem datele reale ale cazului."],
     ],
   },
   {
     id: "servicii",
     title: "Servicii",
     items: [
-      ["Pot comanda un singur serviciu?", "Da. Modelele mandibulare 3D, segmentarea CBCT, designul CAD/CAM și ghidurile chirurgicale se pot comanda separat sau într-un flux complet."],
-      ["Ce diferență este între segmentare și model mandibular?", "Segmentarea produce modelul digital al structurilor de interes. Modelul mandibular este obiectul fizic printat 3D, realizat pornind de la această segmentare."],
-      ["Ce structuri se pot segmenta?", "Mandibula, maxilarul, canalul mandibular, sinusul maxilar, dinții individuali sau orice zonă indicată de medic pentru caz."],
-      ["Pot vedea designul înainte de producție?", "Da. Designul digital îți este prezentat, iar producția începe după aprobarea ta."],
+      ["Pot comanda un singur serviciu?", "Da. Reabilitările totale înșurubate, fațetele dentare, coroanele și punțile, bonturile personalizate, SmileCloud wax up și ghidurile chirurgicale se pot comanda separat sau într-un flux complet."],
+      ["Pot vedea designul înainte de producție?", "Da. Proiectul digital îți este trimis pentru validare, iar execuția începe după acordul tău."],
+      ["Cum se stabilește necesarul de componente protetice?", "Odată ce cazul intră în etapa de proiectare, selectăm componentele necesare și îți transmitem lista pentru a le comanda."],
     ],
   },
   {
     id: "termene-si-livrare",
     title: "Termene și livrare",
     items: [
-      ["Cum aflu cât durează o lucrare?", "Îți comunicăm termenul de execuție împreună cu prețul, înainte să începem. Depinde de tipul și complexitatea lucrării."],
-      ["Există regim de urgență?", "Putem discuta urgențele la momentul ofertei. Disponibilitatea depinde de volumul de lucru din laborator."],
+      ["Care este termenul de execuție?", "Termenul mediu de execuție este de 5 zile lucrătoare."],
+      ["Există regim de urgență?", "Spune-ne la trimiterea cazului. Disponibilitatea depinde de volumul de lucru din laborator."],
       ["Cum ajunge lucrarea la cabinet?", "Lucrarea este verificată la finisare și expediată către cabinet, împreună cu documentația cazului."],
     ],
   },
   {
-    id: "preturi-si-colaborare",
-    title: "Prețuri și colaborare",
+    id: "catalog-si-colaborare",
+    title: "Catalog și colaborare",
     items: [
-      ["Cum se stabilește prețul?", "Prețul depinde de complexitatea cazului și de volumul modelului sau al lucrării. Trimite datele și primești o ofertă înainte de începerea lucrului."],
-      ["Lucrați cu cabinete din afara Bucureștiului?", "Da. Colaborăm cu cabinete din România și din afara ei; fișierele se transmit digital, iar lucrarea ajunge la cabinet prin expediere."],
-      ["Cum încep o colaborare?", "Trimite primul caz prin formular sau sună-ne. Nu este nevoie de un contract înainte de prima ofertă."],
+      ["Cum pot solicita catalogul de produse și lista de prețuri?", "Completează formularul de contact, iar noi te vom contacta pentru a-ți oferi catalogul de produse și lista de prețuri."],
+      ["Colaborați cu clinici din afara țării?", "Da, colaborăm cu clinici atât din România, cât și din Europa. Livrările sunt realizate prin servicii externe de curierat."],
+      ["Cum încep o colaborare?", "Trimite primul caz prin formular sau sună-ne. Nu este nevoie de un contract înainte de primul caz."],
     ],
   },
   {
@@ -81,7 +80,7 @@ export function FaqHero() {
             <input
               data-faq-search
               type="search"
-              placeholder="Caută, de exemplu: DICOM, termen, preț"
+              placeholder="Caută, de exemplu: scanare, termen, catalog"
               style={{ width: "100%", padding: "16px 0", background: "transparent", border: "none", borderBottom: "1px solid rgba(26,26,26,0.3)", fontFamily: font, fontSize: "17px", outline: "none", color: "#1A1A1A" }}
             />
           </label>

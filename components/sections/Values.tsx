@@ -88,8 +88,8 @@ export function Values() {
               Tehnologie
             </h3>
             <p style={{ margin: "0", fontSize: "16px", lineHeight: "1.6", color: "#3A3A44", fontWeight: "300" }}>
-              Scanare 3D, design CAD/CAM, planificare implantară și printare, toate în aceeași casă. Un singur lanț de răspundere, de la
-              fișier la lucrarea din cutie.
+              Scanare, design digital, planificare protetică și chirurgicală, frezare, ceramică și finisare, toate în aceeași casă. Un singur
+              lanț de răspundere, de la scanare la lucrarea din cutie.
             </p>
           </div>
           <div

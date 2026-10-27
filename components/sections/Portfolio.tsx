@@ -81,7 +81,7 @@ export function Portfolio() {
           <button
             className="idl-hover-7"
             type="button"
-            data-filter="Coroane și fațete"
+            data-filter="Coroane și punți"
             style={{
               padding: "10px 18px",
               borderRadius: "999px",
@@ -93,12 +93,12 @@ export function Portfolio() {
               cursor: "pointer",
             }}
           >
-            Coroane și fațete
+            Coroane și punți
           </button>
           <button
             className="idl-hover-7"
             type="button"
-            data-filter="Fațete feldspatice"
+            data-filter="Fațete dentare"
             style={{
               padding: "10px 18px",
               borderRadius: "999px",
@@ -110,7 +110,7 @@ export function Portfolio() {
               cursor: "pointer",
             }}
           >
-            Fațete feldspatice
+            Fațete dentare
           </button>
           <button
             className="idl-hover-7"
@@ -132,7 +132,7 @@ export function Portfolio() {
           <button
             className="idl-hover-7"
             type="button"
-            data-filter="Modele 3D"
+            data-filter="Bonturi personalizate"
             style={{
               padding: "10px 18px",
               borderRadius: "999px",
@@ -144,12 +144,46 @@ export function Portfolio() {
               cursor: "pointer",
             }}
           >
-            Modele 3D
+            Bonturi personalizate
+          </button>
+          <button
+            className="idl-hover-7"
+            type="button"
+            data-filter="Reabilitări totale înșurubate"
+            style={{
+              padding: "10px 18px",
+              borderRadius: "999px",
+              border: "1px solid rgba(26,26,26,0.18)",
+              background: "transparent",
+              color: "#3A3A44",
+              fontFamily: "var(--font-outfit), Helvetica, sans-serif",
+              fontSize: "14px",
+              cursor: "pointer",
+            }}
+          >
+            Reabilitări totale înșurubate
+          </button>
+          <button
+            className="idl-hover-7"
+            type="button"
+            data-filter="SmileCloud wax up"
+            style={{
+              padding: "10px 18px",
+              borderRadius: "999px",
+              border: "1px solid rgba(26,26,26,0.18)",
+              background: "transparent",
+              color: "#3A3A44",
+              fontFamily: "var(--font-outfit), Helvetica, sans-serif",
+              fontSize: "14px",
+              cursor: "pointer",
+            }}
+          >
+            SmileCloud wax up
           </button>
         </div>
         <div className="m-grid m-rep" data-cases style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "32px 28px" }}>
           <article
-            data-case="Coroane și fațete"
+            data-case="Coroane și punți"
             data-reveal
             data-lift
             style={{
@@ -285,18 +319,18 @@ export function Portfolio() {
             </div>
             <div>
               <div style={{ fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053", marginBottom: "8px" }}>
-                Coroane și fațete
+                Coroane și punți
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
                 <a className="idl-hover-9" href="/portofoliu">Reabilitare frontală superioară</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Șase coroane și fațete, integrare cromatică cu dinții vecini.
+                Șase coroane, integrare cromatică cu dinții vecini.
               </p>
             </div>
           </article>
           <article
-            data-case="Fațete feldspatice"
+            data-case="Fațete dentare"
             data-reveal
             data-lift
             style={{
@@ -432,13 +466,13 @@ export function Portfolio() {
             </div>
             <div>
               <div style={{ fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053", marginBottom: "8px" }}>
-                Fațete feldspatice
+                Fațete dentare
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                <a className="idl-hover-9" href="/portofoliu">Fațete feldspatice, caz estetic</a>
+                <a className="idl-hover-9" href="/portofoliu">Fațete dentare, caz estetic</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Stratificare manuală pe refractar, grosime minimă.
+                Ceramică feldspatică, grosime minimă.
               </p>
             </div>
           </article>
@@ -585,12 +619,12 @@ export function Portfolio() {
                 <a className="idl-hover-9" href="/portofoliu">Ghid pentru două implanturi</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Poziționare cu ghidaj protetic, profil de emergență planificat.
+                Poziționare cu ghid protetic, profil de emergență planificat.
               </p>
             </div>
           </article>
           <article
-            data-case="Modele 3D"
+            data-case="Bonturi personalizate"
             data-reveal
             data-lift
             style={{
@@ -726,18 +760,18 @@ export function Portfolio() {
             </div>
             <div>
               <div style={{ fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053", marginBottom: "8px" }}>
-                Modele 3D
+                Bonturi personalizate
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                <a className="idl-hover-9" href="/portofoliu">Model mandibular din CBCT</a>
+                <a className="idl-hover-9" href="/portofoliu">Bonturi personalizate pe implanturi</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Model printat pentru măsurători și planificare preoperatorie.
+                Realizate pe măsura fiecărui implant.
               </p>
             </div>
           </article>
           <article
-            data-case="Coroane și fațete"
+            data-case="Reabilitări totale înșurubate"
             data-reveal
             data-lift
             style={{
@@ -873,18 +907,18 @@ export function Portfolio() {
             </div>
             <div>
               <div style={{ fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053", marginBottom: "8px" }}>
-                Coroane și fațete
+                Reabilitări totale înșurubate
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                <a className="idl-hover-9" href="/portofoliu">Reabilitare orală completă</a>
+                <a className="idl-hover-9" href="/portofoliu">Reabilitare totală înșurubată</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Plan în etape, verificare a ocluziei pe parcurs.
+                Restaurare completă pe implanturi, proiectată digital.
               </p>
             </div>
           </article>
           <article
-            data-case="Modele 3D"
+            data-case="SmileCloud wax up"
             data-reveal
             data-lift
             style={{
@@ -1020,13 +1054,13 @@ export function Portfolio() {
             </div>
             <div>
               <div style={{ fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0F0053", marginBottom: "8px" }}>
-                Modele 3D
+                SmileCloud wax up
               </div>
               <h3 style={{ margin: "0 0 6px", fontSize: "19px", fontWeight: "500", letterSpacing: "-0.01em" }}>
-                <a className="idl-hover-9" href="/portofoliu">Wax-up digital și model de studiu</a>
+                <a className="idl-hover-9" href="/portofoliu">Wax up digital al zâmbetului</a>
               </h3>
               <p style={{ margin: "0", fontSize: "15px", lineHeight: "1.55", color: "#6E6E78", fontWeight: "300" }}>
-                Simulare digitală transformată în model fizic pentru probă.
+                Simulare digitală validată de medic înainte de execuție.
               </p>
             </div>
           </article>

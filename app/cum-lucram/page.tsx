@@ -54,10 +54,10 @@ export default function Page() {
         }
         aside="Planificarea se face împreună cu medicul. Decizia clinică îi aparține întotdeauna lui."
         items={[
-          ["Scanare și suprapunere", "CBCT, scan intraoral și, unde este cazul, dual scan technique, într-un singur plan."],
+          ["Scanare și suprapunere", "Scanare intraorală, CBCT și fotografii documentare, într-un singur plan."],
           ["Poziția implanturilor", "Stabilită în funcție de os și de proiectul protetic, pentru un profil de emergență corect."],
           ["Simulare 3D", "Rezultatul final vizibil pe ecran, înainte de orice pas ireversibil."],
-          ["Transfer în intervenție", "Ghiduri chirurgicale și modele care duc planul în sala de operație."],
+          ["Transfer în intervenție", "Ghiduri chirurgicale care duc planul în sala de operație."],
         ]}
       />
       <StackableGuides />
@@ -66,7 +66,7 @@ export default function Page() {
       <Delivery />
       <InOut
         id="in-cutie"
-        cta="Cerere de ofertă, termen de livrare"
+        cta="Cere termenul pentru cazul tău"
         send={{ title: "Pregătirea lucrării", items: ["Verificare finală față de datele digitale", "Ambalare protejată pentru transport", "Documentația cazului, atașată"] }}
         get={{ title: "Ajunge la cabinet", items: ["Lucrarea verificată, gata de utilizare", "Indicațiile de utilizare și, după caz, ordinea pașilor", "Un interlocutor pentru orice întrebare"] }}
       />
@@ -93,9 +93,9 @@ export default function Page() {
         title="Despre proces și livrare"
         cta="Întrebare despre un caz"
         items={[
-          ["Ce fișiere trebuie să trimit?", "Pentru serviciile din CBCT, setul complet de imagini DICOM și o descriere a zonei de interes. Pentru design CAD/CAM, scanul sau amprenta și indicațiile clinice."],
-          ["Cum aflu cât durează?", "Îți comunicăm termenul de execuție, împreună cu prețul, înainte să începem. Depinde de tipul și complexitatea lucrării."],
-          ["Pot vedea designul înainte de producție?", "Da. Designul digital este trimis spre validare, iar producția începe după aprobarea ta."],
+          ["Ce informații sunt necesare pentru a trimite un caz?", "Fișierele scanării intraorale, fotografiile de documentare și informațiile aferente comenzii. Suntem prezenți pe platformele cloud ale principalilor producători de scanere, astfel încât să ne poți transmite fișierele direct."],
+          ["Care este termenul de execuție?", "Termenul mediu de execuție este de 5 zile lucrătoare."],
+          ["Pot vedea designul înainte de producție?", "Da. Proiectul digital este trimis spre validare, iar execuția începe după acordul tău."],
           ["Cum ajunge lucrarea la cabinet?", "Este verificată la finisare și expediată către cabinet, împreună cu documentația cazului."],
         ]}
       />
@@ -112,8 +112,8 @@ export default function Page() {
       />
       <ServiceForm
         workType="Cum lucrăm, trimitere caz"
-        intro="Descrie-ne pe scurt cazul și zona de interes. Revenim cu termenul de execuție și cu prețul înainte să începem."
-        checklist={["Tipul de lucrare", "Zona de interes", "Fișierele (DICOM, STL) le trimiți la primul răspuns"]}
+        intro="Descrie-ne pe scurt cazul și zona de interes. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil."
+        checklist={["Tipul de lucrare", "Zona de interes", "Fișierele scanării intraorale și fotografiile de documentare le trimiți la primul răspuns"]}
       />
     </PageShell>
   );

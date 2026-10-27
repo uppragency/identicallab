@@ -243,14 +243,20 @@ export function Footer() {
               Servicii
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px" }}>
-              <a className="idl-hover-9" href="/servicii/modele-mandibulare-3d" style={{ color: "rgba(255,255,255,0.82)" }}>
-                Modele mandibulare 3D
+              <a className="idl-hover-9" href="/servicii#reabilitari-totale-insurubate" style={{ color: "rgba(255,255,255,0.82)" }}>
+                Reabilitări totale înșurubate
               </a>
-              <a className="idl-hover-9" href="/servicii/segmentare-cbct" style={{ color: "rgba(255,255,255,0.82)" }}>
-                Segmentare CBCT
+              <a className="idl-hover-9" href="/servicii#fatete-dentare" style={{ color: "rgba(255,255,255,0.82)" }}>
+                Fațete dentare
               </a>
-              <a className="idl-hover-9" href="/servicii/design-cad-cam" style={{ color: "rgba(255,255,255,0.82)" }}>
-                Design CAD/CAM
+              <a className="idl-hover-9" href="/servicii#coroane-si-punti" style={{ color: "rgba(255,255,255,0.82)" }}>
+                Coroane și punți
+              </a>
+              <a className="idl-hover-9" href="/servicii#bonturi-personalizate" style={{ color: "rgba(255,255,255,0.82)" }}>
+                Bonturi personalizate
+              </a>
+              <a className="idl-hover-9" href="/servicii#smilecloud-wax-up" style={{ color: "rgba(255,255,255,0.82)" }}>
+                SmileCloud wax up
               </a>
               <a className="idl-hover-9" href="/servicii/ghiduri-chirurgicale" style={{ color: "rgba(255,255,255,0.82)" }}>
                 Ghiduri chirurgicale

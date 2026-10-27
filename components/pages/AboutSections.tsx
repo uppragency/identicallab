@@ -96,7 +96,7 @@ export function AboutStory() {
   const steps = [
     ["01", "Tehnica dentară clasică", "Începem cu meșteșugul: ceară, ghips, mână sigură. Aici se formează ochiul pentru formă, ocluzie și detaliu, pe care îl păstrăm și azi."],
     ["02", "Trecerea la digital", "Introducem scanarea 3D și designul CAD/CAM. Procesele devin măsurabile, repetabile și mai rapide, fără să pierdem controlul tehnicianului."],
-    ["03", "Laborator complet digital", "Segmentare CBCT, modele mandibulare printate 3D, ghiduri chirurgicale și planificare implantară, într-un singur lanț de răspundere."],
+    ["03", "Laborator complet digital", "Reabilitări înșurubate, fațete, coroane și punți, bonturi personalizate, wax up digital și ghiduri chirurgicale, într-un singur lanț de răspundere."],
     ["04", "Astăzi", "Peste 700 de cabinete lucrează cu noi. Fiecare caz este analizat, discutat cu medicul și verificat la fiecare etapă."],
   ];
   return (
@@ -199,9 +199,9 @@ export function AboutMethod() {
 export function AboutTech() {
   const items = [
     ["Scanare 3D", "Scanare intraorală și de laborator, cu fișiere compatibile cu fluxurile cabinetelor partenere."],
-    ["Segmentare CBCT", "Reconstrucția 3D a anatomiei osoase a pacientului, pregătită pentru planificare și printare."],
+    ["Planificare digitală", "Planificare protetică și chirurgicală pe un avatar digital al pacientului, înainte de intervenție."],
     ["Design CAD/CAM", "Proiectare digitală a lucrărilor protetice, cu control asupra formei, ocluziei și grosimilor."],
-    ["Printare 3D", "Modele mandibulare, modele de lucru și ghiduri chirurgicale, realizate în laborator."],
+    ["Printare 3D", "Modele de lucru și ghiduri chirurgicale, printate în laborator pe Stratasys."],
     ["Planificare implantară", "Poziționare digitală a implanturilor, discutată cu medicul înainte de etapa chirurgicală."],
     ["Finisare manuală", "Mâna tehnicianului pentru caracterizare, culoare și integrare estetică."],
   ];

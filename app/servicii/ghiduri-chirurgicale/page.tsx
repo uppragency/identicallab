@@ -79,7 +79,7 @@ export default function Page() {
       />
       <ServiceForm
         workType="Ghid chirurgical"
-        intro="Spune-ne despre caz și despre sistemul de implanturi. Revenim cu termenul de execuție și cu prețul înainte să începem."
+        intro="Spune-ne despre caz și despre sistemul de implanturi. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil."
         checklist={["CBCT și, dacă ai, planul implantar", "Sistemul de implanturi folosit", "Termenul intervenției"]}
       />
       <RelatedServices current="ghiduri-chirurgicale" />

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { features } from "@/lib/features";
 import { metaFor } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
@@ -9,6 +11,7 @@ import { Accent } from "@/components/ui";
 export const metadata: Metadata = metaFor("/servicii/segmentare-cbct");
 
 export default function Page() {
+  if (!features.legacyServices) notFound();
   return (
     <PageShell>
       <JsonLd data={[breadcrumbLd([["Acasă", "/"], ["Servicii", "/servicii"], ["Segmentare CBCT", "/servicii/segmentare-cbct"]]), serviceLd("/servicii/segmentare-cbct", "Segmentare CBCT")]} />
@@ -75,7 +78,7 @@ export default function Page() {
       />
       <ServiceForm
         workType="Segmentare CBCT"
-        intro="Spune-ne ce structuri te interesează. Revenim cu termenul de execuție și cu prețul înainte să începem."
+        intro="Spune-ne ce structuri te interesează. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil."
         checklist={["Setul DICOM (la primul răspuns)", "Structurile de interes", "Formatul de export dorit"]}
       />
       <RelatedServices current="segmentare-cbct" />

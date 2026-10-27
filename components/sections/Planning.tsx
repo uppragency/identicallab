@@ -73,8 +73,8 @@ export function Planning() {
             Rezultatul: mai multă precizie și un tratament personalizat.
           </p>
           <p style={{ margin: "20px 0 0", maxWidth: "54ch", fontSize: "16px", lineHeight: "1.6", color: "#6E6E78", fontWeight: "300" }}>
-            Un fișier DICOM nu rămâne doar pe ecran. Prin segmentare, prelucrare digitală și imprimare 3D, informația obținută din CBCT
-            poate fi transformată într-un model fizic al anatomiei pacientului.
+            Din scanarea intraorală, CBCT și fotografiile documentare construim un avatar digital al pacientului, pe care planificăm
+            atât restaurarea protetică, cât și poziția implanturilor.
           </p>
           <div style={{ marginTop: "36px" }}>
             <div style={{ display: "flex", gap: "8px", marginBottom: "16px" }}>

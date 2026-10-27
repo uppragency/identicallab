@@ -39,7 +39,7 @@ export default function Page() {
       <PortfolioCta />
       <ServiceForm
         workType="Caz din portofoliu"
-        intro="Ai un caz asemănător cu unul din portofoliu? Descrie-l pe scurt. Revenim cu termenul de execuție și cu prețul înainte să începem."
+        intro="Ai un caz asemănător cu unul din portofoliu? Descrie-l pe scurt. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil."
         checklist={["Tipul de lucrare", "Zona de interes", "Fișierele le trimiți la primul răspuns"]}
       />
     </PageShell>

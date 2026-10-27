@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { features } from "@/lib/features";
 import { metaFor } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbLd, serviceLd } from "@/lib/jsonld";
@@ -9,6 +11,7 @@ import { Accent } from "@/components/ui";
 export const metadata: Metadata = metaFor("/servicii/design-cad-cam");
 
 export default function Page() {
+  if (!features.legacyServices) notFound();
   return (
     <PageShell>
       <JsonLd data={[breadcrumbLd([["Acasă", "/"], ["Servicii", "/servicii"], ["Design CAD/CAM", "/servicii/design-cad-cam"]]), serviceLd("/servicii/design-cad-cam", "Design CAD/CAM")]} />
@@ -69,12 +72,12 @@ export default function Page() {
           ["Ce date trebuie să trimit?", "Scanul intraoral sau al modelului, culoarea dorită și indicațiile clinice. Fotografiile ajută la cazurile estetice."],
           ["Pot vedea designul înainte de producție?", "Da. Designul îți este prezentat, iar producția începe după aprobarea ta."],
           ["Lucrați și cu amprentă clasică?", "Putem prelua cazuri pornite din amprentă clasică, pe care o digitizăm în laborator. Confirmăm fluxul la comandă."],
-          ["Cum aflu termenul și prețul?", "Revenim cu ambele înainte să începem, pe baza lucrării cerute."],
+          ["Cum aflu termenul?", "Termenul mediu de execuție este de 5 zile lucrătoare."],
         ]}
       />
       <ServiceForm
         workType="Design CAD/CAM"
-        intro="Spune-ne ce lucrare ai nevoie. Revenim cu termenul de execuție și cu prețul înainte să începem."
+        intro="Spune-ne ce lucrare ai nevoie. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil."
         checklist={["Tipul de lucrare și numărul de elemente", "Scan sau amprentă (la primul răspuns)", "Culoarea și indicațiile clinice"]}
       />
       <RelatedServices current="design-cad-cam" />

@@ -18,8 +18,8 @@ export default function Page() {
       <ContactSteps />
       <ServiceForm
         workType=""
-        intro="Descrie-ne pe scurt cazul și zona de interes. Revenim cu termenul de execuție și cu prețul înainte să începem."
-        checklist={["Tipul de lucrare", "Zona de interes", "Fișierele (DICOM, STL) le trimiți la primul răspuns"]}
+        intro="Descrie-ne pe scurt cazul și zona de interes. Un specialist iDentical Lab te contactează în cel mai scurt timp posibil."
+        checklist={["Tipul de lucrare", "Zona de interes", "Fișierele scanării intraorale și fotografiile de documentare le trimiți la primul răspuns"]}
       />
       <CompanyStrip />
     </PageShell>

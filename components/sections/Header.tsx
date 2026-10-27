@@ -63,8 +63,8 @@ export function Header() {
               <button
                 className="idl-hover-1"
                 type="button"
-                data-svc="model mandibular printat" data-ph="FOTO22"
-                data-href="/servicii/modele-mandibulare-3d"
+                data-svc="reabilitare totală înșurubată" data-ph="FOTO22"
+                data-href="/servicii#reabilitari-totale-insurubate"
                 style={{
                   display: "block",
                   width: "100%",
@@ -77,18 +77,18 @@ export function Header() {
                   cursor: "pointer",
                 }}
               >
-                <span style={{ display: "block", fontSize: "15px", color: "#1A1A1A" }}>Modele mandibulare 3D</span>
+                <span style={{ display: "block", fontSize: "15px", color: "#1A1A1A" }}>Reabilitări totale înșurubate</span>
                 <span
                   style={{ display: "block", marginTop: "3px", fontSize: "13px", lineHeight: "1.4", color: "#6E6E78", fontWeight: "300" }}
                 >
-                  Replici printate ale anatomiei osoase, din CBCT.
+                  Restaurări complete pe implanturi.
                 </span>
               </button>
               <button
                 className="idl-hover-1"
                 type="button"
-                data-svc="segmentare CBCT pe ecran" data-ph="FOTO23"
-                data-href="/servicii/segmentare-cbct"
+                data-svc="fațete dentare" data-ph="FOTO23"
+                data-href="/servicii#fatete-dentare"
                 style={{
                   display: "block",
                   width: "100%",
@@ -101,18 +101,18 @@ export function Header() {
                   cursor: "pointer",
                 }}
               >
-                <span style={{ display: "block", fontSize: "15px", color: "#1A1A1A" }}>Segmentare CBCT</span>
+                <span style={{ display: "block", fontSize: "15px", color: "#1A1A1A" }}>Fațete dentare</span>
                 <span
                   style={{ display: "block", marginTop: "3px", fontSize: "13px", lineHeight: "1.4", color: "#6E6E78", fontWeight: "300" }}
                 >
-                  Izolarea structurilor de interes din setul DICOM.
+                  Aspect natural, adaptare precisă.
                 </span>
               </button>
               <button
                 className="idl-hover-1"
                 type="button"
-                data-svc="design CAD în lucru" data-ph="FOTO24"
-                data-href="/servicii/design-cad-cam"
+                data-svc="coroane și punți" data-ph="FOTO24"
+                data-href="/servicii#coroane-si-punti"
                 style={{
                   display: "block",
                   width: "100%",
@@ -125,11 +125,59 @@ export function Header() {
                   cursor: "pointer",
                 }}
               >
-                <span style={{ display: "block", fontSize: "15px", color: "#1A1A1A" }}>Design CAD/CAM</span>
+                <span style={{ display: "block", fontSize: "15px", color: "#1A1A1A" }}>Coroane și punți</span>
                 <span
                   style={{ display: "block", marginTop: "3px", fontSize: "13px", lineHeight: "1.4", color: "#6E6E78", fontWeight: "300" }}
                 >
-                  Formă, proporții, morfologie și ocluzie, digital.
+                  Materiale alese în funcție de caz.
+                </span>
+              </button>
+              <button
+                className="idl-hover-1"
+                type="button"
+                data-svc="bont personalizat" data-ph="FOTO68"
+                data-href="/servicii#bonturi-personalizate"
+                style={{
+                  display: "block",
+                  width: "100%",
+                  textAlign: "left",
+                  padding: "12px 14px",
+                  border: "none",
+                  borderRadius: "8px",
+                  background: "transparent",
+                  fontFamily: "var(--font-outfit), Helvetica, sans-serif",
+                  cursor: "pointer",
+                }}
+              >
+                <span style={{ display: "block", fontSize: "15px", color: "#1A1A1A" }}>Bonturi personalizate</span>
+                <span
+                  style={{ display: "block", marginTop: "3px", fontSize: "13px", lineHeight: "1.4", color: "#6E6E78", fontWeight: "300" }}
+                >
+                  Realizate pe măsura implantului.
+                </span>
+              </button>
+              <button
+                className="idl-hover-1"
+                type="button"
+                data-svc="SmileCloud wax up" data-ph="FOTO69"
+                data-href="/servicii#smilecloud-wax-up"
+                style={{
+                  display: "block",
+                  width: "100%",
+                  textAlign: "left",
+                  padding: "12px 14px",
+                  border: "none",
+                  borderRadius: "8px",
+                  background: "transparent",
+                  fontFamily: "var(--font-outfit), Helvetica, sans-serif",
+                  cursor: "pointer",
+                }}
+              >
+                <span style={{ display: "block", fontSize: "15px", color: "#1A1A1A" }}>SmileCloud wax up</span>
+                <span
+                  style={{ display: "block", marginTop: "3px", fontSize: "13px", lineHeight: "1.4", color: "#6E6E78", fontWeight: "300" }}
+                >
+                  Wax up digital, validat înainte.
                 </span>
               </button>
               <button
@@ -153,7 +201,7 @@ export function Header() {
                 <span
                   style={{ display: "block", marginTop: "3px", fontSize: "13px", lineHeight: "1.4", color: "#6E6E78", fontWeight: "300" }}
                 >
-                  Poziționare cu ghidaj protetic.
+                  Poziționare cu ghid protetic.
                 </span>
               </button>
             </span>

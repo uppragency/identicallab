@@ -27,10 +27,12 @@ Reguli: format JPG sau WebP, minim 2000 px pe latura lungă, raportul indicat î
 | FOTO19 | Acasă · Ghiduri chirurgicale (pași) | Design 3D al ghidului |
 | FOTO20 | Acasă · Ghiduri chirurgicale (pași) | Ghid printat, manșoane montate |
 | FOTO21 | Acasă · Ghiduri chirurgicale (pași) | Ghid poziționat pe model |
-| FOTO22 | Meniu · previzualizare Servicii | Previzualizare meniu: Modele mandibulare |
-| FOTO23 | Meniu · previzualizare Servicii | Previzualizare meniu: Segmentare CBCT |
-| FOTO24 | Meniu · previzualizare Servicii | Previzualizare meniu: Design CAD/CAM |
+| FOTO22 | Meniu · previzualizare Servicii | Previzualizare meniu: Reabilitări totale înșurubate |
+| FOTO23 | Meniu · previzualizare Servicii | Previzualizare meniu: Fațete dentare |
+| FOTO24 | Meniu · previzualizare Servicii | Previzualizare meniu: Coroane și punți |
 | FOTO25 | Meniu · previzualizare Servicii | Previzualizare meniu: Ghiduri chirurgicale |
+| FOTO68 | Meniu · previzualizare Servicii | Previzualizare meniu: Bonturi personalizate |
+| FOTO69 | Meniu · previzualizare Servicii | Previzualizare meniu: SmileCloud wax up |
 | CAZ01 | Acasă · Portofoliu (slider înainte/după) | Caz 1 din slider-ul de pe homepage: pereche înainte/după, aceeași poziție |
 | CAZ02 | Acasă · Portofoliu (slider înainte/după) | Caz 2 din slider-ul de pe homepage: pereche înainte/după, aceeași poziție |
 | CAZ03 | Acasă · Portofoliu (slider înainte/după) | Caz 3 din slider-ul de pe homepage: pereche înainte/după, aceeași poziție |
@@ -61,9 +63,11 @@ Reguli: format JPG sau WebP, minim 2000 px pe latura lungă, raportul indicat î
 | FOTO36 | Despre noi · Echipa | Portret: Specialist CAD/CAM (4:5) |
 | FOTO37 | Despre noi · Echipa | Portret: Specialist planificare digitală (4:5) |
 | FOTO38 | Servicii · hero | Masă de lucru din laborator, mai multe lucrări |
-| FOTO39 | Servicii · listă (rânduri) | Modele mandibulare 3D: imagine rând (16:11) |
-| FOTO40 | Servicii · listă (rânduri) | Segmentare CBCT: imagine rând (16:11) |
-| FOTO41 | Servicii · listă (rânduri) | Design CAD/CAM: imagine rând (16:11) |
+| FOTO39 | Servicii · listă (rânduri) | Reabilitări totale înșurubate: imagine rând (16:11) |
+| FOTO40 | Servicii · listă (rânduri) | Fațete dentare: imagine rând (16:11) |
+| FOTO41 | Servicii · listă (rânduri) | Coroane și punți: imagine rând (16:11) |
+| FOTO70 | Servicii · listă (rânduri) | Bonturi personalizate: imagine rând (16:11) |
+| FOTO71 | Servicii · listă (rânduri) | SmileCloud wax up: imagine rând (16:11) |
 | FOTO42 | Servicii · listă (rânduri) | Ghiduri chirurgicale: imagine rând (16:11) |
 | FOTO43 | Servicii · bandă echipă | Echipa iDentical în laborator (4:3, fundal închis) |
 | FOTO44 | Servicii · Modele mandibulare 3D | Hero: model mandibular printat, prim-plan (4:5; în varianta cu 3 imagini există și două detalii A și B, 3:4) |
@@ -73,10 +77,12 @@ Reguli: format JPG sau WebP, minim 2000 px pe latura lungă, raportul indicat î
 | FOTO48 | Servicii · Ghiduri chirurgicale | Hero: ghid chirurgical printat (4:5) |
 | FOTO49 | Servicii · Ghiduri chirurgicale | Plan implantar digital (4:3) |
 | FOTO50 | Cum lucrăm | Echipa iDentical în laborator (4:3, fundal închis) |
-| FOTO51 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | Modele mandibulare 3D: miniatură card (4:3) |
-| FOTO52 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | Segmentare CBCT: miniatură card (4:3) |
-| FOTO53 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | Design CAD/CAM: miniatură card (4:3) |
+| FOTO51 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | Reabilitări totale înșurubate: miniatură card (4:3) |
+| FOTO52 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | Fațete dentare: miniatură card (4:3) |
+| FOTO53 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | Coroane și punți: miniatură card (4:3) |
 | FOTO54 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | Ghiduri chirurgicale: miniatură card (4:3) |
+| FOTO72 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | Bonturi personalizate: miniatură card (4:3) |
+| FOTO73 | Servicii · carduri "Alte servicii" (se repetă pe pagini) | SmileCloud wax up: miniatură card (4:3) |
 | CAZ07 | Portofoliu · cazul lunii | Cazul lunii: pereche înainte/după, aceeași poziție (16:11) |
 | CAZ08 | Portofoliu · grilă cazuri | Caz: Reabilitare frontală superioară (înainte/după, 4:3) |
 | CAZ09 | Portofoliu · grilă cazuri | Caz: Fațete feldspatice, caz estetic (înainte/după, 4:3) |
@@ -109,4 +115,4 @@ Note:
 - CAZ01-CAZ19: fiecare caz are două imagini, înainte și după, în aceeași poziție. Se numesc `CAZ01-inainte.jpg` și `CAZ01-dupa.jpg`.
 - LOGO01-LOGO06: logo-uri în format SVG sau PNG transparent.
 - Codurile FOTO22-FOTO25 sunt previzualizările din meniul Servicii și se pot reutiliza din pozele principale ale serviciilor.
-- Cele 6 poze din Blog (FOTO26-FOTO32) se folosesc doar când pornim blogul.
+- Cele 6 poze din Blog (FOTO26-FOTO32) se folosesc doar când pornim blogul.- FOTO44-FOTO49 aparțineau paginilor de serviciu vechi (Modele mandibulare, Segmentare CBCT, Design CAD/CAM), ascunse acum prin flag. Rămân necesare doar FOTO48 și FOTO49 (Ghiduri chirurgicale).

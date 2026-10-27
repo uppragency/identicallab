@@ -66,7 +66,7 @@ export function Hero() {
               textWrap: "pretty",
             }}
           >
-            Laborator dentar high-end pentru cabinete stomatologice: scanare 3D, design CAD/CAM, ghiduri chirurgicale și modele printate.
+            Laborator dentar high-end pentru cabinete stomatologice: reabilitări înșurubate, fațete, coroane și punți, bonturi personalizate, wax up digital și ghiduri chirurgicale.
             Fiecare lucrare este verificată în fiecare etapă și livrată rapid.
           </p>
           <p

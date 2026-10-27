@@ -43,11 +43,12 @@ export function DragCursor() {
 
 export function PortfolioHero() {
   const cats: [string, string][] = [
-    ["Coroane și fațete", "04"],
-    ["Fațete feldspatice", "01"],
+    ["Reabilitări totale înșurubate", "02"],
+    ["Fațete dentare", "02"],
+    ["Coroane și punți", "02"],
+    ["Bonturi personalizate", "02"],
+    ["SmileCloud wax up", "02"],
     ["Ghiduri chirurgicale", "02"],
-    ["Modele 3D", "03"],
-    ["Segmentare CBCT", "02"],
   ];
   return (
     <section
@@ -128,24 +129,24 @@ export function FeaturedCase() {
 }
 
 const CASES: [string, string, string][] = [
-  ["Coroane și fațete", "Reabilitare frontală superioară", "Șase coroane și fațete, integrare cromatică cu dinții vecini."],
-  ["Fațete feldspatice", "Fațete feldspatice, caz estetic", "Stratificare manuală pe refractar, grosime minimă."],
-  ["Ghiduri chirurgicale", "Ghid pentru două implanturi", "Poziționare cu ghidaj protetic, profil de emergență planificat."],
-  ["Modele 3D", "Model mandibular din CBCT", "Model printat pentru măsurători și planificare preoperatorie."],
-  ["Coroane și fațete", "Reabilitare orală completă", "Plan în etape, verificare a ocluziei pe parcurs."],
-  ["Modele 3D", "Wax-up digital și model de studiu", "Simulare digitală transformată în model fizic pentru probă."],
-  ["Segmentare CBCT", "Segmentare mandibulară pentru planificare", "Structuri izolate din DICOM, pregătite pentru model și ghid."],
-  ["Coroane și fațete", "Punte pe implanturi", "Design CAD/CAM orientat de poziția implanturilor."],
+  ["Fațete dentare", "Reabilitare frontală superioară", "Șase fațete, integrare cromatică cu dinții vecini."],
+  ["Fațete dentare", "Fațete feldspatice, caz estetic", "Ceramică feldspatică, grosime minimă."],
+  ["Ghiduri chirurgicale", "Ghid pentru două implanturi", "Poziționare cu ghid protetic, profil de emergență planificat."],
+  ["Bonturi personalizate", "Bont personalizat în zona estetică", "Profil de emergență adaptat țesuturilor moi."],
+  ["Reabilitări totale înșurubate", "Reabilitare orală completă", "Restaurare completă pe implanturi, proiectată digital."],
+  ["SmileCloud wax up", "Wax up digital al zâmbetului", "Simulare digitală validată de medic înainte de execuție."],
+  ["Reabilitări totale înșurubate", "Arcadă completă pe implanturi", "Restaurare înșurubată, proiectată pe planul protetic."],
+  ["Coroane și punți", "Punte pe implanturi", "Design digital orientat de poziția implanturilor."],
   ["Ghiduri chirurgicale", "Ghid pentru implant unic", "Ghid dento-purtat, verificat pe model înainte de livrare."],
-  ["Coroane și fațete", "Coroane unitare în zona estetică", "Culoare și formă armonizate cu dentiția existentă."],
-  ["Segmentare CBCT", "Segmentare sinus și canal mandibular", "Structuri marcate pentru evitare în planificarea implantară."],
-  ["Modele 3D", "Model pentru intervenție complexă", "Replică a zonei de interes, folosită pentru repetarea pașilor."],
+  ["Coroane și punți", "Coroane unitare în zona estetică", "Culoare și formă armonizate cu dentiția existentă."],
+  ["Bonturi personalizate", "Bonturi pe implanturi multiple", "Realizate pe măsura fiecărui implant."],
+  ["SmileCloud wax up", "Wax up pentru reabilitare estetică", "Rezultat vizibil și validat înainte de execuție."],
 ];
 
 const filterBase: CSSProperties = { padding: "10px 18px", borderRadius: "999px", fontFamily: font, fontSize: "14px", cursor: "pointer" };
 
 export function CasesGrid() {
-  const filters = ["Toate", "Coroane și fațete", "Fațete feldspatice", "Ghiduri chirurgicale", "Modele 3D", "Segmentare CBCT"];
+  const filters = ["Toate", "Reabilitări totale înșurubate", "Fațete dentare", "Coroane și punți", "Bonturi personalizate", "SmileCloud wax up", "Ghiduri chirurgicale"];
   return (
     <section id="portofoliu" style={{ padding: "120px 40px 130px" }}>
       <div style={wrap}>

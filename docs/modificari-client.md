@@ -243,3 +243,10 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
 - Implementate: 01 la 17, cu valorile implicite propuse în note. Decizii luate fără răspuns explicit: titlul de la 08 ("până în prezent"), eticheta "Rată de refacere", titlurile "Patru pași de la scanare la lucrare" (04) și "De la scanare la lucrarea livrată" (13), cardurile noi de servicii duc la /contact (03), pasul 1 din Ghiduri stackable are titlul "Achiziția de date" (05), 09 doar pe homepage (/intrebari neschimbat), 17 flag guides:false.
 - Neatinse (nepromise de client): meniul mega Servicii din header, pagina /servicii, /intrebari, secțiunile Planificare de pe /cum-lucram, FAQ-urile de pe paginile de servicii.
 - Next.js actualizat 16.4.0 la 16.4.3 (patch de securitate, build-ul nu mai trecea).
+
+## Propagare în restul site-ului (27.10.2026)
+- Actualizat: meniul Servicii (6 servicii), /servicii (rânduri, flux în 5 etape, comparație, FAQ, formular), /intrebari, Cum lucrăm (Planificare fără DICOM/STL), footer, drawer mobil, Despre noi, Contact, SEO, mail de confirmare.
+- Prețul eliminat peste tot; promisiunea înlocuită cu "Un specialist iDentical Lab te contactează în cel mai scurt timp posibil."
+- Portofoliu: categorii noi (Coroane și punți, Fațete dentare, Ghiduri chirurgicale, Bonturi personalizate, Reabilitări totale înșurubate, SmileCloud wax up). Cazurile existente sunt retaginte provizoriu, de revizuit cu cazuri reale.
+- Doar Ghiduri chirurgicale păstrează pagină proprie. Celelalte 5 servicii trimit la /servicii#slug.
+- Paginile vechi (modele mandibulare, segmentare CBCT, design CAD/CAM) dau 404 și sunt scoase din sitemap (flag `legacyServices` în lib/features.ts).

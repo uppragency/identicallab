@@ -84,9 +84,11 @@ export function MobileDrawer() {
           <div style={{ display: "flex", flexDirection: "column", paddingBottom: "10px" }}>
             {[
               ["Toate serviciile", "/servicii"],
-              ["Modele mandibulare 3D", "/servicii/modele-mandibulare-3d"],
-              ["Segmentare CBCT", "/servicii/segmentare-cbct"],
-              ["Design CAD/CAM", "/servicii/design-cad-cam"],
+              ["Reabilitări totale înșurubate", "/servicii#reabilitari-totale-insurubate"],
+              ["Fațete dentare", "/servicii#fatete-dentare"],
+              ["Coroane și punți", "/servicii#coroane-si-punti"],
+              ["Bonturi personalizate", "/servicii#bonturi-personalizate"],
+              ["SmileCloud wax up", "/servicii#smilecloud-wax-up"],
               ["Ghiduri chirurgicale", "/servicii/ghiduri-chirurgicale"],
             ].map(([t, h], k) => (
               <a key={h} href={h} data-drawer-link style={{ padding: "14px 0 14px 4px", fontFamily: "var(--font-outfit), Helvetica, sans-serif", fontSize: "19px", fontWeight: "300", borderTop: k ? "1px solid rgba(26,26,26,0.06)" : "none", color: k ? "#3A3A44" : "#0F0053" }}>

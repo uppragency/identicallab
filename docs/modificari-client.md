@@ -118,3 +118,31 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   c. Întrebarea 4: "Completează formularul de contact" trebuie să ducă la /contact sau la modalul de ofertă? Propun link către /contact.
   d. Răspunsul 5 spune "Europa", iar la 2 "5 zile lucrătoare": pentru livrări externe termenul include curierul? De clarificat.
   e. Pe paginile de servicii, FAQ-urile proprii (de ex. ghiduri chirurgicale) rămân neschimbate.
+
+## 10. Homepage, secțiunea "Materiale și tehnologii" (id #materiale)
+- Fișier: components/sections/Materials.tsx (linkul din footer "Materiale și tehnologii" ducă la /#materiale)
+- Screenshot: nu a fost atașat (text fără imagine).
+- Starea actuală: 7 rânduri la Materiale (Zirconiu multistrat, Disilicat de litiu, Ceramică feldspatică, Ceramică pe refractar, PMMA și compozit, Rezine biocompatibile, Rezine pentru modele) și 7 la Tehnologii (Scanere de laborator, Software CAD dentar, Planificare implantară, Imprimante 3D, Freze CAM, Cuptoare de sinterizare, Control final), cu marcaje "[ brand / model ]" de completat.
+- Cerință client, conținut nou:
+  MATERIALE
+  - Zirconiu multilayer: Dentsply Sirona sau Ivoclar
+  - Disilicat de litiu: Ivoclar IPS e.max CAD (clientul a lipit și "Lithium disilicate block for CAD/CAM", probabil text de link/pagină produs)
+  - Ceramică feldspatică: selectată în funcție de caz
+  - Compozit: COLTENE BRILLIANT Crios sau VOCO Grandio disc multicolor
+  - Rășini biocompatibile: Stratasys MED610 și VeroGlaze MED620
+  - Rășini pentru modele: Stratasys VeroDent PureWhite, VeroMagentaV, VeroCyanV și VeroYellowV (clientul a lipit și "Stratasys Support Center", probabil text de link)
+  TEHNOLOGII
+  - Scanner de laborator: Medit T710
+  - Software de proiectare și fabricație digitală: exocad, inLab, Materialise Magics, MillBox, SUM3D, GrabCAD Print și Blender for Dental
+  - Software de planificare implantară: coDiagnostiX
+  - Imprimantă 3D: Stratasys J5 DentaJet (plus "Stratasys Support Center", probabil link)
+  - Mașini de frezat: imes-icore
+  - Cuptoare de sinterizare: Dentsply Sirona și MIHM-VOGT
+- Diferențe față de starea actuală: rândurile "Ceramică pe refractar" și "Control final" nu apar în lista clientului (le scot?); "PMMA și compozit" devine "Compozit"; "Zirconiu multistrat" devine "Zirconiu multilayer".
+- Întrebări la final:
+  a. "Lithium disilicate block for CAD/CAM" și "Stratasys Support Center" (apar de două ori) sunt text de link copiat de pe site-urile producătorilor? Le pun ca linkuri externe (cu adresele oficiale, de confirmat) sau le omit? Nu le afișez ca text brut.
+  b. Scot rândurile "Ceramică pe refractar" și "Control final", cum rezultă din lista clientului?
+  c. Mențiunile de brand (Ivoclar, Dentsply Sirona, Stratasys, COLTENE, VOCO, Medit etc.) sunt mărci înregistrate: clientul confirmă că poate indica folosirea lor (nu logo-urile, doar nume)? Recomand doar nume text, fără logo-uri, fără sigle.
+  d. "MIHM-VOGT" apare scris cu două "T" în ortografia mărcii (MIHM-VOGT); păstrez cum a scris clientul.
+  e. Lista de la Software e lungă (7 produse): o afișez pe mai multe rânduri în coloana din dreapta. Verific lizibilitatea pe mobil la implementare.
+  f. Secțiunea "Accreditations" (components/sections/Accreditations.tsx) are text similar și placeholder "[ brand de aparatură / materiale ]": se aliniază cu aceste branduri sau rămâne separat?

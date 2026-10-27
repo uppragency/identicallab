@@ -82,3 +82,23 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   b. Cei doi paragrafi introductivi (despre scanări și ghiduri, respectiv DICOM, segmentare și imprimare 3D) rămân neschimbați?
   c. Terminologia "ghidaj" apare și în alte locuri (Portofoliu, meniu, Servicii, pagina Portofoliu). Propun să le aliniez la "ghid" doar dacă clientul confirmă, altfel rămân.
   d. Textul clientului folosește "free-hand" (anglicism). Îl păstrez ca atare, conform textului primit.
+
+## 08. Homepage, secțiunea cifre "Suntem mândri să spunem că, în acest an, am realizat peste:"
+- Fișier: components/sections/Results.tsx (titlul linia ~34, "Toleranță declarată" linia ~192; cifrele sunt acum placeholdere)
+- Screenshot: docs/modificari-client/08-a.png (8 celule; marcajul "VALORI DE COMPLETAT" din dreapta titlului trebuie scos după completare)
+- Cerință client, valori pe celule (ordinea din screenshot):
+  1. Coroane și fațete: 45.000
+  2. Modele printate 3D (acum "Modele mandibulare printate 3D"): 3500, cu mențiunea "pe Stratasys" ("modele printate pe Stratasys")
+  3. Ghiduri chirurgicale: 870
+  4. Wax-up-uri și planificări digitale: 3000 (clientul scrie "wax up uri"; eticheta rămâne "Wax-up-uri și planificări digitale" sau devine doar "Wax-up-uri", de confirmat)
+  5. Cazuri complexe procesate: 15000 (clientul scrie "cazuri procesate", fără "complexe")
+  6. Cabinete stomatologice partenere: 700+ (neschimbat)
+  7. Timp mediu de livrare: 5 zile lucrătoare (acum format "00 h")
+  8. Toleranță declarată: 0,2% rată de refacere (acum format "0,0 mm")
+- Întrebări și riscuri la final:
+  a. Titlul spune "în acest an, am realizat peste". Cifrele (45.000 coroane și fațete, 15.000 cazuri) par cumulate pe mai mulți ani. Propun "de la înființare" sau "până în prezent" în loc de "în acest an". De confirmat perioada reală cu clientul.
+  b. "15000 cazuri procesate" fără "complexe": păstrez eticheta cu "complexe" sau o scot?
+  c. 0,2% rată de refacere e o afirmație de performanță. Recomand ca clientul să o poată susține cu date interne (nr. refaceri / nr. lucrări), mai ales într-un context medical. Eticheta propusă: "Rată de refacere" cu valoarea "0,2%", în loc de "Toleranță declarată".
+  d. Textul de sub cifre ("Fiecare dintre aceste lucrări intră în reabilitări orale complete...") rămâne neschimbat?
+  e. Formatul numerelor: 45.000 și 3500 și 15000 trebuie scrise unitar. Propun cu punct la mii, în stilul românesc: 45.000, 3.500, 870, 3.000, 15.000.
+  f. Animația de numărare (dacă există) trebuie verificată cu numere mari.

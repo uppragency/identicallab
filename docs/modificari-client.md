@@ -229,3 +229,9 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   b. Pagina de portofoliu și paginile de servicii au linkuri către ghiduri ("Despre ghidurile chirurgicale" ducă la serviciul, nu la /ghiduri: nu se ating). De verificat la implementare ce linkuri duc spre /ghiduri și ascuns toate.
   c. Videoclipurile: cine le face și când? Cât de multe în total (12)? Format YouTube Shorts (vertical) sau 16:9? Recomand 16:9 încorporat cu youtube-nocookie.com (conform politicii de cookie-uri, fără cookie-uri până la consimțământ) și un schelet de pagină gata pentru ele.
   d. Cele 12 texte de ghiduri existente (SEO) se păstrează în cod pentru reutilizare ca transcrieri sub videoclipuri.
+
+## Răspunsuri la întrebările 16 și 17 (15:05)
+- 16a. "doar în footer": AMBIGUU. Cerința inițială (16) cere un element de meniu "Cursuri" înainte de Contact. Răspunsul poate însemna: (i) apare și în footer, pe lângă meniu; sau (ii) apare doar în footer, nu în meniul principal. De clarificat înainte de implementare. Implicit, până la clarificare, fac (i): meniu desktop, meniu mobil și footer.
+- 16b/c. "da": se adaugă UTM la linkul către DMA: https://dentalmasters.ro/?utm_source=identical.ro&utm_medium=menu (în footer: utm_medium=footer).
+- 17. "ascunde și pagina ghiduri": se ascunde complet, inclusiv pagina /ghiduri și paginile individuale /ghiduri/[slug]: întorc 404, ies din sitemap, căutare, JSON-LD și toate linkurile. Flag lib/features.ts `guides: false`.
+- 17c. "videoclipurile vor fi 16:9": embed 16:9 cu youtube-nocookie.com, la reactivare.

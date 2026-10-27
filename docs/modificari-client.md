@@ -207,3 +207,25 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   c. Rândul 3 ("Cazul are nevoie de altă abordare / Spunem direct și propunem alternativa. / Alegi varianta potrivită clinic.") nu a fost menționat: rămâne neschimbat?
   d. Nota de sub tabel ("Termenele reale pe tip de lucrare și regimul de urgență se confirmă la ofertă.") menționează oferta: după modificarea 14 (fără preț/ofertă) trebuie ajustată? Propun: "Termenele se stabilesc la începerea proiectării."
   e. "Design-ul" apare cu cratimă la client; în restul site-ului e "designul". Folosesc "designul" pentru consecvență.
+
+## 16. Meniu nou "Cursuri" (înainte de Contact), link extern către DMA
+- Fișiere: components/sections/Header.tsx (meniul desktop, linia ~184 zona Ghiduri/Contact ~196), components/sections/MobileDrawer.tsx (meniul mobil), probabil și Footer.tsx
+- Screenshot: nu a fost atașat (text fără imagine).
+- Cerință client: un element separat de meniu "Cursuri", plasat înainte de "Contact", care deschide într-un tab nou pagina DMA: https://dentalmasters.ro/
+- Implementare propusă: link extern cu target="_blank" și rel="noopener noreferrer", în meniul desktop și în meniul mobil (drawer), cu o iconiță mică de link extern (săgeată diagonală) ca să fie clar că iese din site. În footer, după decizia clientului.
+- Întrebări la final:
+  a. Se adaugă "Cursuri" și în footer (coloana de linkuri), sau doar în meniul principal și mobil?
+  b. Eticheta rămâne "Cursuri" (exact cum a cerut clientul)?
+  c. Pentru tracking (GA4, când e activ) marchez linkul ca eveniment "click_cursuri_dma"? Opțional.
+  d. Domeniul dentalmasters.ro e un site separat al clientului/partenerului: confirm că trebuie link simplu, fără UTM. Propun un UTM (?utm_source=identical.ro&utm_medium=menu) ca să vadă traficul venit din site, doar cu acordul clientului.
+
+## 17. Meniul "Ghiduri" (/ghiduri, 12 ghiduri): ascundere temporară
+- Fișiere: components/sections/Header.tsx (linia ~184), MobileDrawer.tsx (linia ~127), Footer.tsx (linia ~216), app/ghiduri/*, app/sitemap.ts, lib/seo.ts, lib/jsonld.ts, components/sections/SearchOverlay.tsx, linkurile "Ghiduri utile" din blocks.tsx (RelatedGuides, deja neutilizat), link din components/pages/GuideSections.tsx, secțiuni de homepage care trimit la ghiduri.
+- Screenshot: nu a fost atașat (text fără imagine).
+- Cerință client: ghidurile 1 la 12 vor deveni filmulețe de 30 de secunde până la 1 minut, cu explicații, încărcate din YouTube. Până când clientul revine cu videoclipurile, secțiunea Ghiduri se ascunde.
+- Implementare propusă: un flag în lib/features.ts (`guides: false`, ca la blog și newsletter, care sunt deja dezactivate). Cu flagul oprit: dispar linkurile din meniu desktop, meniu mobil, footer, căutare și homepage; paginile /ghiduri și /ghiduri/[slug] întorc 404 (sau noindex și fără linkuri); ghidurile ies din sitemap și din schema JSON-LD; metadatele de ghiduri rămân în cod. Reactivarea: `guides: true` plus înlocuirea conținutului cu embed YouTube.
+- Întrebări și riscuri la final:
+  a. 404 sau pagini încă accesibile direct, dar ascunse din meniu (noindex)? Dacă ghidurile au fost deja indexate de Google (site-ul e blocat la indexare până la lansare, deci nu), 404 e curat. Recomand 404.
+  b. Pagina de portofoliu și paginile de servicii au linkuri către ghiduri ("Despre ghidurile chirurgicale" ducă la serviciul, nu la /ghiduri: nu se ating). De verificat la implementare ce linkuri duc spre /ghiduri și ascuns toate.
+  c. Videoclipurile: cine le face și când? Cât de multe în total (12)? Format YouTube Shorts (vertical) sau 16:9? Recomand 16:9 încorporat cu youtube-nocookie.com (conform politicii de cookie-uri, fără cookie-uri până la consimțământ) și un schelet de pagină gata pentru ele.
+  d. Cele 12 texte de ghiduri existente (SEO) se păstrează în cod pentru reutilizare ca transcrieri sub videoclipuri.

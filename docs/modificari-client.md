@@ -102,3 +102,19 @@ Status: colectare. Implementarea pornește doar la comanda "start implementare".
   d. Textul de sub cifre ("Fiecare dintre aceste lucrări intră în reabilitări orale complete...") rămâne neschimbat?
   e. Formatul numerelor: 45.000 și 3500 și 15000 trebuie scrise unitar. Propun cu punct la mii, în stilul românesc: 45.000, 3.500, 870, 3.000, 15.000.
   f. Animația de numărare (dacă există) trebuie verificată cu numere mari.
+
+## 09. Întrebări frecvente (homepage "Înainte de primul caz" și posibil pagina /intrebari)
+- Fișiere: components/sections/Faq.tsx (5 întrebări pe homepage: Ce fișiere trebuie să trimit? / Cât durează realizarea unui model? / Primesc și fișierul STL? / Cum se stabilește prețul? / Lucrați cu clinici din toată țara?), components/pages/FaqSections.tsx (FAQ_GROUPS, folosit pe /intrebari și în JSON-LD FAQPage)
+- Screenshot: nu a fost atașat (text fără imagine).
+- Cerință client: cele 5 întrebări cu răspunsuri devin, în ordine:
+  1. Ce informații sunt necesare pentru a trimite un caz? Fișierele scanării intraorale, fotografiile de documentare și informațiile aferente comenzii. Suntem prezenți pe platformele cloud ale principalilor producători de scanere, astfel încât să ne poți transmite fișierele direct.
+  2. Care este termenul de execuție? Termenul mediu de execuție este de 5 zile lucrătoare.
+  3. Cum se stabilește necesarul de componente protetice? Odată ce cazul intră în etapa de proiectare, selectăm componentele necesare și îți transmitem lista pentru a le comanda.
+  4. Cum pot solicita catalogul de produse și lista de prețuri? Completează formularul de contact, iar noi te vom contacta pentru a-ți oferi catalogul de produse și lista de prețuri.
+  5. Colaborați cu clinici din afara țării? Da, colaborăm cu clinici atât din România, cât și din Europa. Livrările sunt realizate prin servicii externe de curierat.
+- Întrebări la final:
+  a. Se înlocuiește doar lista de pe homepage, sau și lista completă de pe /intrebari (FAQ_GROUPS, pe grupe), împreună cu schema FAQPage pentru SEO?
+  b. Întrebarea 1 spune "te poți transmite fișierele direct" prin platforme cloud ale producătorilor de scanere: de confirmat care platforme (3Shape, iTero, Medit etc.), pentru a le putea afișa ca logo-uri sau listă. Nu le inventez.
+  c. Întrebarea 4: "Completează formularul de contact" trebuie să ducă la /contact sau la modalul de ofertă? Propun link către /contact.
+  d. Răspunsul 5 spune "Europa", iar la 2 "5 zile lucrătoare": pentru livrări externe termenul include curierul? De clarificat.
+  e. Pe paginile de servicii, FAQ-urile proprii (de ex. ghiduri chirurgicale) rămân neschimbate.

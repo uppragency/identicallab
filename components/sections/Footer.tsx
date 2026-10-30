@@ -1,3 +1,4 @@
+import { LangSwitch } from "@/components/LangSwitch";
 import { features } from "@/lib/features";
 export function Footer() {
   return (
@@ -482,6 +483,7 @@ export function Footer() {
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
             <span style={{ color: "rgba(255,255,255,0.45)" }}>© 2026 iDentical Lab</span>
+            <LangSwitch tone="dark" />
             <button
               className="idl-hover-a"
               type="button"

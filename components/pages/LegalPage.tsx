@@ -1,11 +1,13 @@
 import { Eyebrow, font } from "@/components/ui";
 import { wrap } from "@/components/pages/blocks";
 import { LEGAL_DOCS, type LegalDoc } from "@/lib/legal";
+import { getLang } from "@/lib/i18n/store";
 
 const navy = "#0F0053";
 const body = { margin: "0 0 16px", fontSize: "17px", lineHeight: "1.7", color: "#3A3A44", fontWeight: "300", maxWidth: "66ch" } as const;
 
 export function LegalPage({ doc }: { doc: LegalDoc }) {
+  const english = getLang() === "en";
   return (
     <>
       <section id="top" style={{ padding: "96px 40px 60px", backgroundImage: "radial-gradient(1100px 620px at 88% -12%, rgba(38,183,188,0.14), rgba(255,255,255,0) 62%)" }}>
@@ -18,11 +20,16 @@ export function LegalPage({ doc }: { doc: LegalDoc }) {
             {doc.title}
           </h1>
           <p data-reveal style={{ margin: "32px 0 0", maxWidth: "56ch", fontSize: "19px", lineHeight: "1.55", color: "#3A3A44", fontWeight: "300" }}>{doc.intro}</p>
+          {english && (
+            <p data-reveal style={{ margin: "22px 0 0", maxWidth: "56ch", padding: "14px 18px", borderLeft: "2px solid #26B7BC", background: "rgba(38,183,188,0.07)", fontSize: "15px", lineHeight: "1.55", color: "#3A3A44", fontWeight: "300" }}>
+              This document is available in Romanian only. The Romanian version is the binding one. For questions, write to gabriel.musetescu@identical.ro.
+            </p>
+          )}
           <div data-reveal style={{ marginTop: "28px", fontSize: "12px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6E6E78" }}>Ultima actualizare: {doc.updated}</div>
         </div>
       </section>
 
-      <section id="document" style={{ padding: "30px 40px 130px" }}>
+      <section id="document" lang={english ? "ro" : undefined} style={{ padding: "30px 40px 130px" }}>
         <div className="m-grid m-gap" style={{ ...wrap, display: "grid", gridTemplateColumns: "0.3fr 0.7fr", gap: "72px", alignItems: "start" }}>
           <aside className="m-sticky" style={{ position: "sticky", top: "120px" }}>
             <div style={{ fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: navy, marginBottom: "18px" }}>[ Cuprins ]</div>

@@ -10,6 +10,7 @@ export type Lead = {
   workType: string;
   message: string;
   pageUrl: string;
+  lang: "ro" | "en";
 };
 
 const DEFAULT_FROM = "iDentical Lab <onboarding@resend.dev>";
@@ -37,34 +38,61 @@ function row(label: string, value: string) {
 export const RESPONSE_SLA = "cel mult 24 de ore lucrătoare";
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://identical.ro";
 
+const CONFIRM = {
+  ro: {
+    hello: (n: string) => `Bună ziua, ${n},`,
+    received: (sla: string) => `Am primit cererea ta. Un specialist iDentical Lab te contactează în ${sla}, pentru a stabili termenele și a începe proiectarea.`,
+    sla: RESPONSE_SLA,
+    labels: { clinic: "Clinică", workType: "Tip lucrare", message: "Mesaj" },
+    brochure: "Broșura iDentical Lab",
+    brochureLink: "Descarcă broșura iDentical Lab (PDF)",
+    urgent: "Dacă e urgent, răspunde direct la acest email.",
+    team: "Echipa iDentical Lab",
+    subject: "Am primit cererea ta | iDentical Lab",
+  },
+  en: {
+    hello: (n: string) => `Hello ${n},`,
+    received: (sla: string) => `We have received your request. An iDentical Lab specialist will contact you within ${sla}, to agree the turnaround time and start the design.`,
+    sla: "24 working hours at most",
+    labels: { clinic: "Clinic", workType: "Type of work", message: "Message" },
+    brochure: "iDentical Lab brochure",
+    brochureLink: "Download the iDentical Lab brochure (PDF)",
+    urgent: "If it is urgent, reply directly to this email.",
+    team: "The iDentical Lab team",
+    subject: "We received your request | iDentical Lab",
+  },
+};
+
 function confirmation(cfg: NonNullable<ReturnType<typeof config>>, lead: Lead) {
+  const c = CONFIRM[lead.lang];
   const summary = [
-    lead.clinic && ["Clinică", lead.clinic],
-    lead.workType && ["Tip lucrare", lead.workType],
-    lead.message && ["Mesaj", lead.message.length > 400 ? lead.message.slice(0, 400) + "..." : lead.message],
+    lead.clinic && [c.labels.clinic, lead.clinic],
+    lead.workType && [c.labels.workType, lead.workType],
+    lead.message && [c.labels.message, lead.message.length > 400 ? lead.message.slice(0, 400) + "..." : lead.message],
   ].filter(Boolean) as string[][];
+  const site = lead.lang === "en" ? SITE + "/en" : SITE;
   const text = [
-    `Bună ziua, ${lead.name},`,
+    c.hello(lead.name),
     "",
-    `Am primit cererea ta. Un specialist iDentical Lab te contactează în ${RESPONSE_SLA}, pentru a stabili termenele și a începe proiectarea.`,
+    c.received(c.sla),
     "",
     ...summary.map(([k, v]) => `${k}: ${v}`),
-    cfg.brochureUrl ? `\nBroșura iDentical Lab: ${cfg.brochureUrl}` : "",
+    cfg.brochureUrl ? `\n${c.brochure}: ${cfg.brochureUrl}` : "",
     "",
-    "Dacă e urgent, răspunde direct la acest email.",
+    c.urgent,
     "",
-    "Echipa iDentical Lab",
-    SITE,
+    c.team,
+    site,
   ].join("\n");
   const html = `<div style="font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#1A1A1A;max-width:560px">
 <p style="margin:0 0 20px;color:#0F0053;font-size:12px;letter-spacing:.14em;text-transform:uppercase">[ iDentical Lab ]</p>
-<p>Bună ziua, ${escapeHtml(lead.name)},</p>
-<p>Am primit cererea ta. Un specialist iDentical Lab te contactează în <strong>${RESPONSE_SLA}</strong>, pentru a stabili termenele și a începe proiectarea.</p>
+<p>${escapeHtml(c.hello(lead.name))}</p>
+<p>${escapeHtml(c.received("\u0001")).replace("\u0001", `<strong>${escapeHtml(c.sla)}</strong>`)}</p>
 ${summary.length ? `<table style="border-collapse:collapse;margin:8px 0 16px;font-size:15px">${summary.map(([k, v]) => row(k, v)).join("")}</table>` : ""}
-${cfg.brochureUrl ? `<p><a href="${escapeHtml(cfg.brochureUrl)}" style="color:#0F0053">Descarcă broșura iDentical Lab (PDF)</a></p>` : ""}
-<p style="color:#6E6E78;font-size:14px">Dacă e urgent, răspunde direct la acest email.</p>
-<p style="margin-top:24px">Echipa iDentical Lab<br><a href="${SITE}" style="color:#0F0053">${SITE.replace("https://", "")}</a></p></div>`;
-  return { from: cfg.from, to: lead.email, replyTo: cfg.to.split(",")[0].trim(), subject: "Am primit cererea ta | iDentical Lab", text, html };
+${cfg.brochureUrl ? `<p><a href="${escapeHtml(cfg.brochureUrl)}" style="color:#0F0053">${c.brochureLink}</a></p>` : ""}
+<p style="color:#6E6E78;font-size:14px">${c.urgent}</p>
+<p style="margin-top:24px">${c.team}<br><a href="${site}" style="color:#0F0053">${site.replace("https://", "")}</a></p></div>`;
+  return { from: cfg.from, to: lead.email, replyTo: cfg.to.split(",")[0].trim(), subject: c.subject, text, html };
 }
 
 /** Daily reminder for leads still in status "nou" after 24h. */
@@ -94,7 +122,7 @@ export async function sendLeadEmails(lead: Lead): Promise<boolean> {
   const subject = `Lead nou: ${lead.name}${lead.clinic ? `, ${lead.clinic}` : ""}`;
   const html = `<div style="font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:1.5;color:#1A1A1A">
 <p style="margin:0 0 16px;color:#0F0053;font-size:12px;letter-spacing:.12em;text-transform:uppercase">iDentical Lab · ${lead.source === "offer" ? "Modal ofertă" : "Formular contact"}</p>
-<table style="border-collapse:collapse">${row("Nume", lead.name)}${row("Clinică", lead.clinic)}${row("Email", lead.email)}${row("Telefon", lead.phone)}${row("Tip lucrare", lead.workType)}${row("Mesaj", lead.message)}${row("Pagină", lead.pageUrl)}</table><p style="margin-top:16px"><a href="${SITE}/leads-x7k2p9w4tq" style="color:#0F0053">Deschide în panoul de lead-uri</a> · răspunde în ${RESPONSE_SLA}</p></div>`;
+<table style="border-collapse:collapse">${row("Nume", lead.name)}${row("Clinică", lead.clinic)}${row("Email", lead.email)}${row("Telefon", lead.phone)}${row("Tip lucrare", lead.workType)}${row("Mesaj", lead.message)}${row("Pagină", lead.pageUrl)}${row("Limba site", lead.lang.toUpperCase())}</table><p style="margin-top:16px"><a href="${SITE}/leads-x7k2p9w4tq" style="color:#0F0053">Deschide în panoul de lead-uri</a> · răspunde în ${RESPONSE_SLA}</p></div>`;
   const text = [
     `Nume: ${lead.name}`,
     lead.clinic && `Clinică: ${lead.clinic}`,
@@ -103,6 +131,7 @@ export async function sendLeadEmails(lead: Lead): Promise<boolean> {
     lead.workType && `Tip lucrare: ${lead.workType}`,
     lead.message && `Mesaj: ${lead.message}`,
     lead.pageUrl && `Pagină: ${lead.pageUrl}`,
+    `Limba site: ${lead.lang.toUpperCase()}`,
   ]
     .filter(Boolean)
     .join("\n");

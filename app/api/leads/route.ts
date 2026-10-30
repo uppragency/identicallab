@@ -25,6 +25,7 @@ export async function POST(request: Request) {
     workType: clean(body.workType, 300),
     message: clean(body.message, 5000),
     pageUrl: clean(body.pageUrl, 500),
+    lang: body.lang === "en" ? "en" : "ro",
   };
 
   if (lead.name.length < 2 || !isEmail(lead.email)) {

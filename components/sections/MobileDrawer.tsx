@@ -1,3 +1,4 @@
+import { LangSwitch } from "@/components/LangSwitch";
 import { features } from "@/lib/features";
 export function MobileDrawer() {
   return (
@@ -233,6 +234,9 @@ export function MobileDrawer() {
         >
           Sună laboratorul
         </a>
+        <div style={{ display: "flex", justifyContent: "center", paddingTop: "8px" }}>
+          <LangSwitch size={15} />
+        </div>
       </div>
     </div>
   );

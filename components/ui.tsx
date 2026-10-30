@@ -40,7 +40,11 @@ export function H2({ children, light, max = "24ch", style }: { children: ReactNo
   );
 }
 
-export const Accent = ({ children }: { children: ReactNode }) => <span style={{ color: "#26B7BC" }}>{children}</span>;
+export function Accent({ children }: { children: ReactNode }) {
+  return <span style={{ color: "#26B7BC" }}>{children}</span>;
+}
+// The language runtime recognises accent spans by this name when it translates headings.
+Accent.displayName = "Accent";
 
 /** Photo placeholder in the design's hatched style. */
 export function Photo({

@@ -1,3 +1,4 @@
+import { LangSwitch } from "@/components/LangSwitch";
 import { features } from "@/lib/features";
 export function Header() {
   return (
@@ -251,6 +252,7 @@ export function Header() {
         </a>
       </nav>
       <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+        <LangSwitch className="idl-lang-hd" />
         <button
           className="idl-hover-2"
           type="button"

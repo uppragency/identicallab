@@ -10,6 +10,33 @@
  * Form submission (Supabase + Resend) is the only addition (_initForms).
  */
 import { useEffect } from "react";
+import { pathFor } from "@/lib/i18n/config";
+
+// The server renders <html lang>; client-built text follows it.
+const LANG = typeof document !== "undefined" && document.documentElement.lang === "en" ? "en" : "ro";
+const TEXT = {
+  ro: {
+    nothingFound: "Nimic găsit. Scrie-ne direct și răspundem.",
+    open: "Laboratorul lucrează acum",
+    closed: "Laboratorul este închis acum",
+    hours: "L–V, 09:00–17:00",
+    sentRequest: "Mulțumim. Am primit cererea și revenim în cel mai scurt timp.",
+    subscribed: "Te-ai abonat. Mulțumim.",
+    sendError: "Nu am putut trimite acum. Încearcă din nou sau scrie-ne la gabriel.musetescu@identical.ro.",
+    sending: "Se trimite…",
+  },
+  en: {
+    nothingFound: "Nothing found. Write to us directly and we will answer.",
+    open: "The lab is open now",
+    closed: "The lab is closed now",
+    hours: "Mon to Fri, 09:00 to 17:00",
+    sentRequest: "Thank you. We have received your request and will get back to you shortly.",
+    subscribed: "You are subscribed. Thank you.",
+    sendError: "We could not send this right now. Please try again or write to us at gabriel.musetescu@identical.ro.",
+    sending: "Sending…",
+  },
+};
+const T = TEXT[LANG];
 
 class SiteBehaviors {
   root: ParentNode | null = null;
@@ -419,7 +446,7 @@ class SiteBehaviors {
           }
           const s = root.querySelector("#servicii");
           if (!s) {
-            window.location.href = "/#servicii";
+            window.location.href = pathFor("/", LANG) + "#servicii";
             return;
           }
           window.scrollTo({ top: window.scrollY + s.getBoundingClientRect().top - 90, behavior: "smooth" });
@@ -450,7 +477,7 @@ class SiteBehaviors {
       const hits = index.filter((i) => i.text.toLowerCase().includes(needle)).slice(0, 12);
       if (!hits.length) {
         out.innerHTML =
-          '<div style="padding:18px 0;color:rgba(255,255,255,0.6);font-size:16px;">Nimic găsit. Scrie-ne direct și răspundem.</div>';
+          '<div style="padding:18px 0;color:rgba(255,255,255,0.6);font-size:16px;">' + T.nothingFound + "</div>";
         return;
       }
       hits.forEach((h) => {
@@ -540,7 +567,7 @@ class SiteBehaviors {
       const d = new Date();
       const open = d.getDay() >= 1 && d.getDay() <= 5 && d.getHours() >= 9 && d.getHours() < 17;
       if (dot) dot.style.background = open ? "#26B7BC" : "rgba(255,255,255,0.35)";
-      if (txt) txt.textContent = (open ? "Laboratorul lucrează acum" : "Laboratorul este închis acum") + " · L–V, 09:00–17:00";
+      if (txt) txt.textContent = (open ? T.open : T.closed) + " · " + T.hours;
     };
     update();
     this._statusTimer = setInterval(update, 60000);
@@ -776,12 +803,8 @@ class SiteBehaviors {
   _initForms(root) {
     const forms = Array.from(root.querySelectorAll("form[data-form]"));
     const MESSAGES = {
-      sent: {
-        offer: "Mulțumim. Am primit cererea și revenim în cel mai scurt timp.",
-        contact: "Mulțumim. Am primit cererea și revenim în cel mai scurt timp.",
-        newsletter: "Te-ai abonat. Mulțumim.",
-      },
-      error: "Nu am putut trimite acum. Încearcă din nou sau scrie-ne la gabriel.musetescu@identical.ro.",
+      sent: { offer: T.sentRequest, contact: T.sentRequest, newsletter: T.subscribed },
+      error: T.sendError,
     };
     forms.forEach((form) => {
       const kind = form.getAttribute("data-form");
@@ -804,10 +827,10 @@ class SiteBehaviors {
         const data = Object.fromEntries(new FormData(form).entries());
         const url = kind === "newsletter" ? "/api/newsletter" : "/api/leads";
         const payload =
-          kind === "newsletter" ? { email: data.email, website: data.website } : { ...data, source: kind, pageUrl: location.href };
+          kind === "newsletter" ? { email: data.email, website: data.website } : { ...data, source: kind, pageUrl: location.href, lang: LANG };
         if (btn) {
           btn.disabled = true;
-          btn.textContent = "Se trimite…";
+          btn.textContent = T.sending;
         }
         show("", true);
         try {
@@ -819,7 +842,7 @@ class SiteBehaviors {
           if (!res.ok) throw new Error("HTTP " + res.status);
           form.reset();
           if (kind !== "newsletter") {
-            window.location.assign("/multumim");
+            window.location.assign(pathFor("/multumim", LANG));
             return;
           }
           show(MESSAGES.sent[kind], true);

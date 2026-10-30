@@ -4,6 +4,8 @@ const nextConfig = {
   // Strict Mode double-invokes effects in dev and would bind listeners twice.
   reactStrictMode: false,
   poweredByHeader: false,
+  // Unknown URLs render app/global-not-found.tsx, because the site has several root layouts and a [lang] root segment.
+  experimental: { globalNotFound: true },
 };
 
 export default nextConfig;

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pathFor, type Lang } from "@/lib/i18n/config";
 
 export const SITE_NAME = "iDentical Lab";
 export const BRAND_SUFFIX = " | iDentical Lab";
@@ -173,19 +174,84 @@ export const GUIDE_SEO: Record<string, GuideSeo> = {
   },
 };
 
-const OG_IMAGE = { url: "/og.png", width: 1200, height: 630, alt: "iDentical Lab, laborator dentar digital" };
+const OG_IMAGE_RO = { url: "/og.png", width: 1200, height: 630, alt: "iDentical Lab, laborator dentar digital" };
+const OG_IMAGE_EN = { ...OG_IMAGE_RO, alt: "iDentical Lab, digital dental laboratory" };
 
-/** Build Next.js Metadata for a path, with canonical and social tags. */
-export function metaFor(path: string, over?: Partial<Pick<PageSeo, "title" | "description">>): Metadata {
-  const s = SEO[path];
+/** English title and description for the public pages. Pages without an entry fall back to the Romanian text. */
+export const SEO_EN: Record<string, Pick<PageSeo, "title" | "description">> = {
+  "/": {
+    title: "Digital Dental Laboratory Bucharest | iDentical Lab",
+    description: "Digital dental lab in Bucharest: screw-retained restorations, veneers, crowns and bridges, custom abutments, wax-up and surgical guides. Send your first case.",
+  },
+  "/despre-noi": {
+    title: "About Us: 30 Years of Dental Lab Craft | iDentical Lab",
+    description: "Meet iDentical Lab in Bucharest: 30 years of experience and a complete digital workflow, from scan to delivery. See how we work.",
+  },
+  "/servicii": {
+    title: "Digital Dental Lab Services | iDentical Lab",
+    description: "Full-arch screw-retained restorations, dental veneers, crowns and bridges, custom abutments, SmileCloud wax-up and surgical guides for dental practices.",
+  },
+  "/servicii/ghiduri-chirurgicale": {
+    title: "Surgical Guide for Implants | iDentical Lab",
+    description: "Implant surgical guide made from the digital plan you approve and checked before delivery. Send us your case.",
+  },
+  "/portofoliu": {
+    title: "Portfolio: Dental Work Before and After | iDentical Lab",
+    description: "See before and after cases: screw-retained restorations, veneers, crowns and bridges, custom abutments, wax-up and surgical guides. Send us your case.",
+  },
+  "/cum-lucram": {
+    title: "How We Work: From CBCT to Delivery | iDentical Lab",
+    description: "The iDentical Lab digital workflow, from the CBCT file to the finished work delivered to your practice: steps, planning and turnaround. Send your first case.",
+  },
+  "/intrebari": {
+    title: "Dental Laboratory FAQ | iDentical Lab",
+    description: "Answers on submitting a case, services, turnaround, catalogue and working with a digital dental laboratory. Can't find yours? Write to us.",
+  },
+  "/contact": {
+    title: "Contact Dental Laboratory Bucharest | iDentical Lab",
+    description: "Contact iDentical Lab: phone +40 724 065 767, email, opening hours and address in Bucharest. Fill in the form and a specialist will get back to you.",
+  },
+  "/termeni-si-conditii": {
+    title: "Terms and Conditions | iDentical Lab",
+    description: "Rules for using the iDentical Lab website and quote requests. Read them before you submit a case. The Romanian version prevails.",
+  },
+  "/politica-de-confidentialitate": {
+    title: "Privacy Policy | iDentical Lab",
+    description: "How we process personal data sent through our forms: purpose, legal basis, retention and your GDPR rights. The Romanian version prevails.",
+  },
+  "/politica-cookie": {
+    title: "Cookie Policy | iDentical Lab",
+    description: "Which cookies and local data the iDentical Lab website uses, and how to change your preferences at any time. The Romanian version prevails.",
+  },
+};
+
+export function seoFor(path: string, lang: Lang): PageSeo {
+  const ro = SEO[path];
+  return lang === "en" && SEO_EN[path] ? { ...ro, ...SEO_EN[path] } : ro;
+}
+
+/** Canonical plus hreflang alternates for an internal (Romanian) path. */
+export function alternatesFor(path: string, lang: Lang) {
+  return {
+    canonical: pathFor(path, lang),
+    languages: { "ro-RO": pathFor(path, "ro"), en: pathFor(path, "en"), "x-default": pathFor(path, "ro") },
+  };
+}
+
+export const OG_LOCALE: Record<Lang, string> = { ro: "ro_RO", en: "en_GB" };
+
+/** Build Next.js Metadata for a path, with canonical, hreflang and social tags. */
+export function metaFor(path: string, lang: Lang = "ro", over?: Partial<Pick<PageSeo, "title" | "description">>): Metadata {
+  const s = seoFor(path, lang);
   const title = over?.title ?? s.title;
   const description = over?.description ?? s.description;
+  const image = lang === "en" ? OG_IMAGE_EN : OG_IMAGE_RO;
   return {
     title: { absolute: title },
     description,
-    alternates: { canonical: path },
-    openGraph: { type: "website", locale: "ro_RO", siteName: SITE_NAME, url: path, title, description, images: [OG_IMAGE] },
-    twitter: { card: "summary_large_image", title, description, images: [OG_IMAGE.url] },
+    alternates: alternatesFor(path, lang),
+    openGraph: { type: "website", locale: OG_LOCALE[lang], siteName: SITE_NAME, url: pathFor(path, lang), title, description, images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image.url] },
   };
 }
 
@@ -196,8 +262,8 @@ export function guideMeta(slug: string): Metadata {
     title: { absolute: g.title },
     description: g.description,
     alternates: { canonical: path },
-    openGraph: { type: "article", locale: "ro_RO", siteName: SITE_NAME, url: path, title: g.title, description: g.description, images: [OG_IMAGE] },
-    twitter: { card: "summary_large_image", title: g.title, description: g.description, images: [OG_IMAGE.url] },
+    openGraph: { type: "article", locale: "ro_RO", siteName: SITE_NAME, url: path, title: g.title, description: g.description, images: [OG_IMAGE_RO] },
+    twitter: { card: "summary_large_image", title: g.title, description: g.description, images: [OG_IMAGE_RO.url] },
   };
 }
 

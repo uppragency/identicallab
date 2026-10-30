@@ -218,3 +218,8 @@ details[open] > summary [data-acc-icon] { transform: rotate(45deg); }
   details > summary.m-sb { flex-wrap: nowrap !important; align-items: flex-start; }
   details > summary.m-sb > :last-child { flex: none; }
 }
+
+/* Language switch */
+.idl-lang-link { transition: color .2s ease; }
+.idl-lang-link:hover { color: #26B7BC !important; }
+@media (max-width: 640px) { .idl-lang-hd { display: none !important; } }

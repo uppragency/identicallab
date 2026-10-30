@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { pathFor } from "@/lib/i18n/config";
 
 const KEY = "idl-cookie-consent";
 const VERSION = 1;
@@ -35,7 +36,44 @@ function save(c: Consent) {
 
 const font = "var(--font-outfit), Helvetica, sans-serif";
 
+const TEXT = {
+  ro: {
+    aria: "Preferințe cookie",
+    title: "[ Cookie-uri ]",
+    intro: "Folosim doar stocare necesară funcționării site-ului. Cu acordul tău, putem activa și măsurarea vizitelor sau marketingul. Detalii în",
+    policy: "Politica de cookie-uri",
+    all: "Acceptă toate",
+    necessaryOnly: "Doar necesare",
+    settings: "Setări",
+    necessary: "Necesare",
+    necessaryText: "Rețin alegerea ta privind cookie-urile. Mereu active.",
+    analyticsLabel: "Analitice",
+    analyticsText: "Ne ajută să înțelegem cum este folosit site-ul. Dezactivate până alegi.",
+    marketingLabel: "Marketing",
+    marketingText: "Măsurarea campaniilor publicitare. Dezactivate până alegi.",
+    save: "Salvează alegerea",
+  },
+  en: {
+    aria: "Cookie preferences",
+    title: "[ Cookies ]",
+    intro: "We only use storage that is necessary for the site to work. With your consent, we can also enable visit measurement and marketing. Details in the",
+    policy: "Cookie policy",
+    all: "Accept all",
+    necessaryOnly: "Necessary only",
+    settings: "Settings",
+    necessary: "Necessary",
+    necessaryText: "They remember your cookie choice. Always on.",
+    analyticsLabel: "Analytics",
+    analyticsText: "They help us understand how the site is used. Off until you choose.",
+    marketingLabel: "Marketing",
+    marketingText: "Measuring advertising campaigns. Off until you choose.",
+    save: "Save choice",
+  },
+};
+
 export default function CookieBanner() {
+  const lang = typeof document !== "undefined" && document.documentElement.lang === "en" ? "en" : "ro";
+  const T = TEXT[lang];
   const [open, setOpen] = useState(false);
   const [settings, setSettings] = useState(false);
   const [analytics, setAnalytics] = useState(false);
@@ -115,7 +153,7 @@ export default function CookieBanner() {
     <div
       role="dialog"
       aria-modal="false"
-      aria-label="Preferințe cookie"
+      aria-label={T.aria}
       data-cookie-banner
       className="idl-cookie"
       style={{
@@ -134,42 +172,42 @@ export default function CookieBanner() {
         fontFamily: font,
       }}
     >
-      <div style={{ fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0F0053", marginBottom: "12px" }}>[ Cookie-uri ]</div>
+      <div style={{ fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0F0053", marginBottom: "12px" }}>{T.title}</div>
       {!settings ? (
         <>
           <p style={{ margin: "0 0 18px", fontSize: "15px", lineHeight: 1.55, fontWeight: 300, color: "#3A3A44" }}>
-            Folosim doar stocare necesară funcționării site-ului. Cu acordul tău, putem activa și măsurarea vizitelor sau marketingul. Detalii în{" "}
-            <a href="/politica-cookie" style={{ color: "#0F0053", borderBottom: "1px solid rgba(15,0,83,0.4)" }}>
-              Politica de cookie-uri
+            {T.intro}{" "}
+            <a href={pathFor("/politica-cookie", lang)} style={{ color: "#0F0053", borderBottom: "1px solid rgba(15,0,83,0.4)" }}>
+              {T.policy}
             </a>
             .
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
             <button type="button" onClick={() => decide(true, true)} style={btn(true)}>
-              Acceptă toate
+              {T.all}
             </button>
             <button type="button" onClick={() => decide(false, false)} style={btn(false)}>
-              Doar necesare
+              {T.necessaryOnly}
             </button>
           </div>
           <button type="button" onClick={() => setSettings(true)} style={{ marginTop: "14px", padding: "0 0 2px", border: "none", background: "transparent", fontFamily: font, fontSize: "13px", color: "#0F0053", borderBottom: "1px solid rgba(15,0,83,0.4)", cursor: "pointer" }}>
-            Setări
+            {T.settings}
           </button>
         </>
       ) : (
         <>
           <div style={{ marginBottom: "6px" }}>
-            {row("Necesare", "Rețin alegerea ta privind cookie-urile. Mereu active.", true)}
-            {row("Analitice", "Ne ajută să înțelegem cum este folosit site-ul. Dezactivate până alegi.", analytics, setAnalytics)}
-            {row("Marketing", "Măsurarea campaniilor publicitare. Dezactivate până alegi.", marketing, setMarketing)}
+            {row(T.necessary, T.necessaryText, true)}
+            {row(T.analyticsLabel, T.analyticsText, analytics, setAnalytics)}
+            {row(T.marketingLabel, T.marketingText, marketing, setMarketing)}
             <div style={{ borderTop: "1px solid rgba(26,26,26,0.1)" }} />
           </div>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginTop: "16px" }}>
             <button type="button" onClick={() => decide(analytics, marketing)} style={btn(true)}>
-              Salvează alegerea
+              {T.save}
             </button>
             <button type="button" onClick={() => decide(true, true)} style={btn(false)}>
-              Acceptă toate
+              {T.all}
             </button>
           </div>
         </>

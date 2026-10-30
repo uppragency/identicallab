@@ -220,6 +220,14 @@ details[open] > summary [data-acc-icon] { transform: rotate(45deg); }
 }
 
 /* Language switch */
-.idl-lang-link { transition: color .2s ease; }
-.idl-lang-link:hover { color: #26B7BC !important; }
+.idl-flags { display: inline-flex; align-items: center; gap: 10px; }
+.idl-flag { position: relative; display: inline-flex; border-radius: 4px; overflow: visible; opacity: .55; transition: opacity .2s ease, transform .2s ease; outline-offset: 3px; }
+.idl-flag svg { display: block; border-radius: 3px; box-shadow: 0 0 0 1px rgba(26,26,26,.14); }
+.idl-flags-dark .idl-flag svg { box-shadow: 0 0 0 1px rgba(255,255,255,.3); }
+.idl-flag.is-active { opacity: 1; }
+a.idl-flag:hover, a.idl-flag:focus-visible { opacity: 1; transform: translateY(-1px); }
+.idl-flag::after { content: attr(data-tip); position: absolute; top: calc(100% + 8px); left: 50%; transform: translate(-50%, -4px); padding: 5px 10px; border-radius: 6px; background: #1A1A1A; color: #fff; font: 400 12px/1.2 var(--font-outfit), Helvetica, sans-serif; letter-spacing: .02em; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity .15s ease, transform .15s ease; z-index: 90; }
+.idl-flag:hover::after, .idl-flag:focus-visible::after { opacity: 1; transform: translate(-50%, 0); }
 @media (max-width: 640px) { .idl-lang-hd { display: none !important; } }
+.idl-flags-dark .idl-flag::after { top: auto; bottom: calc(100% + 8px); transform: translate(-50%, 4px); background: #FFFFFF; color: #1A1A1A; }
+.idl-flags-dark .idl-flag:hover::after, .idl-flags-dark .idl-flag:focus-visible::after { transform: translate(-50%, 0); }
